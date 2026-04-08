@@ -1,6 +1,7 @@
 import "./globals.css";
 import { AdminEntryButton } from "@/components/AdminEntryButton";
 import { SiteHeaderShell } from "@/components/SiteHeaderShell";
+import { SiteFooterShell } from "@/components/SiteFooterShell";
 
 export const metadata = {
   title: "Dr. Sheng's Website",
@@ -13,6 +14,7 @@ export default function RootLayout({ children }) {
       <body className="antialiased">
         <SiteHeaderShell />
         {children}
+        <SiteFooterShell />
         <AdminEntryButton />
       </body>
     </html>
