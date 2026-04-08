@@ -67,4 +67,4 @@ def sync_nsf_to_firestore():
             print(f"⚠️ Error processing {opp.get('opportunity_title')}: {e}")
 
 if __name__ == "__main__":
-    sync_nsf_to_firestore()
+    sync_nsf_to_firestore() 
