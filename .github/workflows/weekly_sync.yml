@@ -24,4 +24,4 @@ jobs:
       - name: Run sync script
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-        run: python scraper.py
+        run: python dr-shengs-website/scraper.py
