@@ -208,10 +208,6 @@ export function ResearchEditor() {
               key={row.id}
               className="rounded-2xl border border-zinc-800/80 bg-zinc-950/20 p-5"
             >
-              <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-                
-                <Btn onClick={() => saveAllForDoc(row.id)}>Save arrays</Btn>
-              </div>
               <div className="grid gap-6 lg:grid-cols-2">
                 <ArrayBlock
                   docId={row.id}
@@ -225,6 +221,9 @@ export function ResearchEditor() {
                   label="Research fundings"
                   placeholderAdd="New funding line…"
                 />
+              </div>
+              <div className="mt-4 flex justify-end">
+                <Btn onClick={() => saveAllForDoc(row.id)}>Save Research Fields</Btn>
               </div>
             </div>
           ))}
