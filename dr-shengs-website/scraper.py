@@ -17,7 +17,7 @@ def sync_nsf_to_firestore():
     feed_url = "https://www.nsf.gov/rss/upcoming_due_dates.xml"
     feed = feedparser.parse(feed_url)
     
-    collection_ref = db.collection('funding_opportunities')
+    collection_ref = db.collection('funding')
 
     for entry in feed.entries:
         # Data mapping
