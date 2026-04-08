@@ -53,29 +53,31 @@ def sync_grants_to_firestore():
             # Document ID from the API UUID
             opp_id = str(opp.get('opportunity_id', 'unknown'))
             
-            # --- Safety Check for Description ---
-            # Using .get() ensures no crash if 'summary' is missing.
-            # Adding 'or ""' ensures that even if it's None (null), it becomes a string.
+            # --- The Fix: Extract first, then slice ---
+            # 1. Get the value (defaulting to empty string if null)
             raw_summary = opp.get('summary') or "No description provided."
-            # Now we slice the string safely
-            clean_description = raw_summary[:1000]
+            # 2. Slice the string variable
+            clean_description = str(raw_summary)[:1000] 
+
+            # Pulling the other fields exactly as they are in the JSON
+            agency_name = opp.get('agency_name') or "Unknown Agency"
+            deadline_str = opp.get('close_date') or "N/A"
 
             doc_data = {
                 "title": opp.get('opportunity_title', 'No Title'),
                 "link": f"https://www.grants.gov/search-results-detail/{opp_id}",
                 "description": clean_description,
-                # Pulling agency_name exactly as-is
-                "source": opp.get('agency_name', 'Unknown Source'),
-                # Pulling close_date exactly as-is (string)
-                "deadline": opp.get('close_date', 'N/A'), 
+                "source": agency_name,    # Displays the full agency name as-is
+                "deadline": deadline_str, # Displays the raw date string as-is
                 "last_updated": firestore.SERVER_TIMESTAMP
             }
 
+            # Write to Firestore
             collection_ref.document(opp_id).set(doc_data, merge=True)
-            print(f"🚀 Synced: {doc_data['title']}")
+            print(f"🚀 Synced: {doc_data['title']} (Agency: {agency_name})")
 
         except Exception as e:
-            # This will now catch and print the specific error for each item
+            # This will help you identify if a specific record has weird data
             print(f"⚠️ Error processing item {opp.get('opportunity_id')}: {e}")
 
 if __name__ == "__main__":
