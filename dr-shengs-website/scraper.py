@@ -28,16 +28,21 @@ def sync_nsf_to_firestore():
         "X-API-Key": api_key
     }
     
+    # Broaden the payload to ensure we catch results
     payload = {
-        "query": "NSF",
         "filters": {
-            "opportunity_status": {"one_of": ["posted"]},
-            "agency": {"one_of": ["National Science Foundation"]}
+            "opportunity_status": {"one_of": ["posted"]}
+            # Agency filter removed for now to maximize results
         },
         "pagination": {
             "page_offset": 1,
-            "page_size": 20,
-            "sort_order": [{"order_by": "post_date", "sort_direction": "descending"}]
+            "page_size": 25,
+            "sort_order": [
+                {
+                    "order_by": "post_date",
+                    "sort_direction": "descending"
+                }
+            ]
         }
     }
     
