@@ -55,16 +55,16 @@ export function PeopleDirectoryClient() {
           <section className="mt-8">
             {people.map((person, index) => (
               <div key={person.id}>
-                <article className="grid grid-cols-1 gap-5 py-6 sm:grid-cols-[11rem_1fr] sm:gap-7">
-                  <div className="h-44 w-44 overflow-hidden rounded-xl border border-black/70 bg-zinc-50">
+                <article className="grid grid-cols-1 gap-5 py-6 sm:grid-cols-[14rem_1fr] sm:gap-8">
+                  <div className="flex items-start">
                     {person.image_url ? (
                       <img
                         src={person.image_url}
                         alt={person.name || "Profile picture"}
-                        className="h-full w-full object-cover"
+                        className="max-h-56 max-w-[14rem] rounded-xl border border-black/70 object-contain"
                       />
                     ) : (
-                      <div className="flex h-full w-full items-center justify-center text-sm text-zinc-500">
+                      <div className="flex h-56 w-56 items-center justify-center rounded-xl border border-black/70 bg-zinc-50 text-sm text-zinc-500">
                         Picture
                       </div>
                     )}
