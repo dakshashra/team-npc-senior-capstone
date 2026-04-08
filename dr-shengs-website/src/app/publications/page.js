@@ -28,7 +28,7 @@ export default function PublicationsPage() {
               className="group block w-full md:w-1/2 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-all hover:shadow-xl"
             >
               <Image
-                src="/google_scholar.png"
+                src="/google_scholar.jpg"
                 alt="Google Scholar"
                 width={1200}
                 height={800}
@@ -44,7 +44,7 @@ export default function PublicationsPage() {
               className="group block w-full md:w-1/2 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-all hover:shadow-xl"
             >
               <Image
-                src="/researchgate.png"
+                src="/researchgate3.png"
                 alt="ResearchGate"
                 width={1200}
                 height={800}
@@ -63,7 +63,7 @@ export default function PublicationsPage() {
               className="group block w-full md:w-1/2 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-all hover:shadow-xl"
             >
               <Image
-                src="/researcherid.png"
+                src="/researcherid2.png"
                 alt="ResearchID Web of Science"
                 width={1200}
                 height={800}
