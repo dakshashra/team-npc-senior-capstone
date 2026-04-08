@@ -24,4 +24,4 @@ jobs:
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           GRANTS_API_KEY: ${{ secrets.GRANTS_API_KEY }}
-        run: python scraper.py
+        run: python dr-shengs-website/scraper.py
