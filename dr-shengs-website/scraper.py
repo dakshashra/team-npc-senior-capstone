@@ -72,7 +72,7 @@ def sync_nsf_to_firestore():
                 "description": description,
                 "deadline": clean_deadline,
                 "source": "NSF",
-                "last_updated": firestore.SERVER_TIMESTAMP
+                
             }
 
             # Create a unique ID from the URL to prevent duplicates
