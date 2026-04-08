@@ -80,8 +80,7 @@ def sync_nsf_to_firestore():
                 "link": link,
                 "description": opp.get('description', 'No description provided.')[:1000],
                 "deadline": deadline_dt,
-                "source": "NSF",
-                "last_updated": firestore.SERVER_TIMESTAMP
+                "source": "NSF"
             }
 
             # Use Opportunity ID as document ID to prevent duplicates
