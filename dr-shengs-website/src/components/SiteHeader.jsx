@@ -7,8 +7,13 @@ import Link from "next/link";
 const NAV_LINKS = [
   { href: "/people", label: "People" },
   { href: "/research", label: "Research" },
-  { href: "/news", label: "News" },
-  { href: "/funding-opportunities", label: "Funding Opportunities" },
+  { 
+    href: "/news", 
+    label: "News",
+    subItems: [
+      { href: "/funding-opportunities", label: "Funding Opportunities" }
+    ]
+  },
   { href: "/publications", label: "Publications" },
 ];
 
@@ -43,9 +48,26 @@ export function SiteHeader() {
         {/* Desktop nav */}
         <nav className="hidden items-center gap-1 md:flex" aria-label="Primary">
           {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} className={navLinkClass}>
-              {link.label}
-            </Link>
+            <div key={link.href} className="relative group/navitem">
+              <Link href={link.href} className={navLinkClass}>
+                {link.label}
+              </Link>
+              {link.subItems && (
+                <div className="absolute left-0 top-full pt-2 opacity-0 invisible group-hover/navitem:opacity-100 group-hover/navitem:visible transition-all duration-200">
+                  <div className="w-56 rounded-xl bg-white p-2 shadow-lg ring-1 ring-zinc-900/5">
+                    {link.subItems.map(subItem => (
+                      <Link
+                        key={subItem.href}
+                        href={subItem.href}
+                        className="block rounded-lg px-3 py-2 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-100 hover:text-zinc-950"
+                      >
+                        {subItem.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
           ))}
         </nav>
 
@@ -74,18 +96,33 @@ export function SiteHeader() {
       {/* Mobile dropdown */}
       {menuOpen && (
         <nav
-          className="border-t border-zinc-100 bg-white px-4 pb-4 md:hidden"
+          className="border-t border-zinc-100 bg-white px-4 pb-4 pt-2 md:hidden flex flex-col gap-1"
           aria-label="Primary mobile"
         >
           {NAV_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="block rounded-lg px-3 py-2.5 text-base font-semibold text-zinc-800 transition hover:bg-zinc-100 hover:text-zinc-950"
-            >
-              {link.label}
-            </Link>
+            <div key={link.href}>
+              <Link
+                href={link.href}
+                onClick={() => setMenuOpen(false)}
+                className="block rounded-lg px-3 py-2.5 text-base font-semibold text-zinc-800 transition hover:bg-zinc-100 hover:text-zinc-950"
+              >
+                {link.label}
+              </Link>
+              {link.subItems && (
+                <div className="pl-4 mt-1 flex flex-col gap-1">
+                  {link.subItems.map((subItem) => (
+                    <Link
+                      key={subItem.href}
+                      href={subItem.href}
+                      onClick={() => setMenuOpen(false)}
+                      className="block rounded-lg px-3 py-2.5 text-sm font-medium text-zinc-600 transition hover:bg-zinc-100 hover:text-zinc-950"
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </nav>
       )}
