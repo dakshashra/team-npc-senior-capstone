@@ -4,12 +4,12 @@ import Image from "next/image";
 import Link from "next/link";
 
 const navLinkClass =
-  "rounded-lg px-3 py-2 text-sm font-semibold text-zinc-800 transition hover:bg-zinc-100 hover:text-zinc-950";
+  "rounded-lg px-3 py-2 text-base font-semibold text-zinc-800 transition hover:bg-zinc-100 hover:text-zinc-950";
 
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 bg-white shadow-sm">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className="flex flex-wrap items-center justify-between gap-4 px-4 py-3 sm:px-6">
         <Link
           href="/"
           className="flex min-w-0 flex-1 items-center gap-3 sm:gap-4"
@@ -17,12 +17,12 @@ export function SiteHeader() {
           <Image
             src="/texas_tech_logo.png"
             alt="Texas Tech University"
-            width={140}
-            height={48}
-            className="h-10 w-auto shrink-0 object-contain sm:h-12"
+            width={160}
+            height={56}
+            className="h-12 w-auto shrink-0 object-contain sm:h-14"
             priority
           />
-          <span className="text-left text-base font-bold leading-tight tracking-tight text-zinc-900 sm:text-lg md:text-xl">
+          <span className="text-lg font-bold leading-tight tracking-tight text-zinc-900 sm:text-xl md:text-2xl">
             Machine Learning &amp; Data Science Lab
           </span>
         </Link>
@@ -95,7 +95,7 @@ export function SiteHeader() {
           </Link>
         </nav>
       </div>
-      <div className="h-1 w-full bg-[#CC0000]" aria-hidden />
+      <div className="h-1.5 w-full bg-[#CC0000]" aria-hidden />
     </header>
   );
 }
