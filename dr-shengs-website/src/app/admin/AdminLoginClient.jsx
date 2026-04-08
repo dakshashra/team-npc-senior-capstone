@@ -64,12 +64,12 @@ export function AdminLoginClient() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-zinc-950 text-zinc-100">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(120,80,200,0.25),transparent)]" />
-      <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(100%,48rem)] -translate-x-1/2 bg-gradient-to-r from-transparent via-violet-500/40 to-transparent" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(204,0,0,0.20),transparent)]" />
+      <div className="pointer-events-none absolute bottom-0 left-1/2 h-px w-[min(100%,48rem)] -translate-x-1/2 bg-gradient-to-r from-transparent via-[#CC0000]/40 to-transparent" />
 
       <div className="relative mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-16">
         <div className="mb-10 text-center">
-          <p className="text-xs font-medium uppercase tracking-[0.2em] text-violet-400/90">
+          <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#CC0000]/90">
             Restricted
           </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white">
@@ -95,7 +95,7 @@ export function AdminLoginClient() {
                 autoComplete="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
-                className="w-full rounded-xl border border-zinc-700/80 bg-zinc-950/80 px-4 py-3 text-sm text-zinc-100 outline-none ring-0 transition-[border,box-shadow] placeholder:text-zinc-600 focus:border-violet-500/60 focus:shadow-[0_0_0_3px_rgba(139,92,246,0.15)]"
+                className="w-full rounded-xl border border-zinc-700/80 bg-zinc-950/80 px-4 py-3 text-sm text-zinc-100 outline-none ring-0 transition-[border,box-shadow] placeholder:text-zinc-600 focus:border-[#CC0000]/60 focus:shadow-[0_0_0_3px_rgba(204,0,0,0.15)]"
                 placeholder="Admin username"
               />
             </label>
@@ -109,7 +109,7 @@ export function AdminLoginClient() {
                 autoComplete="current-password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full rounded-xl border border-zinc-700/80 bg-zinc-950/80 px-4 py-3 text-sm text-zinc-100 outline-none transition-[border,box-shadow] placeholder:text-zinc-600 focus:border-violet-500/60 focus:shadow-[0_0_0_3px_rgba(139,92,246,0.15)]"
+                className="w-full rounded-xl border border-zinc-700/80 bg-zinc-950/80 px-4 py-3 text-sm text-zinc-100 outline-none transition-[border,box-shadow] placeholder:text-zinc-600 focus:border-[#CC0000]/60 focus:shadow-[0_0_0_3px_rgba(204,0,0,0.15)]"
                 placeholder="••••••••"
               />
             </label>
@@ -131,7 +131,7 @@ export function AdminLoginClient() {
           <button
             type="submit"
             disabled={loading}
-            className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-fuchsia-600 px-4 py-3.5 text-sm font-semibold text-white shadow-lg shadow-violet-900/30 transition hover:from-violet-500 hover:to-fuchsia-500 disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-8 flex w-full items-center justify-center gap-2 rounded-xl bg-[#CC0000] px-4 py-3.5 text-sm font-semibold text-white shadow-lg shadow-[#CC0000]/30 transition hover:bg-[#aa0000] disabled:cursor-not-allowed disabled:opacity-60"
           >
             {loading ? (
               <>
@@ -147,7 +147,7 @@ export function AdminLoginClient() {
         <p className="mt-8 text-center text-sm text-zinc-500">
           <Link
             href="/"
-            className="text-violet-400/90 underline-offset-4 transition hover:text-violet-300 hover:underline"
+            className="text-[#CC0000]/90 underline-offset-4 transition hover:text-[#ff1a1a] hover:underline"
           >
             Back to site
           </Link>
