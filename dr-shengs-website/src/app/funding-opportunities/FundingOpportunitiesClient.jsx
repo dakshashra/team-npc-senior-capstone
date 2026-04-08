@@ -23,30 +23,31 @@ export function FundingOpportunitiesClient() {
         const docs = [];
         snap.forEach((doc) => {
           const data = doc.data();
-          if (data.deadline) {
-            let dateObj;
-            if (typeof data.deadline.toDate === 'function') {
-              dateObj = data.deadline.toDate();
-            } else if (typeof data.deadline === 'string') {
+          if (data.deadline && data.deadline !== "N/A") {
+            let dateObj = null;
+            let deadlineStr = data.deadline;
+
+            if (typeof data.deadline === 'string') {
               dateObj = new Date(data.deadline);
+            } else if (typeof data.deadline?.toDate === 'function') {
+              dateObj = data.deadline.toDate();
+              deadlineStr = dateObj.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
             } else if (data.deadline instanceof Date) {
               dateObj = data.deadline;
+              deadlineStr = dateObj.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
             } else if (typeof data.deadline === 'number') {
               dateObj = new Date(data.deadline);
+              deadlineStr = dateObj.toLocaleDateString('en-US', { day: 'numeric', month: 'long', year: 'numeric' });
             }
 
-            if (dateObj && dateObj >= now) {
+            if (dateObj && !isNaN(dateObj) && dateObj >= now) {
               docs.push({
                 id: doc.id,
                 title: data.title || "",
                 source: data.source || "",
                 description: data.description || "",
                 link: data.link || "",
-                deadlineStr: dateObj.toLocaleDateString('en-US', {
-                  day: 'numeric',
-                  month: 'long',
-                  year: 'numeric'
-                }),
+                deadlineStr: typeof deadlineStr === "string" ? deadlineStr : String(deadlineStr),
                 deadlineDate: dateObj,
               });
             }
