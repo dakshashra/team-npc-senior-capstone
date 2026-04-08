@@ -30,10 +30,47 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 max-w-4xl border-t border-zinc-200 pt-6 text-sm leading-6 text-zinc-700">
-          <p className="font-semibold text-zinc-900">For Prospective Students</p>
-          <p className="mt-2">TA/RA positions in PhD program</p>
-          <p className="mt-2">
+        <div className="mt-12 max-w-4xl border-t border-zinc-200 pt-8">
+          <h2 className="text-xl font-bold tracking-tight text-zinc-900 mb-6">Education</h2>
+          <div className="flex flex-col gap-6">
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <div>
+                <div className="font-semibold text-zinc-900">NSERC Postdoctoral Fellow</div>
+                <div className="text-sm text-zinc-700 mt-0.5">Leonard N. Stern School of Business, New York University, USA</div>
+              </div>
+              <div className="shrink-0 text-sm font-medium text-zinc-500">September 2007 - August 2009</div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <div>
+                <div className="font-semibold text-zinc-900">Ph.D., Computer Science</div>
+                <div className="text-sm text-zinc-700 mt-0.5">The University of Western Ontario, London, Ontario, Canada</div>
+              </div>
+              <div className="shrink-0 text-sm font-medium text-zinc-500">August 2007</div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <div>
+                <div className="font-semibold text-zinc-900">M.Sc., Computer Science</div>
+                <div className="text-sm text-zinc-700 mt-0.5">University of New Brunswick, Fredericton, New Brunswick, Canada</div>
+              </div>
+              <div className="shrink-0 text-sm font-medium text-zinc-500">December 2003</div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1 sm:gap-4">
+              <div>
+                <div className="font-semibold text-zinc-900">M.Sc.E., Computer Engineering</div>
+                <div className="text-sm text-zinc-700 mt-0.5">Suzhou University, Suzhou, Jiangsu, China</div>
+              </div>
+              <div className="shrink-0 text-sm font-medium text-zinc-500">July 1999</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 max-w-4xl border-t border-zinc-200 pt-8 text-sm leading-6 text-zinc-700">
+          <p className="text-lg font-bold tracking-tight text-zinc-900">For Prospective Students</p>
+          <p className="mt-3 font-semibold text-[#CC0000]">TA/RA positions in PhD program</p>
+          <p className="mt-2 text-base">
             I am looking for self-motivated, creative and hard-working Ph.D.
             students. Please feel free to email me (
             <a
