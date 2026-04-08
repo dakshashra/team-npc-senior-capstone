@@ -53,31 +53,35 @@ def sync_grants_to_firestore():
             # Document ID from the API UUID
             opp_id = str(opp.get('opportunity_id', 'unknown'))
             
-            # --- The Fix: Extract first, then slice ---
-            # 1. Get the value (defaulting to empty string if null)
-            raw_summary = opp.get('summary') or "No description provided."
-            # 2. Slice the string variable
-            clean_description = str(raw_summary)[:1000] 
+            # --- 1. Extract Specific Fields ---
+            # Using .get() ensures it doesn't crash if a field is missing
+            eligibility = opp.get('applicant_eligibility_description') or "Eligibility info not provided."
+            more_info_link = opp.get('additional_info_url') or "No additional link available."
+            
+            # --- 2. Create Clean Description ---
+            # Combine the eligibility text and the link with a clean break
+            clean_description = f"{eligibility}\n\nLink: {more_info_link}"
 
-            # Pulling the other fields exactly as they are in the JSON
-            agency_name = opp.get('agency_name') or "Unknown Agency"
+            # --- 3. Extract Deadline and Source ---
+            # The snippet shows the key is 'close_date'
             deadline_str = opp.get('close_date') or "N/A"
+            # Pulling the agency name directly
+            agency_name = opp.get('agency_name', 'Unknown Source')
 
             doc_data = {
                 "title": opp.get('opportunity_title', 'No Title'),
                 "link": f"https://www.grants.gov/search-results-detail/{opp_id}",
                 "description": clean_description,
-                "source": agency_name,    # Displays the full agency name as-is
-                "deadline": deadline_str, # Displays the raw date string as-is
+                "source": agency_name,
+                "deadline": deadline_str, # String format as requested
                 "last_updated": firestore.SERVER_TIMESTAMP
             }
 
             # Write to Firestore
             collection_ref.document(opp_id).set(doc_data, merge=True)
-            print(f"🚀 Synced: {doc_data['title']} (Agency: {agency_name})")
+            print(f"🚀 Synced: {doc_data['title']} (Deadline: {deadline_str})")
 
         except Exception as e:
-            # This will help you identify if a specific record has weird data
             print(f"⚠️ Error processing item {opp.get('opportunity_id')}: {e}")
 
 if __name__ == "__main__":
