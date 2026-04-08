@@ -12,13 +12,70 @@ function normalizeStrings(v) {
   return v.map((s) => String(s ?? ""));
 }
 
+// ── Lifted outside ResearchEditor so React never unmounts it on re-render ────
+function ArrayBlock({
+  docId,
+  label,
+  field,
+  placeholderAdd,
+  pack,
+  newItemVal,
+  onChangeItem,
+  onRemoveItem,
+  onNewItemChange,
+  onAddItem,
+}) {
+  if (!pack) return null;
+  const list = pack[field];
+
+  return (
+    <div className="rounded-xl border border-zinc-800 bg-zinc-950/30 p-4">
+      <p className="mb-3 text-sm font-medium text-zinc-300">{label}</p>
+      <ul className="space-y-2">
+        {list.map((line, i) => (
+          <li
+            key={`${docId}-${field}-${i}`}
+            className="flex flex-col gap-2 sm:flex-row sm:items-center"
+          >
+            <TextInput
+              value={line}
+              onChange={(e) => onChangeItem(docId, field, i, e.target.value)}
+              className="sm:flex-1"
+            />
+            <Btn
+              variant="danger"
+              className="shrink-0"
+              onClick={() => onRemoveItem(docId, field, i)}
+            >
+              Remove
+            </Btn>
+          </li>
+        ))}
+      </ul>
+      <div className="mt-3 flex flex-col gap-2 sm:flex-row">
+        <TextInput
+          value={newItemVal}
+          onChange={(e) => onNewItemChange(docId, field, e.target.value)}
+          placeholder={placeholderAdd}
+          className="sm:flex-1"
+        />
+        <Btn
+          variant="secondary"
+          className="shrink-0"
+          onClick={() => onAddItem(docId, field, newItemVal)}
+        >
+          Add line
+        </Btn>
+      </div>
+    </div>
+  );
+}
+
 export function ResearchEditor() {
   const [docs, setDocs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [status, setStatus] = useState({ text: "", error: false });
-  /** docId -> { interests: string[], fundings: string[] } local edits */
   const [local, setLocal] = useState({});
-  /** docId -> { interest: string, funding: string } new row inputs */
   const [newItems, setNewItems] = useState({});
 
   const load = useCallback(async () => {
@@ -58,29 +115,14 @@ export function ResearchEditor() {
     load();
   }, [load]);
 
-  async function persistArrays(docId, interests, research_fundings) {
-    await updateDoc(doc(db, COL, docId), {
-      interests,
-      research_fundings,
-    });
-  }
-
-  function updateLocal(docId, fn) {
-    setLocal((prev) => {
-      const cur = prev[docId];
-      if (!cur) return prev;
-      return {
-        ...prev,
-        [docId]: fn(cur),
-      };
-    });
-  }
-
   async function saveAllForDoc(docId) {
     const pack = local[docId];
     if (!pack) return;
     try {
-      await persistArrays(docId, pack.interests, pack.research_fundings);
+      await updateDoc(doc(db, COL, docId), {
+        interests: pack.interests,
+        research_fundings: pack.research_fundings,
+      });
       setStatus({ text: "Research arrays saved.", error: false });
       await load();
     } catch (err) {
@@ -89,102 +131,53 @@ export function ResearchEditor() {
     }
   }
 
-  function setArrayItem(docId, field, index, value) {
-    updateLocal(docId, (cur) => {
+  function handleChangeItem(docId, field, index, value) {
+    setLocal((prev) => {
+      const cur = prev[docId];
+      if (!cur) return prev;
       const arr = [...cur[field]];
       arr[index] = value;
-      return { ...cur, [field]: arr };
+      return { ...prev, [docId]: { ...cur, [field]: arr } };
     });
   }
 
-  function removeArrayItem(docId, field, index) {
-    updateLocal(docId, (cur) => ({
-      ...cur,
-      [field]: cur[field].filter((_, i) => i !== index),
-    }));
+  function handleRemoveItem(docId, field, index) {
+    setLocal((prev) => {
+      const cur = prev[docId];
+      if (!cur) return prev;
+      return {
+        ...prev,
+        [docId]: { ...cur, [field]: cur[field].filter((_, i) => i !== index) },
+      };
+    });
   }
 
-  function addArrayItem(docId, field, raw) {
-    const t = raw.trim();
-    if (!t) return;
-    updateLocal(docId, (cur) => ({
-      ...cur,
-      [field]: [...cur[field], t],
-    }));
+  function handleNewItemChange(docId, field, value) {
+    const inputKey = field === "interests" ? "interest" : "funding";
     setNewItems((prev) => ({
       ...prev,
-      [docId]: {
-        ...prev[docId],
-        [field === "interests" ? "interest" : "funding"]: "",
-      },
+      [docId]: { ...(prev[docId] ?? { interest: "", funding: "" }), [inputKey]: value },
     }));
   }
 
-  function ArrayBlock({ docId, label, field, placeholderAdd }) {
-    const pack = local[docId];
-    if (!pack) return null;
-    const list = pack[field];
-    const ni = newItems[docId] ?? { interest: "", funding: "" };
+  function handleAddItem(docId, field, raw) {
+    const t = raw.trim();
+    if (!t) return;
+    setLocal((prev) => {
+      const cur = prev[docId];
+      if (!cur) return prev;
+      return { ...prev, [docId]: { ...cur, [field]: [...cur[field], t] } };
+    });
     const inputKey = field === "interests" ? "interest" : "funding";
-    const inputVal = ni[inputKey] ?? "";
-
-    return (
-      <div className="rounded-xl border border-zinc-800 bg-zinc-950/30 p-4">
-        <p className="mb-3 text-sm font-medium text-zinc-300">{label}</p>
-        <ul className="space-y-2">
-          {list.map((line, i) => (
-            <li
-              key={`${docId}-${field}-${i}`}
-              className="flex flex-col gap-2 sm:flex-row sm:items-center"
-            >
-              <TextInput
-                value={line}
-                onChange={(e) =>
-                  setArrayItem(docId, field, i, e.target.value)
-                }
-                className="sm:flex-1"
-              />
-              <Btn
-                variant="danger"
-                className="shrink-0"
-                onClick={() => removeArrayItem(docId, field, i)}
-              >
-                Remove
-              </Btn>
-            </li>
-          ))}
-        </ul>
-        <div className="mt-3 flex flex-col gap-2 sm:flex-row">
-          <TextInput
-            value={inputVal}
-            onChange={(e) =>
-              setNewItems((prev) => ({
-                ...prev,
-                [docId]: {
-                  ...(prev[docId] ?? { interest: "", funding: "" }),
-                  [inputKey]: e.target.value,
-                },
-              }))
-            }
-            placeholder={placeholderAdd}
-            className="sm:flex-1"
-          />
-          <Btn
-            variant="secondary"
-            className="shrink-0"
-            onClick={() => addArrayItem(docId, field, inputVal)}
-          >
-            Add line
-          </Btn>
-        </div>
-      </div>
-    );
+    setNewItems((prev) => ({
+      ...prev,
+      [docId]: { ...(prev[docId] ?? { interest: "", funding: "" }), [inputKey]: "" },
+    }));
   }
 
   return (
     <Panel
       title="Research"
-      //subtitle="Collection «research» — edit string arrays only (no new documents). Add lines, edit text, remove lines, then save."
       actions={
         <Btn variant="secondary" onClick={load} disabled={loading}>
           Refresh
@@ -214,12 +207,24 @@ export function ResearchEditor() {
                   field="interests"
                   label="Interests"
                   placeholderAdd="New interest…"
+                  pack={local[row.id]}
+                  newItemVal={newItems[row.id]?.interest ?? ""}
+                  onChangeItem={handleChangeItem}
+                  onRemoveItem={handleRemoveItem}
+                  onNewItemChange={handleNewItemChange}
+                  onAddItem={handleAddItem}
                 />
                 <ArrayBlock
                   docId={row.id}
                   field="research_fundings"
                   label="Research fundings"
                   placeholderAdd="New funding line…"
+                  pack={local[row.id]}
+                  newItemVal={newItems[row.id]?.funding ?? ""}
+                  onChangeItem={handleChangeItem}
+                  onRemoveItem={handleRemoveItem}
+                  onNewItemChange={handleNewItemChange}
+                  onAddItem={handleAddItem}
                 />
               </div>
               <div className="mt-4 flex justify-end">
