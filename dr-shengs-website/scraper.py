@@ -50,27 +50,33 @@ def sync_grants_to_firestore():
 
     for opp in items:
         try:
-            # Document ID using the UUID provided by the API
+            # Document ID from the API UUID
             opp_id = str(opp.get('opportunity_id', 'unknown'))
             
-            # Mapping fields based on the Simpler Grants API documentation
+            # --- Safety Check for Description ---
+            # Using .get() ensures no crash if 'summary' is missing.
+            # Adding 'or ""' ensures that even if it's None (null), it becomes a string.
+            raw_summary = opp.get('summary') or "No description provided."
+            # Now we slice the string safely
+            clean_description = raw_summary[:1000]
+
             doc_data = {
                 "title": opp.get('opportunity_title', 'No Title'),
                 "link": f"https://www.grants.gov/search-results-detail/{opp_id}",
-                # The documentation lists 'summary' as the field for the opportunity overview
-                "description": opp.get('summary', 'No summary provided.')[:1000],
-                # 'agency_name' provides the full agency title (e.g., National Science Foundation)
+                "description": clean_description,
+                # Pulling agency_name exactly as-is
                 "source": opp.get('agency_name', 'Unknown Source'),
-                # 'close_date' is the application deadline as a string (e.g., "2026-10-31")
+                # Pulling close_date exactly as-is (string)
                 "deadline": opp.get('close_date', 'N/A'), 
                 "last_updated": firestore.SERVER_TIMESTAMP
             }
 
             collection_ref.document(opp_id).set(doc_data, merge=True)
-            print(f"🚀 Synced: {doc_data['title']} from {doc_data['source']}")
+            print(f"🚀 Synced: {doc_data['title']}")
 
         except Exception as e:
-            print(f"⚠️ Error processing item: {e}")
+            # This will now catch and print the specific error for each item
+            print(f"⚠️ Error processing item {opp.get('opportunity_id')}: {e}")
 
 if __name__ == "__main__":
     sync_grants_to_firestore()
