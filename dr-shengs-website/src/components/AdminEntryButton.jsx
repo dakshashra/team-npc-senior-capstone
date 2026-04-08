@@ -21,8 +21,8 @@ export function AdminEntryButton() {
         strokeLinejoin="round"
         aria-hidden
       >
-        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-        <path d="M9 12l2 2 4-4" className="opacity-80" />
+        <circle cx="12" cy="8" r="4" />
+        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" />
       </svg>
     </Link>
   );
