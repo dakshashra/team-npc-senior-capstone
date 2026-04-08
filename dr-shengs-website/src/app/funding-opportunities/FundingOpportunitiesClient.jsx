@@ -41,14 +41,21 @@ export function FundingOpportunitiesClient() {
             }
 
             if (dateObj && !isNaN(dateObj) && dateObj >= now) {
+              let desc = data.description || "";
+              if (desc.length > 1000) {
+                desc = desc.substring(0, 1000) + "...";
+              }
+
               docs.push({
                 id: doc.id,
                 title: data.title || "",
                 source: data.source || "",
-                description: data.description || "",
+                description: desc,
                 link: data.link || "",
                 deadlineStr: typeof deadlineStr === "string" ? deadlineStr : String(deadlineStr),
                 deadlineDate: dateObj,
+                awardFloor: data.award_floor,
+                awardCeiling: data.award_ceiling,
               });
             }
           }
@@ -100,13 +107,31 @@ export function FundingOpportunitiesClient() {
                     {item.description}
                   </p>
                 </div>
-                <div className="mt-6 flex items-center gap-2 border-t border-zinc-100 pt-4">
-                  <svg className="h-5 w-5 text-zinc-400 group-hover:text-[#CC0000] transition-colors" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
-                  </svg>
-                  <span className="text-sm font-semibold text-zinc-600 group-hover:text-[#CC0000] transition-colors">
-                    Due: {item.deadlineStr}
-                  </span>
+                <div className="mt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-t border-zinc-100 pt-4">
+                  <div className="flex items-center gap-2">
+                    <svg className="h-5 w-5 text-zinc-400 group-hover:text-[#CC0000] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                    </svg>
+                    <span className="text-sm font-semibold text-zinc-600 group-hover:text-[#CC0000] transition-colors">
+                      Due: {item.deadlineStr}
+                    </span>
+                  </div>
+                  
+                  {(item.awardFloor != null || item.awardCeiling != null) && (
+                    <div className="flex items-center gap-2">
+                      <svg className="h-5 w-5 text-zinc-400 group-hover:text-[#CC0000] transition-colors shrink-0" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <span className="text-sm font-semibold text-zinc-600 group-hover:text-[#CC0000] transition-colors">
+                        {item.awardFloor != null && item.awardCeiling != null
+                          ? `${!isNaN(Number(item.awardFloor)) ? '$' + Number(item.awardFloor).toLocaleString() : item.awardFloor} - ${!isNaN(Number(item.awardCeiling)) ? '$' + Number(item.awardCeiling).toLocaleString() : item.awardCeiling}`
+                          : item.awardCeiling != null
+                            ? `Up to ${!isNaN(Number(item.awardCeiling)) ? '$' + Number(item.awardCeiling).toLocaleString() : item.awardCeiling}`
+                            : `Starts at ${!isNaN(Number(item.awardFloor)) ? '$' + Number(item.awardFloor).toLocaleString() : item.awardFloor}`
+                        }
+                      </span>
+                    </div>
+                  )}
                 </div>
               </a>
             ))}
