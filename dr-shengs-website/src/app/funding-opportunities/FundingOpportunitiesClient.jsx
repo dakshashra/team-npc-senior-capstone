@@ -16,7 +16,7 @@ export function FundingOpportunitiesClient() {
       try {
         const q = query(collection(db, "funding"));
         const snap = await getDocs(q);
-        
+
         const now = new Date();
         now.setHours(0, 0, 0, 0); // Include today's deadlines
 
@@ -38,6 +38,7 @@ export function FundingOpportunitiesClient() {
             if (dateObj && dateObj >= now) {
               docs.push({
                 id: doc.id,
+                title: data.title || "",
                 source: data.source || "",
                 description: data.description || "",
                 link: data.link || "",
@@ -82,7 +83,7 @@ export function FundingOpportunitiesClient() {
         ) : (
           <div className="flex flex-col gap-6 w-full">
             {fundingDocs.map((item) => (
-              <a 
+              <a
                 key={item.id}
                 href={item.link ? item.link : '#'}
                 target={item.link ? "_blank" : "_self"}
@@ -90,8 +91,11 @@ export function FundingOpportunitiesClient() {
                 className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition-all hover:shadow-md hover:ring-1 hover:ring-[#CC0000]"
               >
                 <div>
-                  <h2 className="text-xl font-bold text-zinc-900 group-hover:text-[#CC0000] transition-colors">{item.source}</h2>
-                  <p className="mt-3 text-sm leading-relaxed text-zinc-700 whitespace-pre-wrap">
+                  <h2 className="text-xl font-bold text-zinc-900 group-hover:text-[#CC0000] transition-colors">{item.title || item.source}</h2>
+                  {item.title && item.source && (
+                    <p className="mt-1 text-sm font-semibold text-zinc-500 tracking-wide">{item.source}</p>
+                  )}
+                  <p className="mt-4 text-sm leading-relaxed text-zinc-700 whitespace-pre-wrap">
                     {item.description}
                   </p>
                 </div>
