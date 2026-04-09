@@ -137,6 +137,26 @@ export function FundingOpportunitiesClient() {
             ))}
           </div>
         )}
+
+        <div className="mt-10 pt-6 border-t border-zinc-200">
+          <a
+            href="https://simpler.grants.gov/search"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#CC0000] hover:text-[#aa0000] transition-colors group"
+          >
+            Find More Opportunities
+            <svg
+              className="h-4 w-4 transition-transform group-hover:translate-x-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+            </svg>
+          </a>
+        </div>
       </div>
     </main>
   );

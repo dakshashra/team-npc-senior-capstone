@@ -27,7 +27,7 @@ def sync_grants_to_firestore(db):
         },
         "pagination": {
             "page_offset": 1,
-            "page_size": 25,
+            "page_size": 40,
             "sort_order": [{"order_by": "post_date", "sort_direction": "descending"}]
         }
     }
