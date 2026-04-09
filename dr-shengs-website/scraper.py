@@ -21,7 +21,6 @@ def sync_grants_to_firestore(db):
     }
 
     payload = {
-        "query": "NSF",
         "filters": {
             "opportunity_status": {"one_of": ["posted"]}
         },
