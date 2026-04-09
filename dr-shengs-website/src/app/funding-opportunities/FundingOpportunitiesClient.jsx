@@ -42,6 +42,7 @@ export function FundingOpportunitiesClient() {
 
             if (dateObj && !isNaN(dateObj) && dateObj >= now) {
               let desc = data.description || "";
+              if (desc.startsWith("*")) desc = desc.slice(1);
               if (desc.length > 1000) {
                 desc = desc.substring(0, 1000) + "...";
               }
