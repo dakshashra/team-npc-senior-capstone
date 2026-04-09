@@ -8,14 +8,10 @@ import re
 def strip_html(text):
     return re.sub(r'<[^>]+>', '', text or '').strip()
 
-def sync_grants_to_firestore():
-    # 1. Initialize Firebase
-    if not firebase_admin._apps:
-        sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
-        cred = credentials.Certificate(json.loads(sa_json))
-        firebase_admin.initialize_app(cred)
-
-    db = firestore.client()
+# ─────────────────────────────────────────
+# GRANTS: sync NSF opportunities → 'funding'
+# ─────────────────────────────────────────
+def sync_grants_to_firestore(db):
     api_key = os.environ.get('GRANTS_API_KEY')
     api_url = "https://api.simpler.grants.gov/v1/opportunities/search"
 
@@ -41,36 +37,26 @@ def sync_grants_to_firestore():
         response.raise_for_status()
         response_data = response.json()
         items = response_data.get("data", [])
-        print(f"✅ Success! API Found {len(items)} opportunities.")
+        print(f"✅ Grants: Found {len(items)} opportunities.")
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"❌ Grants error: {e}")
         return
 
-    # 2. Sync to 'funding' collection
     collection_ref = db.collection('funding')
 
     for opp in items:
         try:
             opp_id = str(opp.get('opportunity_id', 'unknown'))
-
-            # The API nests most descriptive fields under a 'summary' sub-object
             summary = opp.get('summary') or {}
 
-            # --- Agency ---
-            agency_name = (
-                opp.get('agency_name')
-                or summary.get('agency_name')
-                or 'Unknown Source'
-            )
+            agency_name = opp.get('agency_name') or summary.get('agency_name') or 'Unknown Source'
 
-            # --- Deadline ---
             deadline_str = (
                 summary.get('close_date')
                 or opp.get('close_date')
                 or "N/A"
             )
 
-            # --- Eligibility (plain text only, no HTML) ---
             eligibility_raw = (
                 summary.get('applicant_eligibility_description')
                 or opp.get('applicant_eligibility_description')
@@ -78,11 +64,9 @@ def sync_grants_to_firestore():
             )
             clean_description = strip_html(eligibility_raw)
 
-            # --- Award amounts ---
             award_floor = summary.get('award_floor') or opp.get('award_floor')
             award_ceiling = summary.get('award_ceiling') or opp.get('award_ceiling')
 
-            # --- Link: prefer agency URL, fall back to grants.gov ---
             more_info_link = (
                 summary.get('additional_info_url')
                 or opp.get('additional_info_url')
@@ -102,10 +86,79 @@ def sync_grants_to_firestore():
             }
 
             collection_ref.document(opp_id).set(doc_data, merge=True)
-            print(f"🚀 Synced: {doc_data['title']} (Deadline: {deadline_str})")
+            print(f"🚀 Synced grant: {doc_data['title']} (Deadline: {deadline_str})")
 
         except Exception as e:
-            print(f"⚠️ Error processing item {opp.get('opportunity_id')}: {e}")
+            print(f"⚠️ Error processing grant {opp.get('opportunity_id')}: {e}")
+
+
+# ─────────────────────────────────────────
+# NEWS: replace 'news' collection with ~20 recent tech articles
+# ─────────────────────────────────────────
+def sync_news_to_firestore(db):
+    api_key = os.environ.get('NEWS_API_KEY')
+    url = (
+        "https://newsapi.org/v2/top-headlines"
+        f"?category=technology&language=en&pageSize=20&apiKey={api_key}"
+    )
+
+    try:
+        response = requests.get(url, timeout=20)
+        response.raise_for_status()
+        articles = response.json().get("articles", [])
+        print(f"✅ News: Found {len(articles)} articles.")
+    except Exception as e:
+        print(f"❌ News fetch error: {e}")
+        return
+
+    collection_ref = db.collection('news')
+
+    # 1. Delete all existing documents in the collection
+    existing_docs = collection_ref.stream()
+    deleted = 0
+    for doc in existing_docs:
+        doc.reference.delete()
+        deleted += 1
+    print(f"🗑️  Deleted {deleted} old news documents.")
+
+    # 2. Insert fresh articles
+    for i, article in enumerate(articles):
+        try:
+            # Skip articles with missing core fields
+            if not article.get('title') or article['title'] == '[Removed]':
+                continue
+
+            doc_data = {
+                "title": article.get('title', 'No Title'),
+                "summary": article.get('description') or article.get('content') or "No summary available.",
+                "link": article.get('url', ''),
+                "source": article.get('source', {}).get('name', 'Unknown'),
+                "image_url": article.get('urlToImage', ''),
+                "published_at": article.get('publishedAt', ''),
+                "last_updated": firestore.SERVER_TIMESTAMP
+            }
+
+            # Use index as doc ID so ordering is stable
+            collection_ref.document(str(i).zfill(2)).set(doc_data)
+            print(f"📰 Added: {doc_data['title']}")
+
+        except Exception as e:
+            print(f"⚠️ Error processing article {i}: {e}")
+
+
+# ─────────────────────────────────────────
+# MAIN
+# ─────────────────────────────────────────
+def main():
+    if not firebase_admin._apps:
+        sa_json = os.environ.get('FIREBASE_SERVICE_ACCOUNT')
+        cred = credentials.Certificate(json.loads(sa_json))
+        firebase_admin.initialize_app(cred)
+
+    db = firestore.client()
+
+    sync_grants_to_firestore(db)
+    sync_news_to_firestore(db)
 
 if __name__ == "__main__":
-    sync_grants_to_firestore()
+    main()

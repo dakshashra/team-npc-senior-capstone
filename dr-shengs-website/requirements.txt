@@ -1,3 +1,4 @@
 requests
 firebase-admin
 python-dateutil
+newsapi-python
