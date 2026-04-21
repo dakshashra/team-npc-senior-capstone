@@ -1,78 +1,178 @@
-import Image from "next/image";
-
 export const metadata = {
   title: "Publications · Machine Learning & Data Science Lab",
   description: "Publications from the lab",
 };
 
-export default function PublicationsPage() {
+export const revalidate = 86400;
+
+function extractTags(xml, tag) {
+  const results = [];
+  const regex = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, "g");
+  let match;
+  while ((match = regex.exec(xml)) !== null) {
+    results.push(match[1].trim());
+  }
+  return results;
+}
+
+function extractTag(xml, tag) {
+  const match = xml.match(new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`));
+  return match ? match[1].trim() : null;
+}
+
+function getAttribute(xml, attr) {
+  const match = xml.match(new RegExp(`${attr}="([^"]*)"`));
+  return match ? match[1] : null;
+}
+
+async function fetchPublications() {
+  try {
+    const res = await fetch("https://dblp.org/pid/36/4372.xml", {
+      next: { revalidate: 86400 },
+    });
+
+    if (!res.ok) throw new Error(`DBLP fetch failed: ${res.status}`);
+
+    const xml = await res.text();
+
+    // Split into individual <r>...</r> publication blocks
+    const rBlocks = extractTags(xml, "r");
+
+    return rBlocks.map((block, i) => {
+      // Determine publication type from the outer element tag
+      const typeMatch = block.match(/^<(\w+)\s/);
+      const type = typeMatch ? typeMatch[1] : "unknown";
+      const isJournal = type === "article";
+
+      const key = getAttribute(block, "key") ?? `pub-${i}`;
+      const title = extractTag(block, "title")?.replace(/\.$/, "") ?? "Untitled";
+      const year = parseInt(extractTag(block, "year") ?? "0") || 0;
+      const authors = extractTags(block, "author").map((a) =>
+        // Strip any orcid or pid attributes from author text
+        a.replace(/<[^>]+>/g, "").trim()
+      );
+      const venue =
+        extractTag(block, "journal") ?? extractTag(block, "booktitle") ?? "";
+      const url = extractTag(block, "ee") ?? null;
+
+      return { key, title, authors, venue, year, isJournal, url };
+    });
+  } catch (err) {
+    console.error("Failed to fetch DBLP publications:", err);
+    return [];
+  }
+}
+
+function groupByYear(pubs) {
+  const map = {};
+  for (const pub of pubs) {
+    if (!map[pub.year]) map[pub.year] = [];
+    map[pub.year].push(pub);
+  }
+  return Object.entries(map)
+    .sort(([a], [b]) => Number(b) - Number(a))
+    .map(([year, items]) => ({ year: Number(year), items }));
+}
+
+function PublicationCard({ pub }) {
+  const href = pub.url || "#";
   return (
-    <main className="min-h-screen bg-white">
-      {/* Hero Links Section */}
-      <section className="flex min-h-[calc(100svh-4rem)] w-full flex-col items-center justify-center bg-zinc-50 px-4 py-12 sm:px-6 lg:px-8">
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-xl border border-zinc-200 bg-white p-5 shadow-sm transition-all duration-200 hover:border-zinc-400 hover:shadow-md"
+    >
+      <span
+        className={`mb-3 inline-block rounded-full px-2.5 py-0.5 text-xs font-medium ${
+          pub.isJournal
+            ? "bg-blue-50 text-blue-700"
+            : "bg-amber-50 text-amber-700"
+        }`}
+      >
+        {pub.isJournal ? "Journal" : "Conference"}
+      </span>
 
-        <div className="mx-auto flex w-full max-w-7xl flex-col items-center justify-center bg-zinc-50">
+      <p className="mb-2 font-semibold text-zinc-900 leading-snug group-hover:text-blue-700 transition-colors duration-150">
+        {pub.title}
+      </p>
 
-          <div className="w-full mb-10 md:mb-14">
-            <h1 className="text-4xl font-bold font-sans tracking-tight text-black text-center md:text-left">
-              Publications
-            </h1>
-          </div>
+      <p className="mb-1 text-sm text-zinc-500 line-clamp-2">
+        {pub.authors.join(", ")}
+      </p>
 
-          {/* Top 2 side-by-side */}
-          <div className="flex w-full flex-col md:flex-row gap-6 md:gap-8 justify-center">
-            <a
-              href="https://scholar.google.com/citations?user=0epc43IAAAAJ&hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block w-full md:w-1/2 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-all hover:shadow-xl"
-            >
-              <Image
-                src="/google_scholar.jpg"
-                alt="Google Scholar"
-                width={1200}
-                height={800}
-                className="h-auto w-full transform object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                priority
-              />
-            </a>
+      {pub.venue && (
+        <p className="text-sm font-medium text-zinc-600 italic">{pub.venue}</p>
+      )}
+    </a>
+  );
+}
 
-            <a
-              href="https://www.researchgate.net/profile/Victor-Sheng"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block w-full md:w-1/2 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-all hover:shadow-xl"
-            >
-              <Image
-                src="/researchgate3.png"
-                alt="ResearchGate"
-                width={1200}
-                height={800}
-                className="h-auto w-full transform object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                priority
-              />
-            </a>
-          </div>
+export default async function PublicationsPage() {
+  const publications = await fetchPublications();
+  const grouped = groupByYear(publications);
+  const total = publications.length;
 
-          {/* Bottom 1 centered */}
-          <div className="mt-6 flex w-full justify-center md:mt-8">
-            <a
-              href="https://www.webofscience.com/wos/author/record/E-6264-2017"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group block w-full md:w-1/2 overflow-hidden rounded-2xl border border-zinc-200 shadow-sm transition-all hover:shadow-xl"
-            >
-              <Image
-                src="/researcherid2.png"
-                alt="ResearchID Web of Science"
-                width={1200}
-                height={800}
-                className="h-auto w-full transform object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-                priority
-              />
-            </a>
-          </div>
+  return (
+    <main className="min-h-screen bg-zinc-50">
+      <section className="border-b border-zinc-200 bg-white px-4 py-12 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <h1 className="text-4xl font-bold tracking-tight text-black">
+            Publications
+          </h1>
+          {total > 0 && (
+            <p className="mt-2 text-zinc-500">
+              {total} publications · sourced from{" "}
+              <a
+                href="https://dblp.org/pid/36/4372.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:underline"
+              >
+                DBLP
+              </a>
+            </p>
+          )}
+        </div>
+      </section>
 
+      <section className="px-4 py-10 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          {total === 0 ? (
+            <div className="rounded-xl border border-zinc-200 bg-white p-10 text-center">
+              <p className="text-zinc-500">
+                Could not load publications. Please try again later or visit{" "}
+                <a
+                  href="https://dblp.org/pid/36/4372.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-600 hover:underline"
+                >
+                  DBLP directly
+                </a>
+                .
+              </p>
+            </div>
+          ) : (
+            <div className="space-y-12">
+              {grouped.map(({ year, items }) => (
+                <div key={year}>
+                  <div className="mb-5 flex items-center gap-4">
+                    <h2 className="text-2xl font-bold text-zinc-900">{year}</h2>
+                    <span className="rounded-full bg-zinc-200 px-2.5 py-0.5 text-xs font-medium text-zinc-600">
+                      {items.length}
+                    </span>
+                    <div className="h-px flex-1 bg-zinc-200" />
+                  </div>
+                  <div className="grid gap-4 sm:grid-cols-2">
+                    {items.map((pub) => (
+                      <PublicationCard key={pub.key} pub={pub} />
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
       </section>
     </main>
