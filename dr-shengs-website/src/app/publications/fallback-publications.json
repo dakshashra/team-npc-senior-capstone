@@ -1,0 +1,5712 @@
+[
+  {
+    "key": "journals/csm/KumarKFS26",
+    "title": "Blockchain and Federated Learning for Decentralized Edge Intelligence in Next Generation IoT Security",
+    "authors": [
+      "Mohit Kumar 0004",
+      "Aryan Kaushik",
+      "Carlo Fischione",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Commun. Stand. Mag.",
+    "year": 2026,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/MCOMSTD.2026.3652340"
+  },
+  {
+    "key": "journals/tmm/LiuLSMLW26",
+    "title": "Scale-Aware Attention and Multi-Modal Prompt Learning With Fusion Adapter for RGBT Tracking",
+    "authors": [
+      "Xiang Liu",
+      "Haiyan Li",
+      "Victor S. Sheng",
+      "Yujun Ma",
+      "Xiaoguo Liang",
+      "Guanbo Wang"
+    ],
+    "venue": "IEEE Trans. Multim.",
+    "year": 2026,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TMM.2025.3623526"
+  },
+  {
+    "key": "journals/tors/QiWSY26",
+    "title": "Introduction to the Special Issue on Deep Reinforcement Learning for Recommender Systems",
+    "authors": [
+      "Lianyong Qi",
+      "Shoujin Wang",
+      "Victor S. Sheng",
+      "Lina Yao 0001"
+    ],
+    "venue": "Trans. Recomm. Syst.",
+    "year": 2026,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3746129"
+  },
+  {
+    "key": "conf/aaai/ZhangS26a",
+    "title": "Token-Context Attention for NLI: An Alternative to Self-Attention",
+    "authors": [
+      "Xin Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2026,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v40i41.40786"
+  },
+  {
+    "key": "journals/corr/abs-2602-09434",
+    "title": "A Behavioral Fingerprint for Large Language Models: Provenance Tracking via Refusal Vectors",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2026,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2602.09434"
+  },
+  {
+    "key": "journals/corr/abs-2603-03324",
+    "title": "Controlling Chat Style in Language Models via Single-Direction Editing",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2026,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2603.03324"
+  },
+  {
+    "key": "journals/asc/LiuLSMLW25",
+    "title": "Cross-modal deep interaction and modal-aware aggregation network for visible and infrared tracking",
+    "authors": [
+      "Xiang Liu",
+      "Haiyan Li",
+      "Victor S. Sheng",
+      "Yujun Ma",
+      "Xiaoguo Liang",
+      "Guanbo Wang"
+    ],
+    "venue": "Appl. Soft Comput.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.asoc.2025.113719"
+  },
+  {
+    "key": "journals/eswa/JiaMRGZS25",
+    "title": "Multi-axis fusion with optimal transport learning for multimodal aspect-based sentiment analysis",
+    "authors": [
+      "Li Jia",
+      "Tinghuai Ma",
+      "Huan Rong",
+      "Liyuan Gao",
+      "Yu-Feng Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2025.127353"
+  },
+  {
+    "key": "journals/eswa/WangLFXZS25",
+    "title": "A novel federal learning-based framework defending server-level privacy leakage",
+    "authors": [
+      "Qingren Wang",
+      "Ao Liu",
+      "Chuankai Feng",
+      "Yan Xu 0007",
+      "Jinqin Zhong",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2025.127617"
+  },
+  {
+    "key": "journals/eswa/XuLS25",
+    "title": "Detecting worker collusion in crowdsourcing: Methods, datasets, and challenges",
+    "authors": [
+      "Ruoyu Xu",
+      "Gaoxiang Li",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2025.128767"
+  },
+  {
+    "key": "journals/inffus/RongCLXHS25",
+    "title": "Pred-ID: Future event prediction based on event type schema mining by graph induction and deduction",
+    "authors": [
+      "Huan Rong",
+      "Zhongfeng Chen",
+      "Zhenyu Lu 0002",
+      "Xiao-ke Xu",
+      "Kai Huang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Inf. Fusion",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.inffus.2024.102819"
+  },
+  {
+    "key": "journals/istr/UmejiakuSS25",
+    "title": "Enhancing password security with honeywords and LLMs",
+    "authors": [
+      "Afamefuna Umejiaku",
+      "Moroti Sonde",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Inf. Secur. Appl.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.jisa.2025.104129"
+  },
+  {
+    "key": "journals/mms/GongRCTS25",
+    "title": "EDCM-EA: event prediction based on event development context mining considering event arguments",
+    "authors": [
+      "Zhiheng Gong",
+      "Huan Rong",
+      "Zhongfeng Chen",
+      "Yixiang Tang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Multim. Syst.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s00530-025-01704-w"
+  },
+  {
+    "key": "journals/mta/AiSLYC25",
+    "title": "Class-attention video transformer for engagement prediction",
+    "authors": [
+      "Xusheng Ai",
+      "Victor S. Sheng",
+      "Chunhua Li 0003",
+      "Han Yang",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Multim. Tools Appl.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11042-024-20350-4"
+  },
+  {
+    "key": "journals/tcbb/GaoSS25",
+    "title": "Enhancing Transcription Factor Prediction via Domain Knowledge Integration With Logic Tensor Networks",
+    "authors": [
+      "Liyuan Gao",
+      "Linpeng Sun",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Comput. Biol. Bioinform.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/tcbbio.2025.3617864"
+  },
+  {
+    "key": "journals/tcsv/WangLSMDZ25",
+    "title": "DPMNet: A Remote Sensing Forest Fire Real-Time Detection Network Driven by Dual Pathways and Multidimensional Interactions of Features",
+    "authors": [
+      "Guanbo Wang",
+      "Haiyan Li",
+      "Victor S. Sheng",
+      "Yujun Ma",
+      "Hongwei Ding 0001",
+      "Hongzhi Zhao"
+    ],
+    "venue": "IEEE Trans. Circuits Syst. Video Technol.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TCSVT.2024.3462432"
+  },
+  {
+    "key": "journals/tetc/HeWHPYZS25",
+    "title": "AGSEI: Adaptive Graph Structure Estimation With Long-Tail Distributed Implicit Graphs",
+    "authors": [
+      "Yunfei He",
+      "Yang Wu",
+      "Lishan Huang",
+      "Zhenwan Peng",
+      "Fei Yang",
+      "Yiwen Zhang 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Emerg. Top. Comput.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TETC.2024.3480132"
+  },
+  {
+    "key": "journals/tetci/JiangZWS25",
+    "title": "TiFedCrowd: Federated Crowdsourcing With Time-Controlled Incentive",
+    "authors": [
+      "Xiaoqian Jiang",
+      "Jing Zhang 0015",
+      "Ming Wu 0004",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Emerg. Top. Comput. Intell.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TETCI.2024.3423346"
+  },
+  {
+    "key": "journals/tgrs/FuFS25",
+    "title": "Rethinking Masked Autoencoder for Salient Object Detection in Optical Remote Sensing Images From a Pseudo Image Pretraining Perspective",
+    "authors": [
+      "Yuxiang Fu",
+      "Wei Fang 0007",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Geosci. Remote. Sens.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TGRS.2025.3566228"
+  },
+  {
+    "key": "journals/tkde/RongJMDS25",
+    "title": "CogLign: Interpretable Text Sentiment Determination by Aligning Cognition Between EEG-Derived Brain Graph and Text-Derived Knowledge Graph",
+    "authors": [
+      "Huan Rong",
+      "Wenxuan Ji",
+      "Tinghuai Ma",
+      "Weiyi Ding",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2025.3538618"
+  },
+  {
+    "key": "journals/tkde/NiLZLS25",
+    "title": "Local Community Detection in Multi-Attributed Road-Social Networks",
+    "authors": [
+      "Li Ni 0001",
+      "Qiuyu Li",
+      "Yiwen Zhang 0001",
+      "Wenjian Luo",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2025.3550476"
+  },
+  {
+    "key": "journals/tmi/HanWCQLMQSHL25",
+    "title": "Region Uncertainty Estimation for Medical Image Segmentation With Noisy Labels",
+    "authors": [
+      "Kai Han 0006",
+      "Shuhui Wang",
+      "Jun Chen 0030",
+      "Chengxuan Qian",
+      "Chongwen Lyu",
+      "Siqi Ma",
+      "Chengjian Qiu",
+      "Victor S. Sheng",
+      "Qingming Huang",
+      "Zhe Liu 0004"
+    ],
+    "venue": "IEEE Trans. Medical Imaging",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TMI.2025.3589058"
+  },
+  {
+    "key": "journals/tois/ZhangZSS25",
+    "title": "Simplify to the Limit! Embedding-Less Graph Collaborative Filtering for Recommender Systems",
+    "authors": [
+      "Yi Zhang 0103",
+      "Yiwen Zhang 0001",
+      "Lei Sang 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "ACM Trans. Inf. Syst.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3701230"
+  },
+  {
+    "key": "journals/vc/PajuhanfardPS25",
+    "title": "Quantum generative adversarial network for image generation",
+    "authors": [
+      "Mohammadsaleh Pajuhanfard",
+      "Ziwen Pan",
+      "Victor S. Sheng"
+    ],
+    "venue": "Vis. Comput.",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s00371-025-03915-8"
+  },
+  {
+    "key": "conf/aaai/Chen0ZS25",
+    "title": "CLEP: A Novel Contrastive Learning Method for Evolutionary Reentrancy Vulnerability Detection",
+    "authors": [
+      "Jie Chen 0099",
+      "Liangmin Wang 0001",
+      "Huijuan Zhu",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2025,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v39i1.31981"
+  },
+  {
+    "key": "conf/aaai/NiYL0ZS25",
+    "title": "SLRL: Semi-Supervised Local Community Detection Based on Reinforcement Learning",
+    "authors": [
+      "Li Ni 0001",
+      "Rui Ye",
+      "Wenjian Luo",
+      "Yiwen Zhang 0001",
+      "Lei Zhang 0183",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2025,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v39i1.32044"
+  },
+  {
+    "key": "conf/aaai/Yuan0FF0S25",
+    "title": "Fuzzy Collaborative Reasoning",
+    "authors": [
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Jiaqing Fan",
+      "Junhua Fang",
+      "Guanfeng Liu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2025,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v39i12.33432"
+  },
+  {
+    "key": "conf/bibm/GaoZZS25",
+    "title": "ComplexWaveGAT: Complex-Valued Graph Attention Networks for Modeling Protein-Protein Interactions",
+    "authors": [
+      "Liyuan Gao",
+      "Xin Zhang",
+      "Kun Zhang 0012",
+      "Victor S. Sheng"
+    ],
+    "venue": "BIBM",
+    "year": 2025,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/BIBM66473.2025.11356253"
+  },
+  {
+    "key": "conf/icic/XuLS25",
+    "title": "Enhancing ChatGPT-4o's Automated Programming Assignment Grading and Feedback with Human-in-the-Loop Refinement",
+    "authors": [
+      "Ruoyu Xu",
+      "Gaoxiang Li",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICIC (9)",
+    "year": 2025,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-981-96-9884-4_39"
+  },
+  {
+    "key": "journals/corr/abs-2501-03288",
+    "title": "CodeVision: Detecting LLM-Generated Code Using 2D Token Probability Maps and Vision Models",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2501.03288"
+  },
+  {
+    "key": "journals/corr/abs-2509-16431",
+    "title": "Proactive Statistical Process Control Using AI: A Time Series Forecasting Approach for Semiconductor Manufacturing",
+    "authors": [
+      "Mohammad Iqbal Rasul Seeam",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2509.16431"
+  },
+  {
+    "key": "journals/corr/abs-2512-14892",
+    "title": "OLR-WA: Online Weighted Average Linear Regression in Multivariate Data Streams",
+    "authors": [
+      "Mohammad Abu-Shaira",
+      "Alejandro Rodriguez",
+      "Greg Speegle",
+      "Victor S. Sheng",
+      "Ishfaq Ahmad 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2025,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2512.14892"
+  },
+  {
+    "key": "journals/bspc/QiuSLZHSL24",
+    "title": "MMMViT: Multiscale multimodal vision transformer for brain tumor segmentation with missing modalities",
+    "authors": [
+      "Chengjian Qiu",
+      "Yuqing Song 0001",
+      "Yi Liu 0114",
+      "Yan Zhu 0018",
+      "Kai Han 0006",
+      "Victor S. Sheng",
+      "Zhe Liu 0004"
+    ],
+    "venue": "Biomed. Signal Process. Control.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.bspc.2023.105827"
+  },
+  {
+    "key": "journals/eswa/HanSSLQML24",
+    "title": "Deep semi-supervised learning for medical image segmentation: A review",
+    "authors": [
+      "Kai Han 0006",
+      "Victor S. Sheng",
+      "Yuqing Song 0001",
+      "Yi Liu 0114",
+      "Chengjian Qiu",
+      "Siqi Ma",
+      "Zhe Liu 0004"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2023.123052"
+  },
+  {
+    "key": "journals/eswa/MaYFZS24",
+    "title": "A lightweight deep learning-based android malware detection framework",
+    "authors": [
+      "Runze Ma",
+      "Shangnan Yin",
+      "Xia Feng",
+      "Huijuan Zhu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2024.124633"
+  },
+  {
+    "key": "journals/gandc/FangFS24",
+    "title": "FPS-U2Net: Combining U2Net and multi-level aggregation architecture for fire point segmentation in remote sensing images",
+    "authors": [
+      "Wei Fang 0007",
+      "Yuxiang Fu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Comput. Geosci.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.cageo.2024.105628"
+  },
+  {
+    "key": "journals/ijon/XuZHYWS24",
+    "title": "Hierarchical graph attention networks for multi-modal rumor detection on social media",
+    "authors": [
+      "Fan Xu 0002",
+      "Lei Zeng",
+      "Qi Huang",
+      "Keyu Yan",
+      "Mingwen Wang 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.neucom.2023.127112"
+  },
+  {
+    "key": "journals/jiis/LeiYZQFLS24",
+    "title": "Improving graph collaborative filtering with multimodal-side-information-enriched contrastive learning",
+    "authors": [
+      "Shan Lei",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Jianfeng Qu",
+      "Junhua Fang",
+      "Guanfeng Liu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Intell. Inf. Syst.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10844-023-00807-y"
+  },
+  {
+    "key": "journals/kbs/RongSMJS24",
+    "title": "KGCDP-T: Interpreting knowledge graphs into text by content ordering and dynamic planning with three-level reconstruction",
+    "authors": [
+      "Huan Rong",
+      "Shengjie Sun",
+      "Tinghuai Ma",
+      "Di Jin 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2023.111297"
+  },
+  {
+    "key": "journals/kbs/LyuQHLSRSLL24",
+    "title": "Automatic medical report generation combining contrastive learning and feature difference",
+    "authors": [
+      "Chongwen Lyu",
+      "Chengjian Qiu",
+      "Kai Han 0006",
+      "Saisai Li",
+      "Victor S. Sheng",
+      "Huan Rong",
+      "Yuqing Song 0001",
+      "Yi Liu 0114",
+      "Zhe Liu 0004"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2024.112630"
+  },
+  {
+    "key": "journals/lgrs/FangFS24",
+    "title": "Dual Backbone Interaction Network for Burned Area Segmentation in Optical Remote Sensing Images",
+    "authors": [
+      "Wei Fang 0007",
+      "Yuxiang Fu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Geosci. Remote. Sens. Lett.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/LGRS.2024.3369619"
+  },
+  {
+    "key": "journals/ml/ChenSEZ24",
+    "title": "Cost-sensitive sparse group online learning for imbalanced data streams",
+    "authors": [
+      "Zhong Chen 0003",
+      "Victor S. Sheng",
+      "Andrea Edwards",
+      "Kun Zhang 0012"
+    ],
+    "venue": "Mach. Learn.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10994-023-06403-z"
+  },
+  {
+    "key": "journals/ml/KianiJS24",
+    "title": "Survey on extreme learning machines for outlier detection",
+    "authors": [
+      "Rasoul Kiani",
+      "Wei Jin",
+      "Victor S. Sheng"
+    ],
+    "venue": "Mach. Learn.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10994-023-06375-0"
+  },
+  {
+    "key": "journals/pami/YingZLWS24",
+    "title": "A Little Truth Injection But a Big Reward: Label Aggregation With Graph Neural Networks",
+    "authors": [
+      "Zijian Ying",
+      "Jing Zhang 0015",
+      "Qianmu Li",
+      "Ming Wu 0004",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Pattern Anal. Mach. Intell.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TPAMI.2023.3338216"
+  },
+  {
+    "key": "journals/spe/QiSXC24",
+    "title": "Special Issue on &#34;Ensuring security for artificial intelligence applications in mobile edge computing software systems&#34;",
+    "authors": [
+      "Lianyong Qi",
+      "Victor S. Sheng",
+      "Xiaolong Xu 0001",
+      "Jinjun Chen"
+    ],
+    "venue": "Softw. Pract. Exp.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1002/spe.3362"
+  },
+  {
+    "key": "journals/staeors/FuFS24",
+    "title": "Burned Area Segmentation in Optical Remote Sensing Images Driven by U-Shaped Multistage Masked Autoencoder",
+    "authors": [
+      "Yuxiang Fu",
+      "Wei Fang 0007",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE J. Sel. Top. Appl. Earth Obs. Remote. Sens.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/JSTARS.2024.3402122"
+  },
+  {
+    "key": "journals/tai/JiaMRSHX24",
+    "title": "A Rearrangement and Restore-Based Mixer Model for Target-Oriented Multimodal Sentiment Classification",
+    "authors": [
+      "Li Jia",
+      "Tinghuai Ma",
+      "Huan Rong",
+      "Victor S. Sheng",
+      "Xuejian Huang",
+      "Xintong Xie"
+    ],
+    "venue": "IEEE Trans. Artif. Intell.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TAI.2023.3341879"
+  },
+  {
+    "key": "journals/talip/RongCLXS24",
+    "title": "Multization: Multi-Modal Summarization Enhanced by Multi-Contextually Relevant and Irrelevant Attention Alignment",
+    "authors": [
+      "Huan Rong",
+      "Zhongfeng Chen",
+      "Zhenyu Lu 0002",
+      "Fan Xu 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "ACM Trans. Asian Low Resour. Lang. Inf. Process.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3651983"
+  },
+  {
+    "key": "journals/tcbb/ZhangLWZS24",
+    "title": "Hierarchical Graph Capsule Networks for Molecular Function Classification With Disentangled Representations",
+    "authors": [
+      "Jing Zhang 0015",
+      "Yu Lei",
+      "Yuxiang Wang",
+      "Cangqi Zhou",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Comput. Biol. Bioinform.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/tcbb.2022.3233354"
+  },
+  {
+    "key": "journals/tcss/HeZYYS24",
+    "title": "Label-Dependent Graph Neural Network",
+    "authors": [
+      "Yunfei He",
+      "Yiwen Zhang 0001",
+      "Fei Yang",
+      "Dengcheng Yan",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Comput. Soc. Syst.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TCSS.2023.3312395"
+  },
+  {
+    "key": "journals/tcss/WuYZQSL24",
+    "title": "Dual-Supervised Contrastive Learning for Bundle Recommendation",
+    "authors": [
+      "Chuanjiu Wu",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Jianfeng Qu",
+      "Victor S. Sheng",
+      "Guanfeng Liu 0001"
+    ],
+    "venue": "IEEE Trans. Comput. Soc. Syst.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TCSS.2023.3331255"
+  },
+  {
+    "key": "journals/tgrs/FangSS24",
+    "title": "VRNet: A Vivid Radar Network for Precipitation Nowcasting",
+    "authors": [
+      "Wei Fang 0007",
+      "Liang Shen",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Geosci. Remote. Sens.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TGRS.2024.3382172"
+  },
+  {
+    "key": "journals/tifs/ZhouWZLS24",
+    "title": "WF-Transformer: Learning Temporal Features for Accurate Anonymous Traffic Identification by Using Transformer Networks",
+    "authors": [
+      "Qiang Zhou 0010",
+      "Liangmin Wang 0001",
+      "Huijuan Zhu",
+      "Tong Lu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Inf. Forensics Secur.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TIFS.2023.3318966"
+  },
+  {
+    "key": "journals/tkdd/NiXZLHS24",
+    "title": "Local Overlapping Spatial-aware Community Detection",
+    "authors": [
+      "Li Ni 0001",
+      "Hefei Xu",
+      "Yiwen Zhang 0001",
+      "Wenjian Luo",
+      "Yingying Huang",
+      "Victor S. Sheng"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3634707"
+  },
+  {
+    "key": "journals/tkdd/RongYMSZA24",
+    "title": "Three-stage Transferable and Generative Crowdsourced Comment Integration Framework Based on Zero- and Few-shot Learning with Domain Distribution Alignment",
+    "authors": [
+      "Huan Rong",
+      "Xin Yu",
+      "Tinghuai Ma",
+      "Victor S. Sheng",
+      "Yang Zhou 0001",
+      "Mznah Al-Rodhaan"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3636511"
+  },
+  {
+    "key": "journals/tkdd/LongYFXLSZ24",
+    "title": "Learning Global and Multi-granularity Local Representation with MLP for Sequential Recommendation",
+    "authors": [
+      "Chao Long",
+      "Huanhuan Yuan",
+      "Junhua Fang",
+      "Xuefeng Xian",
+      "Guanfeng Liu 0001",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3638562"
+  },
+  {
+    "key": "journals/tkdd/RongQMJS24",
+    "title": "CoBjeason: Reasoning Covered Object in Image by Multi-Agent Collaboration Based on Informed Knowledge Graph",
+    "authors": [
+      "Huan Rong",
+      "Minfeng Qian",
+      "Tinghuai Ma",
+      "Di Jin 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3643565"
+  },
+  {
+    "key": "journals/tkdd/LiuHZLSZ24",
+    "title": "LMACL: Improving Graph Collaborative Filtering with Learnable Model Augmentation Contrastive Learning",
+    "authors": [
+      "Xinru Liu",
+      "Yongjing Hao",
+      "Lei Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3657302"
+  },
+  {
+    "key": "journals/tkde/RongCMSB24",
+    "title": "FuFaction: Fuzzy Factual Inconsistency Correction on Crowdsourced Documents With Hybrid-Mask at the Hidden-State Level",
+    "authors": [
+      "Huan Rong",
+      "Gongchi Chen",
+      "Tinghuai Ma",
+      "Victor S. Sheng",
+      "Elisa Bertino"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2023.3286097"
+  },
+  {
+    "key": "journals/tkde/NiGZLS24",
+    "title": "Semi-Supervised Local Community Detection",
+    "authors": [
+      "Li Ni 0001",
+      "Junnan Ge",
+      "Yiwen Zhang 0001",
+      "Wenjian Luo",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2023.3290095"
+  },
+  {
+    "key": "journals/tkde/NiLZLS24",
+    "title": "LSADEN: Local Spatial-Aware Community Detection in Evolving Geo-Social Networks",
+    "authors": [
+      "Li Ni 0001",
+      "Qiuyu Li",
+      "Yiwen Zhang 0001",
+      "Wenjian Luo",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2023.3348975"
+  },
+  {
+    "key": "journals/tkde/HaoZXLZLSZ24",
+    "title": "Learnable Model Augmentation Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/tkde.2023.3330426"
+  },
+  {
+    "key": "journals/tkde/ZhuCWXS24",
+    "title": "A Dynamic Analysis-Powered Explanation Framework for Malware Detection",
+    "authors": [
+      "Huijuan Zhu",
+      "Xilong Chen",
+      "Liangmin Wang 0001",
+      "Zhicheng Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2024.3436891"
+  },
+  {
+    "key": "journals/tkde/DuYZWSLLZ24",
+    "title": "Feature-Aware Contrastive Learning With Bidirectional Transformers for Sequential Recommendation",
+    "authors": [
+      "Hanwen Du",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Deqing Wang 0001",
+      "Victor S. Sheng",
+      "Yanchi Liu",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2023.3343345"
+  },
+  {
+    "key": "journals/tnn/ZhangWZS24",
+    "title": "Active Crowdsourcing for Multilabel Annotation",
+    "authors": [
+      "Jing Zhang 0015",
+      "Ming Wu 0004",
+      "Cangqi Zhou",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2022.3194022"
+  },
+  {
+    "key": "journals/tsc/FengCC0S24",
+    "title": "DPFLA: Defending Private Federated Learning Against Poisoning Attacks",
+    "authors": [
+      "Xia Feng",
+      "Wenhao Cheng",
+      "Chunjie Cao",
+      "Liangmin Wang 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Serv. Comput.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TSC.2024.3376255"
+  },
+  {
+    "key": "journals/tsc/ZhuXWXS24",
+    "title": "A Novel Knowledge Search Structure for Android Malware Detection",
+    "authors": [
+      "Huijuan Zhu",
+      "Mengzhen Xia",
+      "Liangmin Wang 0001",
+      "Zhicheng Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Serv. Comput.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TSC.2024.3496333"
+  },
+  {
+    "key": "journals/tsc/ZhuYWS24",
+    "title": "A Survey on Security Analysis Methods of Smart Contracts",
+    "authors": [
+      "Huijuan Zhu",
+      "Lei Yang",
+      "Liangmin Wang 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Serv. Comput.",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TSC.2024.3463394"
+  },
+  {
+    "key": "conf/aaai/XuS24",
+    "title": "Detecting AI-Generated Code Assignments Using Perplexity of Large Language Models",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v38i21.30361"
+  },
+  {
+    "key": "conf/aaai/GaoZS24",
+    "title": "Enhancing Transcription Factor Prediction through Multi-Task Learning (Student Abstract)",
+    "authors": [
+      "Liyuan Gao",
+      "Matthew Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v38i21.30446"
+  },
+  {
+    "key": "conf/aaai/SunS24",
+    "title": "DDViT: Double-Level Fusion Domain Adapter Vision Transformer (Student Abstract)",
+    "authors": [
+      "Linpeng Sun",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v38i21.30516"
+  },
+  {
+    "key": "conf/aaai/XuXLS24",
+    "title": "Bridging the Gap between Source Code and Requirements Using GPT (Student Abstract)",
+    "authors": [
+      "Ruoyu Xu",
+      "Zhenyu Xu",
+      "Gaoxiang Li",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v38i21.30526"
+  },
+  {
+    "key": "conf/aaai/XuXS24",
+    "title": "ChatGPT-Generated Code Assignment Detection Using Perplexity of Large Language Models (Student Abstract)",
+    "authors": [
+      "Zhenyu Xu",
+      "Ruoyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v38i21.30527"
+  },
+  {
+    "key": "conf/cikm/HaoZW0SZ24",
+    "title": "A General Strategy Graph Collaborative Filtering for Recommendation Unlearning",
+    "authors": [
+      "Yongjing Hao",
+      "Fuzhen Zhuang",
+      "Deqing Wang 0001",
+      "Guanfeng Liu 0001",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001"
+    ],
+    "venue": "CIKM",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3627673.3679637"
+  },
+  {
+    "key": "conf/hicss/Zhan00S24",
+    "title": "Defense Against Adversarial Attacks for Neural Representations of Text",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Zhong Chen 0003",
+      "Victor S. Sheng"
+    ],
+    "venue": "HICSS",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://hdl.handle.net/10125/107298"
+  },
+  {
+    "key": "conf/icann/GaoZS24",
+    "title": "Exploring Task-Specific Dimensions in Word Embeddings Through Automatic Rule Learning",
+    "authors": [
+      "Liyuan Gao",
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICANN (4)",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-72341-4_14"
+  },
+  {
+    "key": "conf/icann/XuS24",
+    "title": "Towards Minimal Edits in Automated Program Repair: A Hybrid Framework Integrating Graph Neural Networks and Large Language Models",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICANN (5)",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-72344-5_27"
+  },
+  {
+    "key": "conf/icde/HaoZQ00ZS024",
+    "title": "Meta-optimized Structural and Semantic Contrastive Learning for Graph Collaborative Filtering",
+    "authors": [
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Jianfeng Qu",
+      "Lei Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "ICDE",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDE60146.2024.00058"
+  },
+  {
+    "key": "conf/icde/HaoZFQ0ZS024",
+    "title": "Meta-Optimized Joint Generative and Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Jianfeng Qu",
+      "Guanfeng Liu 0001",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "ICDE",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDE60146.2024.00060"
+  },
+  {
+    "key": "conf/ijcnn/XuXS24",
+    "title": "Beyond Binary Classification: Customizable Text Watermark on Large Language Models",
+    "authors": [
+      "Zhenyu Xu",
+      "Ruoyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IJCNN",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/IJCNN60899.2024.10650062"
+  },
+  {
+    "key": "conf/ijcnn/ZhanGS24",
+    "title": "Privacy-Preserving Unsupervised Spherical Text Embeddings",
+    "authors": [
+      "Huixin Zhan",
+      "Liyuan Gao",
+      "Victor S. Sheng"
+    ],
+    "venue": "IJCNN",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/IJCNN60899.2024.10650028"
+  },
+  {
+    "key": "conf/sdm/000300ZS024",
+    "title": "Robust Sparse Online Learning for Data Streams with Streaming Features",
+    "authors": [
+      "Zhong Chen 0003",
+      "Yi He 0007",
+      "Di Wu 0056",
+      "Huixin Zhan",
+      "Victor S. Sheng",
+      "Kun Zhang 0012"
+    ],
+    "venue": "SDM",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1137/1.9781611978032.21"
+  },
+  {
+    "key": "conf/wsdm/QinYZ0ZS24",
+    "title": "Intent Contrastive Learning with Cross Subsequences for Sequential Recommendation",
+    "authors": [
+      "Xiuyuan Qin",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng"
+    ],
+    "venue": "WSDM",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3616855.3635773"
+  },
+  {
+    "key": "data/10/ZhuXWXS24",
+    "title": "Android malware detection dataset",
+    "authors": [
+      "Huijuan Zhu",
+      "Mengzhen Xia",
+      "Liangmin Wang 0001",
+      "Zhicheng Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "",
+    "year": 2024,
+    "isJournal": false,
+    "url": "https://doi.org/10.21227/zje0-1814"
+  },
+  {
+    "key": "journals/corr/abs-2410-06545",
+    "title": "Signal Watermark on Large Language Models",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2410.06545"
+  },
+  {
+    "key": "journals/corr/abs-2410-07271",
+    "title": "Multi-Task Program Error Repair and Explanatory Diagnosis",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2410.07271"
+  },
+  {
+    "key": "journals/corr/abs-2410-08241",
+    "title": "LecPrompt: A Prompt-based Approach for Logical Error Correction with CodeBERT",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2410.08241"
+  },
+  {
+    "key": "journals/corr/abs-2410-10876",
+    "title": "FreqMark: Frequency-Based Watermark for Sentence-Level Detection of LLM-Generated Text",
+    "authors": [
+      "Zhenyu Xu",
+      "Kun Zhang 0012",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2410.10876"
+  },
+  {
+    "key": "journals/corr/abs-2410-21282",
+    "title": "Logic Error Localization in Student Programming Assignments Using Pseudocode and Graph Neural Networks",
+    "authors": [
+      "Zhenyu Xu",
+      "Kun Zhang 0012",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2410.21282"
+  },
+  {
+    "key": "journals/corr/abs-2411-02674",
+    "title": "Wave Network: An Ultra-Small Language Model",
+    "authors": [
+      "Xin Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2411.02674"
+  },
+  {
+    "key": "journals/corr/abs-2411-04383",
+    "title": "Neuro-Symbolic AI: Explainability, Challenges, and Future Trends",
+    "authors": [
+      "Xin Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2411.04383"
+  },
+  {
+    "key": "journals/corr/abs-2411-04393",
+    "title": "Bridging the Gap: Representation Spaces in Neuro-Symbolic AI",
+    "authors": [
+      "Xin Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2411.04393"
+  },
+  {
+    "key": "journals/corr/abs-2411-06989",
+    "title": "Token2Wave",
+    "authors": [
+      "Xin Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2411.06989"
+  },
+  {
+    "key": "journals/corr/abs-2412-10690",
+    "title": "Affiliation-based Local Community Detection across Multiple Networks",
+    "authors": [
+      "Li Ni 0001",
+      "Zhou Xie",
+      "Yiwen Zhang 0001",
+      "Wenjian Luo",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2024,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2412.10690"
+  },
+  {
+    "key": "journals/bspc/QiuLSYHZLS23",
+    "title": "RTUNet: Residual transformer UNet specifically for pancreas segmentation",
+    "authors": [
+      "Cheng-Jian Qiu",
+      "Zhe Liu 0004",
+      "Yuqing Song 0001",
+      "Jing Yin",
+      "Kai Han 0006",
+      "Yan Zhu 0018",
+      "Yi Liu 0114",
+      "Victor S. Sheng"
+    ],
+    "venue": "Biomed. Signal Process. Control.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.bspc.2022.104173"
+  },
+  {
+    "key": "journals/csms/YanZHGS23",
+    "title": "Load Optimization Scheduling of Chip Mounter Based on Hybrid Adaptive Optimization Algorithm",
+    "authors": [
+      "Xuesong Yan 0001",
+      "Hao Zuo",
+      "Chengyu Hu 0002",
+      "Wenyin Gong",
+      "Victor S. Sheng"
+    ],
+    "venue": "Complex Syst. Model. Simul.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.23919/csms.2022.0026"
+  },
+  {
+    "key": "journals/csse/ChengLXTS23",
+    "title": "A Modified PointNet-Based DDoS Attack Classification and Segmentation in Blockchain",
+    "authors": [
+      "Jieren Cheng",
+      "Xiulai Li",
+      "Xinbing Xu",
+      "Xiangyan Tang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Comput. Syst. Sci. Eng.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.32604/csse.2023.039280"
+  },
+  {
+    "key": "journals/csur/XuSW23",
+    "title": "A Unified Perspective for Disinformation Detection and Truth Discovery in Social Sensing: A Survey",
+    "authors": [
+      "Fan Xu 0002",
+      "Victor S. Sheng",
+      "Mingwen Wang 0001"
+    ],
+    "venue": "ACM Comput. Surv.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3477138"
+  },
+  {
+    "key": "journals/dint/WuCBJZS23",
+    "title": "HUSS: A Heuristic Method for Understanding the Semantic Structure of Spreadsheets",
+    "authors": [
+      "Xindong Wu 0001",
+      "Hao Chen",
+      "Chenyang Bu",
+      "Shengwei Ji",
+      "Zan Zhang 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "Data Intell.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1162/dint_a_00201"
+  },
+  {
+    "key": "journals/eswa/WuLYZSH23",
+    "title": "Learning from biased crowdsourced labeling with deep clustering",
+    "authors": [
+      "Ming Wu 0004",
+      "Qianmu Li",
+      "Fei Yang",
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Jun Hou 0002"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2022.118608"
+  },
+  {
+    "key": "journals/eswa/ZhuGWXS23",
+    "title": "Android malware detection based on multi-head squeeze-and-excitation residual network",
+    "authors": [
+      "Huijuan Zhu",
+      "Wei Gu",
+      "Liangmin Wang 0001",
+      "Zhicheng Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2022.118705"
+  },
+  {
+    "key": "journals/eswa/LiRSSQHL23",
+    "title": "Cascaded multi-point regression Network for high-quality generic lesion detection",
+    "authors": [
+      "Han Li",
+      "Huan Rong",
+      "Victor S. Sheng",
+      "Yuqing Song 0001",
+      "Cheng-Jian Qiu",
+      "Kai Han 0006",
+      "Zhe Liu 0004"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2022.119141"
+  },
+  {
+    "key": "journals/eswa/ZhuWWXS23",
+    "title": "An effective end-to-end android malware detection method",
+    "authors": [
+      "Huijuan Zhu",
+      "Huahui Wei",
+      "Liangmin Wang 0001",
+      "Zhicheng Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2023.119593"
+  },
+  {
+    "key": "journals/eswa/ChenXSC23",
+    "title": "Randomly Wired Graph Neural Network for Chinese NER",
+    "authors": [
+      "Jie Chen 0099",
+      "Xuefeng Xi",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2023.120245"
+  },
+  {
+    "key": "journals/eswa/ZhuLWS23",
+    "title": "A multi-model ensemble learning framework for imbalanced android malware detection",
+    "authors": [
+      "Hui-juan Zhu",
+      "Yang Li",
+      "Liangmin Wang 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2023.120952"
+  },
+  {
+    "key": "journals/iet-blc/WangSDWZ23",
+    "title": "Security and privacy issues in blockchain and its applications",
+    "authors": [
+      "Liangmin Wang 0001",
+      "Victor S. Sheng",
+      "Boris D&#252;dder",
+      "Haiqin Wu",
+      "Huijuan Zhu"
+    ],
+    "venue": "IET Blockchain",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1049/blc2.12051"
+  },
+  {
+    "key": "journals/itiis/FangJZS23",
+    "title": "A New Distributed Log Anomaly Detection Method based on Message Middleware and ATT-GRU",
+    "authors": [
+      "Wei Fang 0007",
+      "Xuelei Jia",
+      "Wen Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "KSII Trans. Internet Inf. Syst.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.3837/tiis.2023.02.011"
+  },
+  {
+    "key": "journals/jaihc/ZhangSXCR23",
+    "title": "Overview of RGBD semantic segmentation based on deep learning",
+    "authors": [
+      "Hongyan Zhang",
+      "Victor S. Sheng",
+      "Xuefeng Xi",
+      "Zhiming Cui 0002",
+      "Huan Rong"
+    ],
+    "venue": "J. Ambient Intell. Humaniz. Comput.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s12652-022-03829-6"
+  },
+  {
+    "key": "journals/kais/ChenSEZ23",
+    "title": "An effective cost-sensitive sparse online learning framework for imbalanced streaming data classification and its application to online anomaly detection",
+    "authors": [
+      "Zhong Chen 0003",
+      "Victor S. Sheng",
+      "Andrea Edwards",
+      "Kun Zhang 0012"
+    ],
+    "venue": "Knowl. Inf. Syst.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10115-022-01745-x"
+  },
+  {
+    "key": "journals/npl/GaoZS23",
+    "title": "Mitigate Gender Bias Using Negative Multi-task Learning",
+    "authors": [
+      "Liyuan Gao",
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "Neural Process. Lett.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11063-023-11368-0"
+  },
+  {
+    "key": "journals/pr/HaoMZLXZS23",
+    "title": "Multi-dimensional Graph Neural Network for Sequential Recommendation",
+    "authors": [
+      "Yongjing Hao",
+      "Jun Ma",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Xuefeng Xian",
+      "Lei Zhao 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Pattern Recognit.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.patcog.2023.109504"
+  },
+  {
+    "key": "journals/pr/ZhangXS23",
+    "title": "Crowdmeta: Crowdsourcing truth inference with meta-Knowledge transfer",
+    "authors": [
+      "Jing Zhang 0015",
+      "Sunyue Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Pattern Recognit.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.patcog.2023.109525"
+  },
+  {
+    "key": "journals/tgrs/FangPSW23",
+    "title": "STUNNER: Radar Echo Extrapolation Model Based on Spatiotemporal Fusion Neural Network",
+    "authors": [
+      "Wei Fang 0007",
+      "Lin Pang",
+      "Victor S. Sheng",
+      "Qiguang Wang"
+    ],
+    "venue": "IEEE Trans. Geosci. Remote. Sens.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TGRS.2023.3268187"
+  },
+  {
+    "key": "journals/tkdd/LiHZLLSZ23",
+    "title": "Edge-enhanced Global Disentangled Graph Neural Network for Sequential Recommendation",
+    "authors": [
+      "Yunyi Li",
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3577928"
+  },
+  {
+    "key": "journals/tkdd/ZhuangM0S23",
+    "title": "Contrastive Learning Based Graph Convolution Network for Social Recommendation",
+    "authors": [
+      "Jiabo Zhuang",
+      "Shunmei Meng",
+      "Jing Zhang 0015",
+      "Victor S. Sheng"
+    ],
+    "venue": "ACM Trans. Knowl. Discov. Data",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3587268"
+  },
+  {
+    "key": "journals/tkde/WangZZZZS23",
+    "title": "Short Text Topic Learning Using Heterogeneous Information Network",
+    "authors": [
+      "Qingren Wang",
+      "Chengcheng Zhu",
+      "Yiwen Zhang 0001",
+      "Hong Zhong 0001",
+      "Jinqin Zhong",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2022.3147766"
+  },
+  {
+    "key": "journals/tkde/HaoZZLSXLZ23",
+    "title": "Feature-Level Deeper Self-Attention Network With Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Yongjing Hao",
+      "Tingting Zhang",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Guanfeng Liu 0001",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2023.3250463"
+  },
+  {
+    "key": "journals/www/FangZLLSZZ23",
+    "title": "Quaternion-based graph convolution network for recommendation",
+    "authors": [
+      "Yaxing Fang",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Lei Zhao 0001",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "World Wide Web (WWW)",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11280-023-01157-z"
+  },
+  {
+    "key": "journals/www/ZhangZXSHC23",
+    "title": "Click is not equal to purchase: multi-task reinforcement learning for multi-behavior recommendation",
+    "authors": [
+      "Huiwang Zhang",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Victor S. Sheng",
+      "Yongjing Hao",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "World Wide Web (WWW)",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11280-023-01215-6"
+  },
+  {
+    "key": "conf/aaai/ZhanS23",
+    "title": "Privacy-Preserving Representation Learning for Text-Attributed Networks with Simplicial Complexes",
+    "authors": [
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v37i13.26932"
+  },
+  {
+    "key": "conf/aaai/GaoZCS23",
+    "title": "Towards Fair and Selectively Privacy-Preserving Models Using Negative Multi-Task Learning (Student Abstract)",
+    "authors": [
+      "Liyuan Gao",
+      "Huixin Zhan",
+      "Austin Chen",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v37i13.26967"
+  },
+  {
+    "key": "conf/aaai/XuLJCS23",
+    "title": "ACCD: An Adaptive Clustering-Based Collusion Detector in Crowdsourcing (Student Abstract)",
+    "authors": [
+      "Ruoyu Xu",
+      "Gaoxiang Li",
+      "Wei Jin",
+      "Austin Chen",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v37i13.27045"
+  },
+  {
+    "key": "conf/aaai/XuSL23",
+    "title": "Logic Error Localization and Correction with Machine Learning (Student Abstract)",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng",
+      "Keyi Lu"
+    ],
+    "venue": "AAAI",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v37i13.27046"
+  },
+  {
+    "key": "conf/aaai/Zhan0LS23",
+    "title": "Measuring the Privacy Leakage via Graph Reconstruction Attacks on Simplicial Neural Networks (Student Abstract)",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Keyi Lu",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v37i13.27050"
+  },
+  {
+    "key": "conf/apsec/XuS23",
+    "title": "Enhancing Logic Error Detection Through Program Pseudocodes",
+    "authors": [
+      "Zhenyu Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "APSEC",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/APSEC60848.2023.00089"
+  },
+  {
+    "key": "conf/bibm/GaoSZS23",
+    "title": "Explainable Transcription Factor Prediction with Protein Language Models",
+    "authors": [
+      "Liyuan Gao",
+      "Kyler Shu",
+      "Jun Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "BIBM",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/BIBM58861.2023.10385498"
+  },
+  {
+    "key": "conf/bigdataconf/AbuShairaRSSA23",
+    "title": "OLR-WA: Online Weighted Average Linear Regression in Multivariate Data Streams",
+    "authors": [
+      "Mohammad Abu-Shaira",
+      "Alejandro Rodriguez",
+      "Greg Speegle",
+      "Victor S. Sheng",
+      "Ishfaq Ahmad 0001"
+    ],
+    "venue": "IEEE Big Data",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/BigData59044.2023.10386601"
+  },
+  {
+    "key": "conf/bigdataconf/GuptaS23",
+    "title": "Neurosymbolic Knowledge Distillation",
+    "authors": [
+      "Himel Das Gupta",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Big Data",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/BigData59044.2023.10386968"
+  },
+  {
+    "key": "conf/cikm/Zhan00S23",
+    "title": "Simplex2vec Backward: From Vectors Back to Simplicial Complex",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Zhong Chen 0003",
+      "Victor S. Sheng"
+    ],
+    "venue": "CIKM",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3583780.3615147"
+  },
+  {
+    "key": "conf/dsaa/ZhanGZCS23",
+    "title": "Defending the Graph Reconstruction Attacks for Simplicial Neural Networks",
+    "authors": [
+      "Huixin Zhan",
+      "Liyuan Gao",
+      "Kun Zhang 0012",
+      "Zhong Chen 0003",
+      "Victor S. Sheng"
+    ],
+    "venue": "DSAA",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/DSAA60987.2023.10302529"
+  },
+  {
+    "key": "conf/emnlp/CheL00ZSDD23",
+    "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+    "authors": [
+      "Tianshi Che",
+      "Ji Liu 0003",
+      "Yang Zhou 0001",
+      "Jiaxiang Ren 0001",
+      "Jiwen Zhou",
+      "Victor S. Sheng",
+      "Huaiyu Dai",
+      "Dejing Dou"
+    ],
+    "venue": "EMNLP",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.18653/v1/2023.emnlp-main.488"
+  },
+  {
+    "key": "conf/icde/DuYZF0LS023",
+    "title": "Contrastive Enhanced Slide Filter Mixer for Sequential Recommendation",
+    "authors": [
+      "Xinyu Du",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "ICDE",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDE55515.2023.00205"
+  },
+  {
+    "key": "conf/icde/RongSM0A23",
+    "title": "A Self-play and Sentiment-Emphasized Comment Integration Framework Based on Deep Q-Learning in a Crowdsourcing Scenario : Extended Abstract",
+    "authors": [
+      "Huan Rong",
+      "Victor S. Sheng",
+      "Tinghuai Ma",
+      "Yang Zhou 0001",
+      "Mznah Al-Rodhaan"
+    ],
+    "venue": "ICDE",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDE55515.2023.00350"
+  },
+  {
+    "key": "conf/icic/XuLJCS23",
+    "title": "Adaptive Clustering-Based Collusion Detection in Crowdsourcing",
+    "authors": [
+      "Ruoyu Xu",
+      "Gaoxiang Li",
+      "Wei Jin",
+      "Austin Chen",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICIC (4)",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-981-99-4752-2_22"
+  },
+  {
+    "key": "conf/iconip/HaoLSLHSZ23",
+    "title": "Sample Selection Based on Uncertainty for Combating Label Noise",
+    "authors": [
+      "Shuohui Hao",
+      "Zhe Liu 0004",
+      "Yuqing Song 0001",
+      "Yi Liu 0114",
+      "Kai Han 0006",
+      "Victor S. Sheng",
+      "Yan Zhu 0018"
+    ],
+    "venue": "ICONIP (9)",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-981-99-8138-0_6"
+  },
+  {
+    "key": "conf/ijcai/YuanZX0LS023",
+    "title": "Sequential Recommendation with Probabilistic Logical Reasoning",
+    "authors": [
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Lei Zhao 0001"
+    ],
+    "venue": "IJCAI",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.24963/ijcai.2023/270"
+  },
+  {
+    "key": "conf/issre/ZhuYWXS23",
+    "title": "GraBit: A Sequential Model-Based Framework for Smart Contract Vulnerability Detection",
+    "authors": [
+      "Huijuan Zhu",
+      "Kaixuan Yang",
+      "Liangmin Wang 0001",
+      "Zhicheng Xu",
+      "Victor S. Sheng"
+    ],
+    "venue": "ISSRE",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ISSRE59848.2023.00024"
+  },
+  {
+    "key": "conf/sigir/DuYZZ00LS23",
+    "title": "Ensemble Modeling with Contrastive Knowledge Distillation for Sequential Recommendation",
+    "authors": [
+      "Hanwen Du",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "SIGIR",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3539618.3591679"
+  },
+  {
+    "key": "conf/sigir/DuYZQZ0LS23",
+    "title": "Frequency Enhanced Hybrid Attention Network for Sequential Recommendation",
+    "authors": [
+      "Xinyu Du",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Jianfeng Qu",
+      "Fuzhen Zhuang",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "SIGIR",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3539618.3591689"
+  },
+  {
+    "key": "conf/sigir/QinYZFZ0LS23",
+    "title": "Meta-optimized Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Xiuyuan Qin",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Fuzhen Zhuang",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "SIGIR",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3539618.3591727"
+  },
+  {
+    "key": "conf/icbk/2023",
+    "title": "IEEE International Conference on Knowledge Graph, ICKG 2023, Shanghai, China, December 1-2, 2023",
+    "authors": [],
+    "venue": "ICKG",
+    "year": 2023,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICKG59574.2023"
+  },
+  {
+    "key": "journals/corr/abs-2302-04373",
+    "title": "Measuring the Privacy Leakage via Graph Reconstruction Attacks on Simplicial Neural Networks (Student Abstract)",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Keyi Lu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2302.04373"
+  },
+  {
+    "key": "journals/corr/abs-2302-04383",
+    "title": "Privacy-Preserving Representation Learning for Text-Attributed Networks with Simplicial Complexes",
+    "authors": [
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2302.04383"
+  },
+  {
+    "key": "journals/corr/abs-2304-07763",
+    "title": "Meta-optimized Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Xiuyuan Qin",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Fuzhen Zhuang",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2304.07763"
+  },
+  {
+    "key": "journals/corr/abs-2304-11383",
+    "title": "Sequential Recommendation with Probabilistic Logical Reasoning",
+    "authors": [
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Lei Zhao 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2304.11383"
+  },
+  {
+    "key": "journals/corr/abs-2304-14668",
+    "title": "Ensemble Modeling with Contrastive Knowledge Distillation for Sequential Recommendation",
+    "authors": [
+      "Hanwen Du",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2304.14668"
+  },
+  {
+    "key": "journals/corr/abs-2305-04322",
+    "title": "Contrastive Enhanced Slide Filter Mixer for Sequential Recommendation",
+    "authors": [
+      "Xinyu Du",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2305.04322"
+  },
+  {
+    "key": "journals/corr/abs-2310-13925",
+    "title": "Meta-optimized Joint Generative and Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Jianfeng Qu",
+      "Guanfeng Liu 0001",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2310.13925"
+  },
+  {
+    "key": "journals/corr/abs-2310-14318",
+    "title": "Intent Contrastive Learning with Cross Subsequences for Sequential Recommendation",
+    "authors": [
+      "Xiuyuan Qin",
+      "Huanhuan Yuan",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2310.14318"
+  },
+  {
+    "key": "journals/corr/abs-2310-15080",
+    "title": "Federated Learning of Large Language Models with Parameter-Efficient Prompt Tuning and Adaptive Optimization",
+    "authors": [
+      "Tianshi Che",
+      "Ji Liu 0003",
+      "Yang Zhou 0001",
+      "Jiaxiang Ren 0001",
+      "Jiwen Zhou",
+      "Victor S. Sheng",
+      "Huaiyu Dai",
+      "Dejing Dou"
+    ],
+    "venue": "CoRR",
+    "year": 2023,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2310.15080"
+  },
+  {
+    "key": "journals/apin/WangZZZS22",
+    "title": "Location-based deep factorization machine model for service recommendation",
+    "authors": [
+      "Qingren Wang",
+      "Min Zhang",
+      "Yiwen Zhang 0001",
+      "Jinqin Zhong",
+      "Victor S. Sheng"
+    ],
+    "venue": "Appl. Intell.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10489-021-02998-9"
+  },
+  {
+    "key": "journals/csse/FangGYWS22",
+    "title": "A New Method of Image Restoration Technology Based on WGAN",
+    "authors": [
+      "Wei Fang 0007",
+      "Enming Gu",
+      "Weinan Yi",
+      "Weiqing Wang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Comput. Syst. Sci. Eng.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.32604/csse.2022.020176"
+  },
+  {
+    "key": "journals/csse/XiaoLZHDS22",
+    "title": "Image Inpainting Detection Based on High-Pass Filter Attention Network",
+    "authors": [
+      "Can Xiao",
+      "Feng Li 0065",
+      "Dengyong Zhang",
+      "Pu Huang",
+      "Xiangling Ding",
+      "Victor S. Sheng"
+    ],
+    "venue": "Comput. Syst. Sci. Eng.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.32604/csse.2022.027249"
+  },
+  {
+    "key": "journals/eswa/LiuSWJSZZYGS22",
+    "title": "Pancreas Co-segmentation based on dynamic ROI extraction and VGGU-Net",
+    "authors": [
+      "Zhe Liu 0004",
+      "Jun Su",
+      "Ruihao Wang",
+      "Rui Jiang",
+      "Yu-Qing Song 0001",
+      "Dengyong Zhang",
+      "Yan Zhu 0018",
+      "Deqi Yuan",
+      "Qingsong Gan",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2021.116444"
+  },
+  {
+    "key": "journals/eswa/ZhouZGLHS22",
+    "title": "Bipartite network embedding with Symmetric Neighborhood Convolution",
+    "authors": [
+      "Cangqi Zhou",
+      "Jing Zhang 0015",
+      "Kaisheng Gao",
+      "Qianmu Li",
+      "Dianming Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2022.116757"
+  },
+  {
+    "key": "journals/eswa/WangLLZS22",
+    "title": "Homophily-aware correction framework for crowdsourced labels using heterogeneous information network",
+    "authors": [
+      "Qingren Wang",
+      "Jian Lu",
+      "Wei Li 0221",
+      "Jing Zhang 0015",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2022.116896"
+  },
+  {
+    "key": "journals/iasc/FangSQS22",
+    "title": "Movie Recommendation Algorithm Based on Ensemble Learning",
+    "authors": [
+      "Wei Fang 0007",
+      "Yu Sha",
+      "Meihan Qi",
+      "Victor S. Sheng"
+    ],
+    "venue": "Intell. Autom. Soft Comput.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.32604/iasc.2022.027067"
+  },
+  {
+    "key": "journals/itiis/ZhangWLZS22",
+    "title": "Cascaded-Hop For DeepFake Videos Detection",
+    "authors": [
+      "Dengyong Zhang",
+      "Pengjie Wu",
+      "Feng Li 0065",
+      "Wenjie Zhu",
+      "Victor S. Sheng"
+    ],
+    "venue": "KSII Trans. Internet Inf. Syst.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.3837/tiis.2022.05.014"
+  },
+  {
+    "key": "journals/itiis/LiuCPZTS22",
+    "title": "MSFM: Multi-view Semantic Feature Fusion Model for Chinese Named Entity Recognition",
+    "authors": [
+      "Jingxin Liu 0006",
+      "Jieren Cheng",
+      "Xin Peng 0010",
+      "Zeli Zhao",
+      "Xiangyan Tang",
+      "Victor S. Sheng"
+    ],
+    "venue": "KSII Trans. Internet Inf. Syst.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.3837/tiis.2022.06.004"
+  },
+  {
+    "key": "journals/mta/AiSL22",
+    "title": "A MBGD enhancement method for imbalance smoothing",
+    "authors": [
+      "Xusheng Ai",
+      "Victor S. Sheng",
+      "Chunhua Li 0003"
+    ],
+    "venue": "Multim. Tools Appl.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11042-022-12697-3"
+  },
+  {
+    "key": "journals/mta/FangYPS22",
+    "title": "Study of cross-domain person re-identification based on DCGAN",
+    "authors": [
+      "Wei Fang 0007",
+      "Weinan Yi",
+      "Lin Pang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Multim. Tools Appl.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11042-022-13526-3"
+  },
+  {
+    "key": "journals/tii/ShuHSW22",
+    "title": "Guest Editorial: Reliability and Security for Intelligent Wireless Sensing and Control Systems",
+    "authors": [
+      "Lei Shu 0001",
+      "Gerhard P. Hancke 0002",
+      "Victor S. Sheng",
+      "Liangmin Wang 0001"
+    ],
+    "venue": "IEEE Trans. Ind. Informatics",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TII.2021.3126613"
+  },
+  {
+    "key": "journals/tkde/RongSMZA22",
+    "title": "A Self-Play and Sentiment-Emphasized Comment Integration Framework Based on Deep Q-Learning in a Crowdsourcing Scenario",
+    "authors": [
+      "Huan Rong",
+      "Victor S. Sheng",
+      "Tinghuai Ma",
+      "Yang Zhou 0001",
+      "Mznah Al-Rodhaan"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2020.2993272"
+  },
+  {
+    "key": "journals/tkde/ZhaoLLXLZSZ22",
+    "title": "Where to Go Next: A Spatio-Temporal Gated Network for Next POI Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Anjing Luo",
+      "Yanchi Liu",
+      "Jiajie Xu 0001",
+      "Zhixu Li",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2020.3007194"
+  },
+  {
+    "key": "journals/tkde/ZhuWZLS22",
+    "title": "A Hybrid Deep Network Framework for Android Malware Detection",
+    "authors": [
+      "Huijuan Zhu",
+      "Liang-Min Wang 0001",
+      "Sheng Zhong 0002",
+      "Yang Li",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2021.3067658"
+  },
+  {
+    "key": "journals/wicomm/LiuLSZY22",
+    "title": "A Novel Energy-Efficient, Static Scenario-Oriented Routing Method of Wireless Sensor Network Based on Edge Computing",
+    "authors": [
+      "Gang Liu",
+      "Zhaobin Liu",
+      "Victor S. Sheng",
+      "Liang Zhang",
+      "Yuanfeng Yang"
+    ],
+    "venue": "Wirel. Commun. Mob. Comput.",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2022/3450361"
+  },
+  {
+    "key": "conf/apweb/ShiDHSCZ22",
+    "title": "Self-guided Contrastive Learning for Sequential Recommendation",
+    "authors": [
+      "Hui Shi",
+      "Hanwen Du",
+      "Yongjing Hao",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002",
+      "Pengpeng Zhao 0001"
+    ],
+    "venue": "APWeb/WAIM (3)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-25201-3_6"
+  },
+  {
+    "key": "conf/bigdataconf/ChenZSEZ22",
+    "title": "Proximal Cost-sensitive Sparse Group Online Learning",
+    "authors": [
+      "Zhong Chen 0003",
+      "Huixin Zhan",
+      "Victor S. Sheng",
+      "Andrea Edwards",
+      "Kun Zhang 0012"
+    ],
+    "venue": "IEEE Big Data",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/BigData55660.2022.10021084"
+  },
+  {
+    "key": "conf/cikm/DuSZWSLL022",
+    "title": "Contrastive Learning with Bidirectional Transformers for Sequential Recommendation",
+    "authors": [
+      "Hanwen Du",
+      "Hui Shi",
+      "Pengpeng Zhao 0001",
+      "Deqing Wang 0001",
+      "Victor S. Sheng",
+      "Yanchi Liu",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001"
+    ],
+    "venue": "CIKM",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3511808.3557266"
+  },
+  {
+    "key": "conf/hicss/ZhanZHS22",
+    "title": "New Threats to Privacy-preserving Text Representations",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Chenyi Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "HICSS",
+    "year": 2022,
+    "isJournal": false,
+    "url": "http://hdl.handle.net/10125/79426"
+  },
+  {
+    "key": "conf/icbk/WuCBJZS22",
+    "title": "HUSS: A Heuristic Method for Understanding the Semantic Structure of Spreadsheets",
+    "authors": [
+      "Xindong Wu 0001",
+      "Hao Chen",
+      "Chenyang Bu",
+      "Shengwei Ji",
+      "Zan Zhang 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICKG",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICKG55886.2022.00049"
+  },
+  {
+    "key": "conf/icccsec/LiCLYS22",
+    "title": "A Survey of Consensus Mechanism Based on Reputation Model",
+    "authors": [
+      "Yuanshen Li",
+      "Jieren Cheng",
+      "Hui Li",
+      "Yuming Yuan",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICAIS (3)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-06791-4_17"
+  },
+  {
+    "key": "conf/icccsec/ChenCLXHTS22",
+    "title": "A Survey of Multi-label Text Classification Based on Deep Learning",
+    "authors": [
+      "Xiaolong Chen",
+      "Jieren Cheng",
+      "Jingxin Liu 0006",
+      "Wenghang Xu",
+      "Shuai Hua",
+      "Zhu Tang",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICAIS (1)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-06794-5_36"
+  },
+  {
+    "key": "conf/icccsec/GuoCWCYLS22",
+    "title": "IoT Data Blockchain-Based Transaction Model Using Zero-Knowledge Proofs and Proxy Re-encryption",
+    "authors": [
+      "Hao Guo",
+      "Jieren Cheng",
+      "Janghao Wang",
+      "Tao Chen",
+      "Yuming Yuan",
+      "Hui Li",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICAIS (2)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-06788-4_48"
+  },
+  {
+    "key": "conf/icccsec/LiuCWLSS22",
+    "title": "A Survey of Deep Learning for Named Entity Recognition in Chinese Social Media",
+    "authors": [
+      "Jingxin Liu 0006",
+      "Jieren Cheng",
+      "Ziyan Wang",
+      "Congqiang Lou",
+      "Chenli Shen",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICAIS (1)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-06794-5_46"
+  },
+  {
+    "key": "conf/icdm/0003ZSE022",
+    "title": "Projection Dual Averaging Based Second-order Online Learning",
+    "authors": [
+      "Zhong Chen 0003",
+      "Huixin Zhan",
+      "Victor S. Sheng",
+      "Andrea Edwards",
+      "Kun Zhang 0012"
+    ],
+    "venue": "ICDM",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDM54844.2022.00015"
+  },
+  {
+    "key": "conf/ijcnn/FangZXFLLS22",
+    "title": "Quaternion-Based Graph Contrastive Learning for Recommendation",
+    "authors": [
+      "Yaxing Fang",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Junhua Fang",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IJCNN",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/IJCNN55064.2022.9892020"
+  },
+  {
+    "key": "conf/ijcnn/HuangZXQLLS22",
+    "title": "Help from Meta-Path: Node and Meta-Path Contrastive Learning for Recommender Systems",
+    "authors": [
+      "Mingyuan Huang",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Jianfeng Qu",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "IJCNN",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/IJCNN55064.2022.9892327"
+  },
+  {
+    "key": "conf/ipmu/SpurlingHZS22",
+    "title": "Anomaly Detection in Crowdsourced Work with Interval-Valued Labels",
+    "authors": [
+      "Makenzie Spurling",
+      "Chenyi Hu",
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "IPMU (1)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-08971-8_42"
+  },
+  {
+    "key": "conf/ipmu/MoodyHZSS22",
+    "title": "Towards Explainable Summary of Crowdsourced Reviews Through Text Mining",
+    "authors": [
+      "Aaron Moody",
+      "Chenyi Hu",
+      "Huixin Zhan",
+      "Makenzie Spurling",
+      "Victor S. Sheng"
+    ],
+    "venue": "IPMU (1)",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-08971-8_44"
+  },
+  {
+    "key": "conf/wise/ZhangZXSHC22",
+    "title": "Click is Not Equal to Purchase: Multi-task Reinforcement Learning for Multi-behavior Recommendation",
+    "authors": [
+      "Huiwang Zhang",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Victor S. Sheng",
+      "Yongjing Hao",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WISE",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-031-20891-1_32"
+  },
+  {
+    "key": "conf/icbds/2021",
+    "title": "Big Data and Security - Third International Conference, ICBDS 2021, Shenzhen, China, November 26-28, 2021, Proceedings",
+    "authors": [],
+    "venue": "ICBDS",
+    "year": 2022,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-981-19-0852-1"
+  },
+  {
+    "key": "journals/corr/abs-2204-10128",
+    "title": "Learnable Model Augmentation Self-Supervised Learning for Sequential Recommendation",
+    "authors": [
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Xuefeng Xian",
+      "Guanfeng Liu 0001",
+      "Deqing Wang 0001",
+      "Lei Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2204.10128"
+  },
+  {
+    "key": "journals/corr/abs-2206-12005",
+    "title": "Knowledge Distillation via Weighted Ensemble of Teaching Assistants",
+    "authors": [
+      "Durga Prasad Ganta",
+      "Himel Das Gupta",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2206.12005"
+  },
+  {
+    "key": "journals/corr/abs-2208-03895",
+    "title": "Contrastive Learning with Bidirectional Transformers for Sequential Recommendation",
+    "authors": [
+      "Hanwen Du",
+      "Hui Shi",
+      "Pengpeng Zhao 0001",
+      "Deqing Wang 0001",
+      "Victor S. Sheng",
+      "Yanchi Liu",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2208.03895"
+  },
+  {
+    "key": "journals/corr/abs-2208-07216",
+    "title": "Class-attention Video Transformer for Engagement Intensity Prediction",
+    "authors": [
+      "Xusheng Ai",
+      "Victor S. Sheng",
+      "Chunhua Li 0003"
+    ],
+    "venue": "CoRR",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2208.07216"
+  },
+  {
+    "key": "journals/corr/abs-2212-05712",
+    "title": "A Roadmap to Domain Knowledge Integration in Machine Learning",
+    "authors": [
+      "Himel Das Gupta",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2022,
+    "isJournal": true,
+    "url": "https://doi.org/10.48550/arXiv.2212.05712"
+  },
+  {
+    "key": "journals/csur/WuSZLDSCZ20",
+    "title": "Multi-Label Active Learning Algorithms for Image Classification: Overview and Future Promise",
+    "authors": [
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Jing Zhang 0015",
+      "Hua Li 0003",
+      "Tetiana Dadakova",
+      "Christine Leon Swisher",
+      "Zhiming Cui 0002",
+      "Pengpeng Zhao 0001"
+    ],
+    "venue": "ACM Comput. Surv.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1145/3379504"
+  },
+  {
+    "key": "journals/eaai/LiuXSZLZS21",
+    "title": "MLANet: Multi-Layer Anchor-free Network for generic lesion detection",
+    "authors": [
+      "Zhe Liu 0004",
+      "Xi Xie",
+      "Yuqing Song 0001",
+      "Yang Zhang 0015",
+      "Xuesheng Liu",
+      "Jiawen Zhang 0004",
+      "Victor S. Sheng"
+    ],
+    "venue": "Eng. Appl. Artif. Intell.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.engappai.2021.104255"
+  },
+  {
+    "key": "journals/eswa/ZhouCZLHS21",
+    "title": "Multi-label graph node classification with label attentive neighborhood convolution",
+    "authors": [
+      "Cangqi Zhou",
+      "Hui Chen",
+      "Jing Zhang 0015",
+      "Qianmu Li",
+      "Dianming Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2021.115063"
+  },
+  {
+    "key": "journals/eswa/ZhanSL21",
+    "title": "Reinforcement learning-based register renaming policy for simultaneous multithreading CPUs",
+    "authors": [
+      "Huixin Zhan",
+      "Victor S. Sheng",
+      "Wei-Ming Lin"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2021.115717"
+  },
+  {
+    "key": "journals/iasc/FangPYS21",
+    "title": "AttEF: Convolutional LSTM Encoder-Forecaster with Attention Module for Precipitation Nowcasting",
+    "authors": [
+      "Wei Fang 0007",
+      "Lin Pang",
+      "Weinan Yi",
+      "Victor S. Sheng"
+    ],
+    "venue": "Intell. Autom. Soft Comput.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.32604/iasc.2021.016589"
+  },
+  {
+    "key": "journals/iasc/YuLSSLMWM21",
+    "title": "CT Segmentation of Liver and Tumors Fused Multi-Scale Features",
+    "authors": [
+      "Aihong Yu",
+      "Zhe Liu 0004",
+      "Victor S. Sheng",
+      "Yuqing Song 0001",
+      "Xuesheng Liu",
+      "Chongya Ma",
+      "Wenqiang Wang",
+      "Cong Ma"
+    ],
+    "venue": "Intell. Autom. Soft Comput.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.32604/iasc.2021.019513"
+  },
+  {
+    "key": "journals/ijon/XuFZZWLS21",
+    "title": "Long- and short-term self-attention network for sequential recommendation",
+    "authors": [
+      "Chengfeng Xu",
+      "Jian Feng",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Deqing Wang 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.neucom.2020.10.066"
+  },
+  {
+    "key": "journals/ijon/FangZSD21",
+    "title": "SCENT: A new precipitation nowcasting method based on sparse correspondence and deep neural network",
+    "authors": [
+      "Wei Fang 0007",
+      "Feihong Zhang",
+      "Victor S. Sheng",
+      "Yewen Ding"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.neucom.2021.02.072"
+  },
+  {
+    "key": "journals/ijsnet/ZhengSWLXC21",
+    "title": "SemicNet: a semicircular network for the segmentation of the liver and its lesions",
+    "authors": [
+      "Zhihua Zheng",
+      "Victor S. Sheng",
+      "Lei Wang",
+      "Zhi Li",
+      "Xue-Feng Xi",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Int. J. Sens. Networks",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1504/IJSNET.2021.113838"
+  },
+  {
+    "key": "journals/itiis/ChengLXXLS21",
+    "title": "A review of Chinese named entity recognition",
+    "authors": [
+      "Jieren Cheng",
+      "Jingxin Liu 0006",
+      "Xinbin Xu",
+      "Dongwan Xia",
+      "Le Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "KSII Trans. Internet Inf. Syst.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.3837/tiis.2021.06.004"
+  },
+  {
+    "key": "journals/kbs/SuLZSSZL21",
+    "title": "DV-Net: Accurate liver vessel segmentation via dense connection model with D-BCE loss function",
+    "authors": [
+      "Jun Su",
+      "Zhe Liu 0004",
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Yuqing Song 0001",
+      "Yan Zhu 0018",
+      "Yi Liu 0114"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2021.107471"
+  },
+  {
+    "key": "journals/mlc/ChenFSZFEZ21",
+    "title": "Adaptive robust local online density estimation for streaming data",
+    "authors": [
+      "Zhong Chen 0003",
+      "Zhide Fang",
+      "Victor S. Sheng",
+      "Jiabin Zhao",
+      "Wei Fan 0001",
+      "Andrea Edwards",
+      "Kun Zhang 0012"
+    ],
+    "venue": "Int. J. Mach. Learn. Cybern.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s13042-021-01275-y"
+  },
+  {
+    "key": "journals/mms/LiuHWZSYYS21",
+    "title": "Automatic liver segmentation from abdominal CT volumes using improved convolution neural networks",
+    "authors": [
+      "Zhe Liu 0004",
+      "Kai Han 0006",
+      "Zhaohui Wang",
+      "Jing Zhang 0015",
+      "Yuqing Song 0001",
+      "Xu Yao",
+      "Deqi Yuan",
+      "Victor S. Sheng"
+    ],
+    "venue": "Multim. Syst.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s00530-020-00709-x"
+  },
+  {
+    "key": "journals/tcss/LinZQLLSN21",
+    "title": "Location-Aware Service Recommendations With Privacy-Preservation in the Internet of Things",
+    "authors": [
+      "Wenmin Lin",
+      "Xuyun Zhang",
+      "Lianyong Qi",
+      "Weimin Li 0001",
+      "Shancang Li",
+      "Victor S. Sheng",
+      "Surya Nepal"
+    ],
+    "venue": "IEEE Trans. Comput. Soc. Syst.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TCSS.2020.2965234"
+  },
+  {
+    "key": "journals/tii/WangMS21",
+    "title": "Multilevel Identification and Classification Analysis of Tor on Mobile and PC Platforms",
+    "authors": [
+      "Liangmin Wang 0001",
+      "Hantao Mei",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Ind. Informatics",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TII.2020.2988870"
+  },
+  {
+    "key": "journals/tkde/ZhaoXLSZXZ21",
+    "title": "Photo2Trip: Exploiting Visual Contents in Geo-Tagged Photos for Personalized Tour Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Chengfeng Xu",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Kai Zheng 0001",
+      "Hui Xiong 0001",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2019.2943854"
+  },
+  {
+    "key": "conf/acml/ZhanZHS21",
+    "title": "K<sup>2</sup>-GNN: Multiple Users' Comments Integration with Probabilistic K-Hop Knowledge Graph Neural Networks",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Chenyi Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "ACML",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://proceedings.mlr.press/v157/zhan21b.html"
+  },
+  {
+    "key": "conf/asunam/ZhanZHS21",
+    "title": "HGATs: hierarchical graph attention networks for multiple comments integration",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Chenyi Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "ASONAM",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3487351.3488322"
+  },
+  {
+    "key": "conf/cikm/ZhanZHS21",
+    "title": "Multi-objective Privacy-preserving Text Representation Learning",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Chenyi Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "CIKM",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3459637.3482147"
+  },
+  {
+    "key": "conf/csci/SiddharthaZS21",
+    "title": "Abstractive Text Summarization via Stacked LSTM<sup>*</sup>",
+    "authors": [
+      "Ireddy Siddhartha",
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "CSCI",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/CSCI54926.2021.00143"
+  },
+  {
+    "key": "conf/csci/WangSSWTT21",
+    "title": "A Review of Publicly Patient-Centered Alzheimer's disease datasets",
+    "authors": [
+      "Rui Wang",
+      "Chwan-Li Shen",
+      "Victor S. Sheng",
+      "Heng Wu",
+      "Zackery Toler",
+      "Samuel Temesgen"
+    ],
+    "venue": "CSCI",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/CSCI54926.2021.00247"
+  },
+  {
+    "key": "conf/dasfaa/TianHZWLS21",
+    "title": "Considering Interaction Sequence of Historical Items for Conversational Recommender System",
+    "authors": [
+      "Xintao Tian",
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Deqing Wang 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-73200-4_8"
+  },
+  {
+    "key": "conf/dasfaa/LiuZZXLS21",
+    "title": "Knowledge-Aware Hypergraph Neural Network for Recommender Systems",
+    "authors": [
+      "Binghao Liu",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Xuefeng Xian",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-73200-4_9"
+  },
+  {
+    "key": "conf/dasfaa/LiZWXLS21",
+    "title": "Learning Disentangled User Representation Based on Controllable VAE for Recommendation",
+    "authors": [
+      "Yunyi Li",
+      "Pengpeng Zhao 0001",
+      "Deqing Wang 0001",
+      "Xuefeng Xian",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-73200-4_12"
+  },
+  {
+    "key": "conf/dasfaa/LiHZZLS21",
+    "title": "Tell Me Where to Go Next: Improving POI Recommendation via Conversation",
+    "authors": [
+      "Changheng Li",
+      "Yongjing Hao",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-73200-4_14"
+  },
+  {
+    "key": "conf/icbk/GantaGS21",
+    "title": "Knowledge Distillation via Weighted Ensemble of Teaching Assistants",
+    "authors": [
+      "Durga Prasad Ganta",
+      "Himel Das Gupta",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICBK",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICKG52313.2021.00014"
+  },
+  {
+    "key": "conf/icbk/0003FSE021",
+    "title": "CSRDA: Cost-sensitive Regularized Dual Averaging for Handling Imbalanced and High-dimensional Streaming Data",
+    "authors": [
+      "Zhong Chen 0003",
+      "Zhide Fang",
+      "Victor S. Sheng",
+      "Andrea Edwards",
+      "Kun Zhang 0012"
+    ],
+    "venue": "ICBK",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICKG52313.2021.00031"
+  },
+  {
+    "key": "conf/icbk/Zhan0HS21",
+    "title": "Gated Graph Neural Networks (GG-NNs) for Abstractive Multi-Comment Summarization",
+    "authors": [
+      "Huixin Zhan",
+      "Kun Zhang 0012",
+      "Chenyi Hu",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICBK",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICKG52313.2021.00050"
+  },
+  {
+    "key": "conf/icde/ZhaoZ0LS021",
+    "title": "Variational Self-attention Network for Sequential Recommendation",
+    "authors": [
+      "Jing Zhao 0040",
+      "Pengpeng Zhao 0001",
+      "Lei Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "ICDE",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDE51399.2021.00138"
+  },
+  {
+    "key": "conf/nafips/HuSWW21",
+    "title": "Managing Uncertainty in Crowdsourcing with Interval-Valued Labels",
+    "authors": [
+      "Chenyi Hu",
+      "Victor S. Sheng",
+      "Ningning Wu",
+      "Xintao Wu"
+    ],
+    "venue": "NAFIPS",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-82099-2_15"
+  },
+  {
+    "key": "conf/prcv/WangLSSQ21",
+    "title": "SaliencyBERT: Recurrent Attention Network for Target-Oriented Multimodal Sentiment Classification",
+    "authors": [
+      "Jiawei Wang",
+      "Zhe Liu 0004",
+      "Victor S. Sheng",
+      "Yuqing Song 0001",
+      "Chenjian Qiu"
+    ],
+    "venue": "PRCV (3)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-88010-1_1"
+  },
+  {
+    "key": "conf/ssci/SpurlingHZS21",
+    "title": "Estimating crowd-worker's reliability with interval-valued labels to improve the quality of crowdsourced work",
+    "authors": [
+      "Makenzie Spurling",
+      "Chenyi Hu",
+      "Huixin Zhan",
+      "Victor S. Sheng"
+    ],
+    "venue": "SSCI",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/SSCI50451.2021.9660043"
+  },
+  {
+    "key": "conf/wise/ZhengXHSCZ21",
+    "title": "Exploiting Intra and Inter-field Feature Interaction with Self-Attentive Network for CTR Prediction",
+    "authors": [
+      "Shenghao Zheng",
+      "Xuefeng Xian",
+      "Yongjing Hao",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002",
+      "Pengpeng Zhao 0001"
+    ],
+    "venue": "WISE (2)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-91560-5_3"
+  },
+  {
+    "key": "conf/wise/LiXZLS21",
+    "title": "MGSAN: A Multi-granularity Self-attention Network for Next POI Recommendation",
+    "authors": [
+      "Yepeng Li",
+      "Xuefeng Xian",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "WISE (2)",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-91560-5_14"
+  },
+  {
+    "key": "conf/www/0001ZWSHZJ21",
+    "title": "Robust Network Alignment via Attack Signal Scaling and Adversarial Perturbation Elimination",
+    "authors": [
+      "Yang Zhou 0001",
+      "Zeru Zhang",
+      "Sixing Wu",
+      "Victor S. Sheng",
+      "Xiaoying Han",
+      "Zijie Zhang 0001",
+      "Ruoming Jin"
+    ],
+    "venue": "WWW",
+    "year": 2021,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3442381.3449823"
+  },
+  {
+    "key": "journals/corr/abs-2111-10536",
+    "title": "Quaternion-Based Graph Convolution Network for Recommendation",
+    "authors": [
+      "Yaxing Fang",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Lei Zhao 0001",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://arxiv.org/abs/2111.10536"
+  },
+  {
+    "key": "journals/corr/abs-2111-10539",
+    "title": "Edge-Enhanced Global Disentangled Graph Neural Network for Sequential Recommendation",
+    "authors": [
+      "Yunyi Li",
+      "Pengpeng Zhao 0001",
+      "Guanfeng Liu 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2021,
+    "isJournal": true,
+    "url": "https://arxiv.org/abs/2111.10539"
+  },
+  {
+    "key": "journals/access/XiWSCFH20",
+    "title": "Cascade U-ResNets for Simultaneous Liver and Lesion Segmentation",
+    "authors": [
+      "Xue-Feng Xi",
+      "Lei Wang",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002",
+      "Baochuan Fu",
+      "Fuyuan Hu"
+    ],
+    "venue": "IEEE Access",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/ACCESS.2020.2985671"
+  },
+  {
+    "key": "journals/access/AiSFLL20",
+    "title": "Ensemble Learning With Attention-Integrated Convolutional Recurrent Neural Network for Imbalanced Speech Emotion Recognition",
+    "authors": [
+      "Xusheng Ai",
+      "Victor S. Sheng",
+      "Wei Fang 0007",
+      "Charles X. Ling",
+      "Chunhua Li 0003"
+    ],
+    "venue": "IEEE Access",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/ACCESS.2020.3035910"
+  },
+  {
+    "key": "journals/bigdatama/PalmerSAC20",
+    "title": "Classification on grade, price, and region with multi-label and multi-target methods in wineinformatics",
+    "authors": [
+      "James Palmer 0004",
+      "Victor S. Sheng",
+      "Travis Atkison",
+      "Bernard Chen 0001"
+    ],
+    "venue": "Big Data Min. Anal.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.26599/BDMA.2019.9020014"
+  },
+  {
+    "key": "journals/complexity/WangZTS20",
+    "title": "Labelling Training Samples Using Crowdsourcing Annotation for Recommendation",
+    "authors": [
+      "Qingren Wang",
+      "Min Zhang",
+      "Tao Tao 0005",
+      "Victor S. Sheng"
+    ],
+    "venue": "Complex.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2020/1670483"
+  },
+  {
+    "key": "journals/eswa/LiSZS20",
+    "title": "Multiclass imbalanced learning with one-versus-one decomposition and spectral clustering",
+    "authors": [
+      "Qianmu Li",
+      "Yanjun Song",
+      "Jing Zhang 0015",
+      "Victor S. Sheng"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2019.113152"
+  },
+  {
+    "key": "journals/ijbic/YanHS20",
+    "title": "Data-driven pollution source location algorithm in water quality monitoring sensor networks",
+    "authors": [
+      "Xuesong Yan 0001",
+      "Chengyu Hu 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "Int. J. Bio Inspired Comput.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1504/IJBIC.2020.107474"
+  },
+  {
+    "key": "journals/jcloudc/WangFXZS20",
+    "title": "A novel privacy-preserving speech recognition framework using bidirectional LSTM",
+    "authors": [
+      "Qingren Wang",
+      "Chuankai Feng",
+      "Yan Xu 0007",
+      "Hong Zhong 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Cloud Comput.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1186/s13677-020-00186-7"
+  },
+  {
+    "key": "journals/jrtip/ZhaoCS20",
+    "title": "A real-time typhoon eye detection method based on deep learning for meteorological information forensics",
+    "authors": [
+      "Liling Zhao",
+      "Yifei Chen",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Real Time Image Process.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11554-019-00899-2"
+  },
+  {
+    "key": "journals/kbs/XuSW20",
+    "title": "Near real-time topic-driven rumor detection in source microblogs",
+    "authors": [
+      "Fan Xu 0002",
+      "Victor S. Sheng",
+      "Mingwen Wang 0001"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2020.106391"
+  },
+  {
+    "key": "journals/mta/AiSFL20",
+    "title": "An optimal model with a lower bound of recall for imbalanced speech emotion recognition",
+    "authors": [
+      "Xusheng Ai",
+      "Victor S. Sheng",
+      "Wei Fang 0007",
+      "Charles X. Ling"
+    ],
+    "venue": "Multim. Tools Appl.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11042-020-09155-3"
+  },
+  {
+    "key": "journals/tetci/PanYWXSLK20",
+    "title": "Loss Functions of Generative Adversarial Networks (GANs): Opportunities and Challenges",
+    "authors": [
+      "Zhaoqing Pan",
+      "Weijie Yu",
+      "Bosi Wang",
+      "Haoran Xie 0001",
+      "Victor S. Sheng",
+      "Jianjun Lei 0001",
+      "Sam Kwong"
+    ],
+    "venue": "IEEE Trans. Emerg. Top. Comput. Intell.",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TETCI.2020.2991774"
+  },
+  {
+    "key": "conf/aaai/0015WMS20",
+    "title": "Interactive Learning with Proactive Cognition Enhancement for Crowd Workers",
+    "authors": [
+      "Jing Zhang 0015",
+      "Huihui Wang 0001",
+      "Shunmei Meng",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v34i01.5392"
+  },
+  {
+    "key": "conf/apweb/YangCZLHS20",
+    "title": "Fruited-Forest: A Reachability Querying Method Based on Spanning Tree Modelling of Reduced DAG",
+    "authors": [
+      "Liu Yang 0015",
+      "Tingxuan Chen",
+      "Junyu Zhang",
+      "Jun Long",
+      "Zhigang Hu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "APWeb/WAIM (1)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-60259-8_11"
+  },
+  {
+    "key": "conf/apweb/ZhuZ0F0XCS20",
+    "title": "Knowledge Graph Attention Network Enhanced Sequential Recommendation",
+    "authors": [
+      "Xingwei Zhu",
+      "Pengpeng Zhao 0001",
+      "Jiajie Xu 0001",
+      "Junhua Fang",
+      "Lei Zhao 0001",
+      "Xuefeng Xian",
+      "Zhiming Cui 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "APWeb/WAIM (1)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-60259-8_15"
+  },
+  {
+    "key": "conf/apweb/NiZ0FLXCS20",
+    "title": "Spatio-Temporal Self-Attention Network for Next POI Recommendation",
+    "authors": [
+      "Jiacheng Ni",
+      "Pengpeng Zhao 0001",
+      "Jiajie Xu 0001",
+      "Junhua Fang",
+      "Zhixu Li",
+      "Xuefeng Xian",
+      "Zhiming Cui 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "APWeb/WAIM (1)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-60259-8_30"
+  },
+  {
+    "key": "conf/asunam/ReddyKYZPSJ20",
+    "title": "BeSober: Assisting relapse prevention in Alcohol Addiction using a novel mobile app-based intervention",
+    "authors": [
+      "Vinay Jayachandra Reddy",
+      "Rashmi Kesidi",
+      "Zhou Yang 0002",
+      "Chen Zhang 0009",
+      "Zhenhe Pan",
+      "Victor S. Sheng",
+      "Fang Jin"
+    ],
+    "venue": "ASONAM",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ASONAM49781.2020.9381364"
+  },
+  {
+    "key": "conf/dasfaa/WuZLSFZ20",
+    "title": "Vector-Level and Bit-Level Feature Adjusted Factorization Machine for Sparse Prediction",
+    "authors": [
+      "Yanghong Wu",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Junhua Fang",
+      "Fuzhen Zhuang"
+    ],
+    "venue": "DASFAA (1)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-59410-7_27"
+  },
+  {
+    "key": "conf/dasfaa/ZhaoZLSLZ20",
+    "title": "Hierarchical Variational Attention for Sequential Recommendation",
+    "authors": [
+      "Jing Zhao 0040",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Zhixu Li",
+      "Lei Zhao 0001"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-59419-0_32"
+  },
+  {
+    "key": "conf/dasfaa/MaZLSXZ20",
+    "title": "Modeling Periodic Pattern with Self-Attention Network for Sequential Recommendation",
+    "authors": [
+      "Jun Ma",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Lei Zhao 0001"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-59419-0_34"
+  },
+  {
+    "key": "conf/dasfaa/YanZZWLS20",
+    "title": "Cross-Domain Recommendation with Adversarial Examples",
+    "authors": [
+      "Haoran Yan",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Deqing Wang 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng"
+    ],
+    "venue": "DASFAA (3)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-59419-0_35"
+  },
+  {
+    "key": "conf/icbk/GuptaS20",
+    "title": "A Roadmap to Domain Knowledge Integration in Machine Learning",
+    "authors": [
+      "Himel Das Gupta",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICKG",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICBK50248.2020.00030"
+  },
+  {
+    "key": "conf/icdm/FattaSC20",
+    "title": "The IEEE ICDM 2020 Workshops",
+    "authors": [
+      "Giuseppe Di Fatta",
+      "Victor S. Sheng",
+      "Alfredo Cuzzocrea"
+    ],
+    "venue": "ICDM (Workshops)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDMW51313.2020.00009"
+  },
+  {
+    "key": "conf/ijcai/LuoZLZWXFS20",
+    "title": "Collaborative Self-Attention Network for Session-based Recommendation",
+    "authors": [
+      "Anjing Luo",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Fuzhen Zhuang",
+      "Deqing Wang 0001",
+      "Jiajie Xu 0001",
+      "Junhua Fang",
+      "Victor S. Sheng"
+    ],
+    "venue": "IJCAI",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.24963/ijcai.2020/359"
+  },
+  {
+    "key": "conf/kdd/ShiSLG20",
+    "title": "Semi-Supervised Multi-Label Learning from Crowds via Deep Sequential Generative Model",
+    "authors": [
+      "Wanli Shi",
+      "Victor S. Sheng",
+      "Xiang Li 0012",
+      "Bin Gu 0001"
+    ],
+    "venue": "KDD",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3394486.3403167"
+  },
+  {
+    "key": "conf/mlis/GuptaZS20",
+    "title": "A Simple Ensemble Learning Knowledge Distillation",
+    "authors": [
+      "Himel Das Gupta",
+      "Kun Zhang 0012",
+      "Victor S. Sheng"
+    ],
+    "venue": "MLIS",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.3233/FAIA200778"
+  },
+  {
+    "key": "conf/www/LiuZZLSX0X20",
+    "title": "Exploiting Aesthetic Preference in Deep Cross Networks for Cross-domain Recommendation",
+    "authors": [
+      "Jian Liu 0001",
+      "Pengpeng Zhao 0001",
+      "Fuzhen Zhuang",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Xiaofang Zhou 0001",
+      "Hui Xiong 0001"
+    ],
+    "venue": "WWW",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3366423.3380036"
+  },
+  {
+    "key": "conf/icdm/2020w",
+    "title": "20th International Conference on Data Mining Workshops, ICDM Workshops 2020, Sorrento, Italy, November 17-20, 2020",
+    "authors": [],
+    "venue": "ICDM (Workshops)",
+    "year": 2020,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDMW51313.2020"
+  },
+  {
+    "key": "journals/corr/abs-2012-13662",
+    "title": "Coarse to Fine: Multi-label Image Classification with Global/Local Attention",
+    "authors": [
+      "Fan Lyu",
+      "Fuyuan Hu",
+      "Victor S. Sheng",
+      "Zhengtian Wu",
+      "Qiming Fu 0001",
+      "Baochuan Fu"
+    ],
+    "venue": "CoRR",
+    "year": 2020,
+    "isJournal": true,
+    "url": "https://arxiv.org/abs/2012.13662"
+  },
+  {
+    "key": "journals/access/ChenZLZFSC19",
+    "title": "Exploiting Aesthetic Features in Visual Contents for Movie Recommendation",
+    "authors": [
+      "Xiaojie Chen 0004",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Lei Zhao 0001",
+      "Junhua Fang",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "IEEE Access",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/ACCESS.2019.2910722"
+  },
+  {
+    "key": "journals/access/CheZFZSC19",
+    "title": "Inter-Basket and Intra-Basket Adaptive Attention Network for Next Basket Recommendation",
+    "authors": [
+      "Binbin Che",
+      "Pengpeng Zhao 0001",
+      "Junhua Fang",
+      "Lei Zhao 0001",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "IEEE Access",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/ACCESS.2019.2922985"
+  },
+  {
+    "key": "journals/cmpb/LiuSSXMXY19",
+    "title": "MRI and PET image fusion using the nonparametric density model and the theory of variable-weight",
+    "authors": [
+      "Zhe Liu 0004",
+      "Yuqing Song 0001",
+      "Victor S. Sheng",
+      "Chunyan Xu",
+      "Charlie Maere",
+      "Kaifeng Xue",
+      "Kai Yang 0001"
+    ],
+    "venue": "Comput. Methods Programs Biomed.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.cmpb.2019.04.010"
+  },
+  {
+    "key": "journals/eswa/LiuSSWJZY19",
+    "title": "Liver CT sequence segmentation based with improved U-Net and graph cut",
+    "authors": [
+      "Zhe Liu 0004",
+      "Yu-Qing Song 0001",
+      "Victor S. Sheng",
+      "Liangmin Wang 0001",
+      "Rui Jiang",
+      "Xiaolin Zhang",
+      "Deqi Yuan"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2019.01.055"
+  },
+  {
+    "key": "journals/ijon/FangDZS19",
+    "title": "DOG: A new background removal for object recognition from images",
+    "authors": [
+      "Wei Fang 0007",
+      "Yewen Ding",
+      "Feihong Zhang",
+      "Victor S. Sheng"
+    ],
+    "venue": "Neurocomputing",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.neucom.2019.05.095"
+  },
+  {
+    "key": "journals/jcn/LiuLMLZFS19",
+    "title": "Security cooperation model based on topology control and time synchronization for wireless sensor networks",
+    "authors": [
+      "Zhaobin Liu",
+      "Wenzhi Liu",
+      "Qiang Ma 0007",
+      "Gang Liu",
+      "Liang Zhang",
+      "Ligang Fang",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Commun. Networks",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/JCN.2019.000041"
+  },
+  {
+    "key": "journals/jcst/LiuQSLWS19",
+    "title": "Texture Feature Extraction from Thyroid MR Imaging Using High-Order Derived Mean CLBP",
+    "authors": [
+      "Zhe Liu 0004",
+      "Cheng-Jian Qiu",
+      "Yu-Qing Song 0001",
+      "Xiaohong Liu",
+      "Juan Wang",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Comput. Sci. Technol.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11390-019-1897-9"
+  },
+  {
+    "key": "journals/scn/ChengLTSLG19",
+    "title": "Corrigendum to &#34;Flow Correlation Degree Optimization Driven Random Forest for Detecting DDoS Attacks in Cloud Computing&#34;",
+    "authors": [
+      "Jieren Cheng",
+      "Mengyang Li",
+      "Xiangyan Tang",
+      "Victor S. Sheng",
+      "Yifu Liu",
+      "Wei Guo 0011"
+    ],
+    "venue": "Secur. Commun. Networks",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2019/6809054"
+  },
+  {
+    "key": "journals/scn/PanYSXM19",
+    "title": "Machine Learning for Wireless Multimedia Data Security",
+    "authors": [
+      "Zhaoqing Pan",
+      "Ching-Nung Yang",
+      "Victor S. Sheng",
+      "Naixue Xiong",
+      "Weizhi Meng 0001"
+    ],
+    "venue": "Secur. Commun. Networks",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2019/7682306"
+  },
+  {
+    "key": "journals/tkde/ShengZGW19",
+    "title": "Majority Voting and Pairing with Multiple Noisy Labeling",
+    "authors": [
+      "Victor S. Sheng",
+      "Jing Zhang 0015",
+      "Bin Gu 0001",
+      "Xindong Wu 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2017.2659740"
+  },
+  {
+    "key": "journals/tkde/ZhangWS19",
+    "title": "Ensemble Learning from Crowds",
+    "authors": [
+      "Jing Zhang 0015",
+      "Ming Wu 0004",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2018.2860992"
+  },
+  {
+    "key": "journals/tkde/0015S19",
+    "title": "Fog-enabled Event Processing Based on IoT Resource Models",
+    "authors": [
+      "Yang Zhang 0015",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2018.2867504"
+  },
+  {
+    "key": "journals/tnn/0015S019",
+    "title": "Crowdsourced Label Aggregation Using Bilayer Collaborative Clustering",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Jian Wu 0002"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2019,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2018.2890148"
+  },
+  {
+    "key": "conf/aaai/ZhaoZLXLZSZ19",
+    "title": "Where to Go Next: A Spatio-Temporal Gated Network for Next POI Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Haifeng Zhu",
+      "Yanchi Liu",
+      "Jiajie Xu 0001",
+      "Zhixu Li",
+      "Fuzhen Zhuang",
+      "Victor S. Sheng",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "AAAI",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v33i01.33015877"
+  },
+  {
+    "key": "conf/aaai/Sheng019",
+    "title": "Machine Learning with Crowdsourcing: A Brief Summary of the Past Research and Future Directions",
+    "authors": [
+      "Victor S. Sheng",
+      "Jing Zhang 0015"
+    ],
+    "venue": "AAAI",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v33i01.33019837"
+  },
+  {
+    "key": "conf/dasfaa/ZhangZLXF0SC19",
+    "title": "AdaCML: Adaptive Collaborative Metric Learning for Recommendation",
+    "authors": [
+      "Tingting Zhang",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Jiajie Xu 0001",
+      "Junhua Fang",
+      "Lei Zhao 0001",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "DASFAA (2)",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-18579-4_18"
+  },
+  {
+    "key": "conf/dasfaa/LuoZLXLZSC19",
+    "title": "Adaptive Attention-Aware Gated Recurrent Unit for Sequential Recommendation",
+    "authors": [
+      "Anjing Luo",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Jiajie Xu 0001",
+      "Zhixu Li",
+      "Lei Zhao 0001",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "DASFAA (2)",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-18579-4_19"
+  },
+  {
+    "key": "conf/dasfaa/LiuZLXFZSC19",
+    "title": "Attention and Convolution Enhanced Memory Network for Sequential Recommendation",
+    "authors": [
+      "Jian Liu 0001",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Jiajie Xu 0001",
+      "Junhua Fang",
+      "Lei Zhao 0001",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "DASFAA (2)",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-18579-4_20"
+  },
+  {
+    "key": "conf/ewsn/LiuLSZY19",
+    "title": "A Centralized Energy-Efficient Wireless Sensor Network Routing Protocol for the Static Sensor Nodes",
+    "authors": [
+      "Gang Liu",
+      "Zhaobin Liu",
+      "Victor S. Sheng",
+      "Liang Zhang",
+      "Yuanfeng Yang"
+    ],
+    "venue": "EWSN",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://dl.acm.org/citation.cfm?id=3324415"
+  },
+  {
+    "key": "conf/ijcai/XuZLSXZFZ19",
+    "title": "Graph Contextualized Self-Attention Network for Session-based Recommendation",
+    "authors": [
+      "Chengfeng Xu",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Fuzhen Zhuang",
+      "Junhua Fang",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "IJCAI",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.24963/ijcai.2019/547"
+  },
+  {
+    "key": "conf/ijcai/ZhangZLSXWLZ19",
+    "title": "Feature-level Deeper Self-Attention Network for Sequential Recommendation",
+    "authors": [
+      "Tingting Zhang",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Deqing Wang 0001",
+      "Guanfeng Liu 0001",
+      "Xiaofang Zhou 0001"
+    ],
+    "venue": "IJCAI",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.24963/ijcai.2019/600"
+  },
+  {
+    "key": "conf/wise/QianZLF0SC19",
+    "title": "Interaction Graph Neural Network for News Recommendation",
+    "authors": [
+      "Yongye Qian",
+      "Pengpeng Zhao 0001",
+      "Zhixu Li",
+      "Junhua Fang",
+      "Lei Zhao 0001",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WISE",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-34223-4_38"
+  },
+  {
+    "key": "conf/www/XuZLXSCZX19",
+    "title": "Recurrent Convolutional Neural Network for Sequential Recommendation",
+    "authors": [
+      "Chengfeng Xu",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Jiajie Xu 0001",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002",
+      "Xiaofang Zhou 0001",
+      "Hui Xiong 0001"
+    ],
+    "venue": "WWW",
+    "year": 2019,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3308558.3313408"
+  },
+  {
+    "key": "journals/corr/abs-1905-07893",
+    "title": "Adaptive DDoS attack detection method based on multiple-kernel learning",
+    "authors": [
+      "Jieren Cheng",
+      "Chen Zhang 0009",
+      "Xiangyan Tang",
+      "Victor S. Sheng",
+      "Zhe Dong",
+      "Junqi Li",
+      "Jing Chen"
+    ],
+    "venue": "CoRR",
+    "year": 2019,
+    "isJournal": true,
+    "url": "http://arxiv.org/abs/1905.07893"
+  },
+  {
+    "key": "journals/corr/abs-1905-13030",
+    "title": "Deep Cross Networks with Aesthetic Preference for Cross-domain Recommendation",
+    "authors": [
+      "Jian Liu 0001",
+      "Pengpeng Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Fuzhen Zhuang",
+      "Jiajie Xu 0001",
+      "Xiaofang Zhou 0001",
+      "Hui Xiong 0001"
+    ],
+    "venue": "CoRR",
+    "year": 2019,
+    "isJournal": true,
+    "url": "http://arxiv.org/abs/1905.13030"
+  },
+  {
+    "key": "journals/corr/abs-1906-08204",
+    "title": "A Novel DDoS Attack Detection Method Using Optimized Generalized Multiple Kernel Learning",
+    "authors": [
+      "Jieren Cheng",
+      "Junqi Li",
+      "Xiangyan Tang",
+      "Victor S. Sheng",
+      "Chen Zhang 0009",
+      "Mengyang Li"
+    ],
+    "venue": "CoRR",
+    "year": 2019,
+    "isJournal": true,
+    "url": "http://arxiv.org/abs/1906.08204"
+  },
+  {
+    "key": "journals/access/ChenZXLZLSC18",
+    "title": "Exploiting Visual Contents in Posters and Still Frames for Movie Recommendation",
+    "authors": [
+      "Xiaojie Chen 0004",
+      "Pengpeng Zhao 0001",
+      "Jiajie Xu 0001",
+      "Zhixu Li",
+      "Lei Zhao 0001",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "IEEE Access",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/ACCESS.2018.2879971"
+  },
+  {
+    "key": "journals/eswa/WangSW18",
+    "title": "Document-specific keyphrase candidate search and ranking",
+    "authors": [
+      "Qingren Wang",
+      "Victor S. Sheng",
+      "Xindong Wu 0001"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2017.12.031"
+  },
+  {
+    "key": "journals/fcsc/ZhouZSXLWC18",
+    "title": "Efficient sampling methods for characterizing POIs on maps based on road networks",
+    "authors": [
+      "Ziting Zhou",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Zhixu Li",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Frontiers Comput. Sci.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11704-016-6146-6"
+  },
+  {
+    "key": "journals/ijprai/WuGSZC18",
+    "title": "An Active Learning Approach for Multi-Label Image Classification with Sample Noise",
+    "authors": [
+      "Jian Wu 0002",
+      "Anqian Guo",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Int. J. Pattern Recognit. Artif. Intell.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1142/S0218001418500052"
+  },
+  {
+    "key": "journals/isci/GuSSZL18",
+    "title": "Sparse regression with output correlation for cardiac ejection fraction estimation",
+    "authors": [
+      "Bin Gu 0001",
+      "Yingying Shan",
+      "Victor S. Sheng",
+      "Yuhui Zheng",
+      "Shuo Li 0001"
+    ],
+    "venue": "Inf. Sci.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.ins.2017.09.026"
+  },
+  {
+    "key": "journals/jcst/ZhaoZLZLXZS18",
+    "title": "A Generative Model Approach for Geo-Social Group Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Haifeng Zhu",
+      "Yanchi Liu",
+      "Ziting Zhou",
+      "Zhixu Li",
+      "Jia-Jie Xu 0001",
+      "Lei Zhao 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "J. Comput. Sci. Technol.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11390-018-1852-1"
+  },
+  {
+    "key": "journals/nca/ShuSL18",
+    "title": "Learning from crowds with active learning and self-healing",
+    "authors": [
+      "Zhenyu Shu",
+      "Victor S. Sheng",
+      "Jingjing Li"
+    ],
+    "venue": "Neural Comput. Appl.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s00521-017-2878-y"
+  },
+  {
+    "key": "journals/pr/GuQGSZ18",
+    "title": "Chunk incremental learning for cost-sensitive hinge loss support vector machine",
+    "authors": [
+      "Bin Gu 0001",
+      "Xin Quan",
+      "Yunhua Gu",
+      "Victor S. Sheng",
+      "Guansheng Zheng"
+    ],
+    "venue": "Pattern Recognit.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.patcog.2018.05.023"
+  },
+  {
+    "key": "journals/scn/ChengZTSDL18",
+    "title": "Adaptive DDoS Attack Detection Method Based on Multiple-Kernel Learning",
+    "authors": [
+      "Jieren Cheng",
+      "Chen Zhang 0009",
+      "Xiangyan Tang",
+      "Victor S. Sheng",
+      "Zhe Dong",
+      "Junqi Li"
+    ],
+    "venue": "Secur. Commun. Networks",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2018/5198685"
+  },
+  {
+    "key": "journals/scn/ChengLTSLG18",
+    "title": "Flow Correlation Degree Optimization Driven Random Forest for Detecting DDoS Attacks in Cloud Computing",
+    "authors": [
+      "Jieren Cheng",
+      "Mengyang Li",
+      "Xiangyan Tang",
+      "Victor S. Sheng",
+      "Yifu Liu",
+      "Wei Guo 0011"
+    ],
+    "venue": "Secur. Commun. Networks",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2018/6459326"
+  },
+  {
+    "key": "journals/sensors/LiuMLSZL18",
+    "title": "Access Control Model Based on Time Synchronization Trust in Wireless Sensor Networks",
+    "authors": [
+      "Zhaobin Liu",
+      "Qiang Ma 0007",
+      "Wenzhi Liu",
+      "Victor S. Sheng",
+      "Liang Zhang",
+      "Gang Liu"
+    ],
+    "venue": "Sensors",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.3390/s18072107"
+  },
+  {
+    "key": "journals/tnn/ZhangSLW18",
+    "title": "Improving Crowdsourced Label Quality Using Noise Correction",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Tao Li 0001",
+      "Xindong Wu 0001"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2017.2677468"
+  },
+  {
+    "key": "journals/tnn/GuS18",
+    "title": "A Solution Path Algorithm for General Parametric Quadratic Programming Problem",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2018,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2017.2771456"
+  },
+  {
+    "key": "conf/apweb/ZhuZLXZS18",
+    "title": "Exploiting Implicit Social Relationship for Point-of-Interest Recommendation",
+    "authors": [
+      "Haifeng Zhu",
+      "Pengpeng Zhao 0001",
+      "Zhixu Li",
+      "Jiajie Xu 0001",
+      "Lei Zhao 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "APWeb/WAIM (2)",
+    "year": 2018,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-96893-3_21"
+  },
+  {
+    "key": "conf/icccsec/ZhongLLLCS18",
+    "title": "An Adaptive Construction Test Method Based on Geometric Calculation for Linearly Separable Problems",
+    "authors": [
+      "Shuiming Zhong",
+      "Xiaoxiang Lu",
+      "Meng Li",
+      "Chengguang Liu",
+      "Yong Cheng",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICCCS (6)",
+    "year": 2018,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-00021-9_36"
+  },
+  {
+    "key": "conf/icccsec/WangSL18",
+    "title": "Exploring Methods of Assessing Influence Relevance of News Articles",
+    "authors": [
+      "Qingren Wang",
+      "Victor S. Sheng",
+      "Zhaobin Liu"
+    ],
+    "venue": "ICCCS (6)",
+    "year": 2018,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-030-00021-9_47"
+  },
+  {
+    "key": "conf/isc2/LyuHSWFF18",
+    "title": "Coarse to Fine: Multi-label Image Classification with Global/Local Attention",
+    "authors": [
+      "Fan Lyu",
+      "Fuyuan Hu",
+      "Victor S. Sheng",
+      "Zhengtian Wu",
+      "Qiming Fu 0001",
+      "Baochuan Fu"
+    ],
+    "venue": "ISC2",
+    "year": 2018,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ISC2.2018.8656664"
+  },
+  {
+    "key": "journals/corr/abs-1806-06671",
+    "title": "Where to Go Next: A Spatio-temporal LSTM model for Next POI Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Haifeng Zhu",
+      "Yanchi Liu",
+      "Zhixu Li",
+      "Jiajie Xu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "CoRR",
+    "year": 2018,
+    "isJournal": true,
+    "url": "http://arxiv.org/abs/1806.06671"
+  },
+  {
+    "key": "journals/cin/LiZSXWC17",
+    "title": "Refining Automatically Extracted Knowledge Bases Using Crowdsourcing",
+    "authors": [
+      "Chunhua Li 0003",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Xuefeng Xian",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Comput. Intell. Neurosci.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2017/4092135"
+  },
+  {
+    "key": "journals/iet-cvi/WuYS0ZC17",
+    "title": "Active learning with label correlation exploration for multi-label image classification",
+    "authors": [
+      "Jian Wu 0002",
+      "Chen Ye",
+      "Victor S. Sheng",
+      "Jing Zhang 0015",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "IET Comput. Vis.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1049/iet-cvi.2016.0243"
+  },
+  {
+    "key": "journals/isci/ZhangSLWW17",
+    "title": "Consensus algorithms for biased labeling in crowdsourcing",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Qianmu Li",
+      "Jian Wu 0002",
+      "Xindong Wu 0001"
+    ],
+    "venue": "Inf. Sci.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.ins.2016.12.026"
+  },
+  {
+    "key": "journals/kbs/AiWCS17",
+    "title": "Broaden the minority class space for decision tree induction using antigen-derived detectors",
+    "authors": [
+      "Xusheng Ai",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002",
+      "Victor S. Sheng"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2017.09.029"
+  },
+  {
+    "key": "journals/pami/GuSTRL17",
+    "title": "Cross Validation Through Two-Dimensional Solution Surface for Cost-Sensitive SVM",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng",
+      "KengYeow Tay",
+      "Walter Romano",
+      "Shuo Li 0001"
+    ],
+    "venue": "IEEE Trans. Pattern Anal. Mach. Intell.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TPAMI.2016.2578326"
+  },
+  {
+    "key": "journals/tmm/WuZSZYZC17",
+    "title": "Weak-Labeled Active Learning With Conditional Label Dependence for Multilabel Image Classification",
+    "authors": [
+      "Jian Wu 0002",
+      "Shiquan Zhao",
+      "Victor S. Sheng",
+      "Jing Zhang 0015",
+      "Chen Ye",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "IEEE Trans. Multim.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TMM.2017.2652065"
+  },
+  {
+    "key": "journals/tnn/GuS17",
+    "title": "A Robust Regularization Path Algorithm for &#957;-Support Vector Classification",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2016.2527796"
+  },
+  {
+    "key": "journals/tnn/GuSS17",
+    "title": "Structural Minimax Probability Machine",
+    "authors": [
+      "Bin Gu 0001",
+      "Xingming Sun",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2016.2544779"
+  },
+  {
+    "key": "journals/www/ZhaoFSLXWC17",
+    "title": "Monochromatic and bichromatic ranked reverse boolean spatial keyword nearest neighbors search",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Hailin Fang",
+      "Victor S. Sheng",
+      "Zhixu Li",
+      "Jiajie Xu 0001",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "World Wide Web",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11280-016-0399-8"
+  },
+  {
+    "key": "journals/www/ZhaoJXSLLWC17",
+    "title": "Location-aware publish/subscribe index with complex boolean expressions",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Hanhan Jiang",
+      "Jiajie Xu 0001",
+      "Victor S. Sheng",
+      "Guanfeng Liu 0001",
+      "An Liu 0002",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "World Wide Web",
+    "year": 2017,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s11280-017-0439-z"
+  },
+  {
+    "key": "conf/aaai/WangSW17",
+    "title": "Keyphrase Extraction with Sequential Pattern Mining",
+    "authors": [
+      "Qingren Wang",
+      "Victor S. Sheng",
+      "Xindong Wu 0001"
+    ],
+    "venue": "AAAI",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v31i1.11075"
+  },
+  {
+    "key": "conf/icbk/WangSH17",
+    "title": "Keyphrase Extraction Using Sequential Pattern Mining and Entropy",
+    "authors": [
+      "Qingren Wang",
+      "Victor S. Sheng",
+      "Chenyi Hu"
+    ],
+    "venue": "ICBK",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICBK.2017.20"
+  },
+  {
+    "key": "conf/icdm/ZhaoXLZ0SX17",
+    "title": "Exploiting Hierarchical Structures for POI Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Xiefeng Xu",
+      "Yanchi Liu",
+      "Ziting Zhou",
+      "Kai Zheng 0001",
+      "Victor S. Sheng",
+      "Hui Xiong 0001"
+    ],
+    "venue": "ICDM",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDM.2017.75"
+  },
+  {
+    "key": "conf/icmcs/GuoWSZC17",
+    "title": "Multi-label active learning with low-rank mapping for image classification",
+    "authors": [
+      "Anqian Guo",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ICME",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICME.2017.8019412"
+  },
+  {
+    "key": "conf/mm/ZhaoXLS0X17",
+    "title": "Photo2Trip: Exploiting Visual Contents in Geo-tagged Photos for Personalized Tour Recommendation",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Xiefeng Xu",
+      "Yanchi Liu",
+      "Victor S. Sheng",
+      "Kai Zheng 0001",
+      "Hui Xiong 0001"
+    ],
+    "venue": "ACM Multimedia",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3123266.3123336"
+  },
+  {
+    "key": "conf/mm/WuGSZCL17",
+    "title": "Adaptive Low-Rank Multi-Label Active Learning for Image Classification",
+    "authors": [
+      "Jian Wu 0002",
+      "Anqian Guo",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002",
+      "Hua Li 0003"
+    ],
+    "venue": "ACM Multimedia",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3123266.3123388"
+  },
+  {
+    "key": "conf/sigir/ZhangSL17",
+    "title": "Label Aggregation for Crowdsourcing with Bi-Layer Clustering",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Tao Li 0001"
+    ],
+    "venue": "SIGIR",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/3077136.3080679"
+  },
+  {
+    "key": "conf/wise/LongZSLXWC17",
+    "title": "Social Personalized Ranking Embedding for Next POI Recommendation",
+    "authors": [
+      "Yan Long",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Guanfeng Liu 0001",
+      "Jiajie Xu 0001",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WISE (1)",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-68783-4_7"
+  },
+  {
+    "key": "reference/ml/LingS17",
+    "title": "Class Imbalance Problem",
+    "authors": [
+      "Charles X. Ling",
+      "Victor S. Sheng"
+    ],
+    "venue": "Encyclopedia of Machine Learning and Data Mining",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-1-4899-7687-1_110"
+  },
+  {
+    "key": "reference/ml/LingS17a",
+    "title": "Cost-Sensitive Learning",
+    "authors": [
+      "Charles X. Ling",
+      "Victor S. Sheng"
+    ],
+    "venue": "Encyclopedia of Machine Learning and Data Mining",
+    "year": 2017,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-1-4899-7687-1_181"
+  },
+  {
+    "key": "journals/air/ZhangWS16",
+    "title": "Learning from crowdsourced labeled data: a survey",
+    "authors": [
+      "Jing Zhang 0015",
+      "Xindong Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Artif. Intell. Rev.",
+    "year": 2016,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10462-016-9491-9"
+  },
+  {
+    "key": "journals/cin/XianZSFGYC16",
+    "title": "Stratification-Based Outlier Detection over the Deep Web",
+    "authors": [
+      "Xuefeng Xian",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Ligang Fang",
+      "Caidong Gu",
+      "Yuanfeng Yang",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Comput. Intell. Neurosci.",
+    "year": 2016,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2016/7386517"
+  },
+  {
+    "key": "journals/eswa/NicholsonSZ16",
+    "title": "Label noise correction and application in crowdsourcing",
+    "authors": [
+      "Bryce Nicholson",
+      "Victor S. Sheng",
+      "Jing Zhang 0015"
+    ],
+    "venue": "Expert Syst. Appl.",
+    "year": 2016,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.eswa.2016.09.003"
+  },
+  {
+    "key": "journals/ijprai/YanWS16",
+    "title": "A Double Weighted Naive Bayes with Niching Cultural Algorithm for Multi-Label Classification",
+    "authors": [
+      "Xuesong Yan 0001",
+      "Qinghua Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Int. J. Pattern Recognit. Artif. Intell.",
+    "year": 2016,
+    "isJournal": true,
+    "url": "https://doi.org/10.1142/S0218001416500130"
+  },
+  {
+    "key": "journals/kbs/LiSJL16",
+    "title": "Noise filtering to improve data and model quality for crowdsourcing",
+    "authors": [
+      "Chaoqun Li 0001",
+      "Victor S. Sheng",
+      "Liangxiao Jiang",
+      "Hongwei Li 0003"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2016,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2016.06.003"
+  },
+  {
+    "key": "journals/tkde/ZhangSWW16",
+    "title": "Multi-Class Ground Truth Inference in Crowdsourcing with Clustering",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Jian Wu 0002",
+      "Xindong Wu 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2016,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2015.2504974"
+  },
+  {
+    "key": "conf/dasfaa/JiangZSXLWC16",
+    "title": "An Efficient Location-Aware Top-k Subscription Matching for Publish/Subscribe with Boolean Expressions",
+    "authors": [
+      "Hanhan Jiang",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "An Liu 0002",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "DASFAA (2)",
+    "year": 2016,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-32049-6_21"
+  },
+  {
+    "key": "conf/icmcs/WuZSZC16",
+    "title": "Multi-label active learning for image classification with asymmetrical conditional dependence",
+    "authors": [
+      "Jian Wu 0002",
+      "Shiquan Zhao",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ICME",
+    "year": 2016,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICME.2016.7552899"
+  },
+  {
+    "key": "conf/monterey/LiuZSL16",
+    "title": "Social Recommendation Terms: Probabilistic Explanation Optimization",
+    "authors": [
+      "Jie Liu",
+      "Lin Zhang 0009",
+      "Victor S. Sheng",
+      "Yuanjun Laili"
+    ],
+    "venue": "Monterey Workshop",
+    "year": 2016,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-61994-1_15"
+  },
+  {
+    "key": "conf/waim/LiZSLLWC16",
+    "title": "A Hybrid Machine-Crowdsourcing Approach for Web Table Matching and Cleaning",
+    "authors": [
+      "Chunhua Li 0003",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Zhixu Li",
+      "Guanfeng Liu 0001",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WAIM (2)",
+    "year": 2016,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-39958-4_11"
+  },
+  {
+    "key": "journals/cin/AiWSZC15",
+    "title": "Immune Centroids Oversampling Method for Binary Classification",
+    "authors": [
+      "Xusheng Ai",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "Comput. Intell. Neurosci.",
+    "year": 2015,
+    "isJournal": true,
+    "url": "https://doi.org/10.1155/2015/109806"
+  },
+  {
+    "key": "journals/jmlr/ZhangSNW15",
+    "title": "CEKA: a tool for mining the wisdom of crowds",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Bryce Nicholson",
+      "Xindong Wu 0001"
+    ],
+    "venue": "J. Mach. Learn. Res.",
+    "year": 2015,
+    "isJournal": true,
+    "url": "https://dl.acm.org/doi/10.5555/2789272.2912090"
+  },
+  {
+    "key": "journals/nn/GuSWHOL15",
+    "title": "Incremental learning for &#957;-Support Vector Regression",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng",
+      "Zhijie Wang 0003",
+      "Derek Ho",
+      "Said Osman",
+      "Shuo Li 0001"
+    ],
+    "venue": "Neural Networks",
+    "year": 2015,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.neunet.2015.03.013"
+  },
+  {
+    "key": "journals/tcyb/ZhangWS15",
+    "title": "Active Learning With Imbalanced Multiple Noisy Labeling",
+    "authors": [
+      "Jing Zhang 0015",
+      "Xindong Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Cybern.",
+    "year": 2015,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TCYB.2014.2344674"
+  },
+  {
+    "key": "journals/tkde/ZhangWS15",
+    "title": "Imbalanced Multiple Noisy Labeling",
+    "authors": [
+      "Jing Zhang 0015",
+      "Xindong Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2015,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2014.2327039"
+  },
+  {
+    "key": "journals/tnn/GuSTRL15",
+    "title": "Incremental Support Vector Learning for Ordinal Regression",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng",
+      "KengYeow Tay",
+      "Walter Romano",
+      "Shuo Li 0001"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2015,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2014.2342533"
+  },
+  {
+    "key": "conf/adc/KuangZSWLLC15",
+    "title": "TK-SK: Textual-Restricted K Spatial Keyword Query on Road Networks",
+    "authors": [
+      "Xiaopeng Kuang",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Jian Wu 0002",
+      "Zhixu Li",
+      "Guanfeng Liu 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ADC",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-19548-3_14"
+  },
+  {
+    "key": "conf/adc/FangZSWXLC15",
+    "title": "Effective Spatial Keyword Query Processing on Road Networks",
+    "authors": [
+      "Hailin Fang",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Jian Wu 0002",
+      "Jiajie Xu 0001",
+      "An Liu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ADC",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-19548-3_16"
+  },
+  {
+    "key": "conf/apweb/GaoZSLLWC15",
+    "title": "EPEMS: An Entity Matching System for E-Commerce Products",
+    "authors": [
+      "Lei Gao",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Zhixu Li",
+      "An Liu 0002",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "APWeb",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-25255-1_74"
+  },
+  {
+    "key": "conf/cikm/AiWSYZC15",
+    "title": "Best First Over-Sampling for Multilabel Classification",
+    "authors": [
+      "Xusheng Ai",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Yufeng Yao",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "CIKM",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/2806416.2806634"
+  },
+  {
+    "key": "conf/cikm/ZhangSWFW15",
+    "title": "Improving Label Quality in Crowdsourcing Using Noise Correction",
+    "authors": [
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Jian Wu 0002",
+      "Xiaoqin Fu",
+      "Xindong Wu 0001"
+    ],
+    "venue": "CIKM",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/2806416.2806627"
+  },
+  {
+    "key": "conf/dasfaa/ZhaoKSXWC15",
+    "title": "Scalable Top- k Spatial Image Search on Road Networks",
+    "authors": [
+      "Pengpeng Zhao 0001",
+      "Xiaopeng Kuang",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "DASFAA (2)",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-18123-3_23"
+  },
+  {
+    "key": "conf/dsaa/NicholsonZSW15",
+    "title": "Label noise correction methods",
+    "authors": [
+      "Bryce Nicholson",
+      "Jing Zhang 0015",
+      "Victor S. Sheng",
+      "Zhiheng Wang"
+    ],
+    "venue": "DSAA",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/DSAA.2015.7344791"
+  },
+  {
+    "key": "conf/icip/NicholsonSZ15",
+    "title": "Noise correction of image labeling in crowdsourcing",
+    "authors": [
+      "Bryce Nicholson",
+      "Victor S. Sheng",
+      "Jing Zhang 0015"
+    ],
+    "venue": "ICIP",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICIP.2015.7351042"
+  },
+  {
+    "key": "conf/icip/YeWSZC15",
+    "title": "Multi-label active learning with label correlation for image classification",
+    "authors": [
+      "Chen Ye",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ICIP",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICIP.2015.7351442"
+  },
+  {
+    "key": "conf/icmla/ShuSZWZC15",
+    "title": "Integrating Active Learning with Supervision for Crowdsourcing Generalization",
+    "authors": [
+      "Zhenyu Shu",
+      "Victor S. Sheng",
+      "Yang Zhang 0015",
+      "Dianhong Wang",
+      "Jing Zhang 0015",
+      "Heng Chen"
+    ],
+    "venue": "ICMLA",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICMLA.2015.13"
+  },
+  {
+    "key": "conf/icmla/LiSSCJY15",
+    "title": "Learning from the Crowd with Neural Network",
+    "authors": [
+      "Jingjing Li",
+      "Victor S. Sheng",
+      "Zhenyu Shu",
+      "Yanxia Cheng",
+      "Yuqin Jin",
+      "Yuan-feng Yan"
+    ],
+    "venue": "ICMLA",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICMLA.2015.14"
+  },
+  {
+    "key": "conf/ijcai/GuSL15",
+    "title": "Bi-Parameter Space Partition for Cost-Sensitive SVM",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng",
+      "Shuo Li 0001"
+    ],
+    "venue": "IJCAI",
+    "year": 2015,
+    "isJournal": false,
+    "url": "http://ijcai.org/Abstract/15/497"
+  },
+  {
+    "key": "conf/isica/YanLWS15",
+    "title": "A Double Weighted Naive Bayes for Multi-label Classification",
+    "authors": [
+      "Xuesong Yan 0001",
+      "Wei Li 0221",
+      "Qinghua Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "ISICA",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-981-10-0356-1_40"
+  },
+  {
+    "key": "conf/micai/NicholsonSZWX15",
+    "title": "Improving Label Accuracy by Filtering Low-Quality Workers in Crowdsourcing",
+    "authors": [
+      "Bryce Nicholson",
+      "Victor S. Sheng",
+      "Jing Zhang 0015",
+      "Zhiheng Wang",
+      "Xuefeng Xian"
+    ],
+    "venue": "MICAI (1)",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-27060-9_45"
+  },
+  {
+    "key": "conf/mir/YeWSZZC15",
+    "title": "Multi-Label Active Learning with Chi-Square Statistics for Image Classification",
+    "authors": [
+      "Chen Ye",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Shiquan Zhao",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ICMR",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/2671188.2749365"
+  },
+  {
+    "key": "conf/mm/ZhaoWSYZC15",
+    "title": "Weak Labeled Multi-Label Active Learning for Image Classification",
+    "authors": [
+      "Shiquan Zhao",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Chen Ye",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ACM Multimedia",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/2733373.2806298"
+  },
+  {
+    "key": "conf/pakdd/AiWSZYC15",
+    "title": "Immune Centroids Over-Sampling Method for Multi-Class Classification",
+    "authors": [
+      "Xusheng Ai",
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Pengpeng Zhao 0001",
+      "Yufeng Yao",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "PAKDD (1)",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-18038-0_20"
+  },
+  {
+    "key": "conf/pcm/WuYSYZC15",
+    "title": "Semi-automatic Labeling with Active Learning for Multi-label Image Classification",
+    "authors": [
+      "Jian Wu 0002",
+      "Chen Ye",
+      "Victor S. Sheng",
+      "Yufeng Yao",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "PCM (1)",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-24075-6_46"
+  },
+  {
+    "key": "conf/waim/XuZSLZWC15",
+    "title": "Batch Mode Active Learning for Networked Data with Optimal Subset Selection",
+    "authors": [
+      "Haihui Xu",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Guanfeng Liu 0001",
+      "Lei Zhao 0001",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WAIM",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-21042-1_8"
+  },
+  {
+    "key": "conf/waim/LiuZSLLWC15",
+    "title": "RPCV: Recommend Potential Customers to Vendors in Location-Based Social Network",
+    "authors": [
+      "Yuanliu Liu",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Zhixu Li",
+      "An Liu 0002",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WAIM",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-21042-1_22"
+  },
+  {
+    "key": "conf/waim/ZhouZSXLWC15",
+    "title": "Effective Sampling of Points of Interests on Maps Based on Road Networks",
+    "authors": [
+      "Ziting Zhou",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Jiajie Xu 0001",
+      "Zhixu Li",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WAIM",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-21042-1_63"
+  },
+  {
+    "key": "conf/wise/FangZSLXWC15",
+    "title": "Ranked Reverse Boolean Spatial Keyword Nearest Neighbors Search",
+    "authors": [
+      "Hailin Fang",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Zhixu Li",
+      "Jiajie Xu 0001",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WISE (1)",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-26190-4_7"
+  },
+  {
+    "key": "conf/wise/JiangZSLLWC15",
+    "title": "An Efficient Location-Aware Publish/Subscribe Index with Boolean Expressions",
+    "authors": [
+      "Hanhan Jiang",
+      "Pengpeng Zhao 0001",
+      "Victor S. Sheng",
+      "Guanfeng Liu 0001",
+      "An Liu 0002",
+      "Jian Wu 0002",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "WISE (1)",
+    "year": 2015,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-319-26190-4_15"
+  },
+  {
+    "key": "journals/datamine/IpeirotisPSW14",
+    "title": "Repeated labeling using multiple noisy labelers",
+    "authors": [
+      "Panagiotis G. Ipeirotis",
+      "Foster J. Provost",
+      "Victor S. Sheng",
+      "Jing Wang 0019"
+    ],
+    "venue": "Data Min. Knowl. Discov.",
+    "year": 2014,
+    "isJournal": true,
+    "url": "https://doi.org/10.1007/s10618-013-0306-1"
+  },
+  {
+    "key": "journals/kbs/ShengGFW14",
+    "title": "Cost-sensitive learning for defect escalation",
+    "authors": [
+      "Victor S. Sheng",
+      "Bin Gu 0001",
+      "Wei Fang 0007",
+      "Jian Wu 0002"
+    ],
+    "venue": "Knowl. Based Syst.",
+    "year": 2014,
+    "isJournal": true,
+    "url": "https://doi.org/10.1016/j.knosys.2014.04.033"
+  },
+  {
+    "key": "conf/icip/WuSZZC14",
+    "title": "Multi-label active learning for image classification",
+    "authors": [
+      "Jian Wu 0002",
+      "Victor S. Sheng",
+      "Jing Zhang 0015",
+      "Pengpeng Zhao 0001",
+      "Zhiming Cui 0002"
+    ],
+    "venue": "ICIP",
+    "year": 2014,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICIP.2014.7026058"
+  },
+  {
+    "key": "journals/ijwmc/YanLWS13",
+    "title": "A hybrid intelligent data classification algorithm",
+    "authors": [
+      "Xuesong Yan 0001",
+      "Wenjing Luo",
+      "Qinghua Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "Int. J. Wirel. Mob. Comput.",
+    "year": 2013,
+    "isJournal": true,
+    "url": "https://doi.org/10.1504/IJWMC.2013.057578"
+  },
+  {
+    "key": "journals/tnn/GuS13",
+    "title": "Feasibility and Finite Convergence Analysis for Accurate On-Line $\\nu$-Support Vector Machine",
+    "authors": [
+      "Bin Gu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "IEEE Trans. Neural Networks Learn. Syst.",
+    "year": 2013,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TNNLS.2013.2250300"
+  },
+  {
+    "key": "conf/aaai/EichelbergerS13",
+    "title": "Does One-Against-All or One-Against-One Improve the Performance of Multiclass Classifications?",
+    "authors": [
+      "Robert Kyle Eichelberger",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2013,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v27i1.8522"
+  },
+  {
+    "key": "conf/aaai/TawiahS13",
+    "title": "Empirical Comparison of Multi-Label Classification Algorithms",
+    "authors": [
+      "Clifford A. Tawiah",
+      "Victor S. Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2013,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v27i1.8521"
+  },
+  {
+    "key": "conf/aaai/ZhangWS13",
+    "title": "Imbalanced Multiple Noisy Labeling for Supervised Learning",
+    "authors": [
+      "Jing Zhang 0015",
+      "Xindong Wu 0001",
+      "Victor Shengli Sheng"
+    ],
+    "venue": "AAAI",
+    "year": 2013,
+    "isJournal": false,
+    "url": "https://doi.org/10.1609/aaai.v27i1.8530"
+  },
+  {
+    "key": "conf/asunam/ZhangWS13",
+    "title": "A threshold method for imbalanced multiple noisy labeling",
+    "authors": [
+      "Jing Zhang 0015",
+      "Xindong Wu 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "ASONAM",
+    "year": 2013,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/2492517.2492640"
+  },
+  {
+    "key": "conf/incdm/TawiahS13",
+    "title": "A Study on Multi-label Classification",
+    "authors": [
+      "Clifford A. Tawiah",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICDM",
+    "year": 2013,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-642-39736-3_11"
+  },
+  {
+    "key": "conf/mldm/EichelbergerS13",
+    "title": "An Empirical Study of Reducing Multiclass Classification Methodologies",
+    "authors": [
+      "Robert Kyle Eichelberger",
+      "Victor S. Sheng"
+    ],
+    "venue": "MLDM",
+    "year": 2013,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-642-39712-7_39"
+  },
+  {
+    "key": "conf/hicss/Sheng12",
+    "title": "Studying Active Learning in the Cost-Sensitive Framework",
+    "authors": [
+      "Victor S. Sheng"
+    ],
+    "venue": "HICSS",
+    "year": 2012,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/HICSS.2012.552"
+  },
+  {
+    "key": "conf/icmla/NordinHCS12",
+    "title": "Interval-Valued Centroids in K-Means Algorithms",
+    "authors": [
+      "Benjamine Nordin",
+      "Chenyi Hu",
+      "Bernard Chen 0001",
+      "Victor S. Sheng"
+    ],
+    "venue": "ICMLA (1)",
+    "year": 2012,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICMLA.2012.87"
+  },
+  {
+    "key": "journals/jcscoll/AtlaTSS11",
+    "title": "Sensitivity of different machine learning algorithms to noise",
+    "authors": [
+      "Abhinav Atla",
+      "Rahul Tada",
+      "Victor S. Sheng",
+      "Naveen K. Singireddy"
+    ],
+    "venue": "J. Comput. Sci. Coll.",
+    "year": 2011,
+    "isJournal": true,
+    "url": "https://dl.acm.org/doi/10.5555/1961574.1961594"
+  },
+  {
+    "key": "conf/icdm/Sheng11",
+    "title": "Simple Multiple Noisy Label Utilization Strategies",
+    "authors": [
+      "Victor S. Sheng"
+    ],
+    "venue": "ICDM",
+    "year": 2011,
+    "isJournal": false,
+    "url": "https://doi.org/10.1109/ICDM.2011.133"
+  },
+  {
+    "key": "conf/incdm/Sheng11",
+    "title": "Fast Data Acquisition in Cost-Sensitive Learning",
+    "authors": [
+      "Victor S. Sheng"
+    ],
+    "venue": "ICDM",
+    "year": 2011,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-642-23184-1_6"
+  },
+  {
+    "key": "conf/mldm/ShengT11",
+    "title": "Boosting Inspired Process for Improving AUC",
+    "authors": [
+      "Victor S. Sheng",
+      "Rahul Tada"
+    ],
+    "venue": "MLDM",
+    "year": 2011,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-642-23199-5_15"
+  },
+  {
+    "key": "reference/ml/LingS10",
+    "title": "Class Imbalance Problem",
+    "authors": [
+      "Charles X. Ling",
+      "Victor S. Sheng"
+    ],
+    "venue": "Encyclopedia of Machine Learning",
+    "year": 2010,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-0-387-30164-8_110"
+  },
+  {
+    "key": "reference/ml/LingS10a",
+    "title": "Cost-Sensitive Learning",
+    "authors": [
+      "Charles X. Ling",
+      "Victor S. Sheng"
+    ],
+    "venue": "Encyclopedia of Machine Learning",
+    "year": 2010,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-0-387-30164-8_181"
+  },
+  {
+    "key": "reference/dataware/ShengL09",
+    "title": "Cost-Sensitive Learning",
+    "authors": [
+      "Victor S. Sheng",
+      "Charles X. Ling"
+    ],
+    "venue": "Encyclopedia of Data Warehousing and Mining",
+    "year": 2009,
+    "isJournal": false,
+    "url": "http://www.igi-global.com/Bookstore/Chapter.aspx?TitleId=10842"
+  },
+  {
+    "key": "conf/kdd/ShengPI08",
+    "title": "Get another label? improving data quality and data mining using multiple, noisy labelers",
+    "authors": [
+      "Victor S. Sheng",
+      "Foster J. Provost",
+      "Panagiotis G. Ipeirotis"
+    ],
+    "venue": "KDD",
+    "year": 2008,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/1401890.1401965"
+  },
+  {
+    "key": "conf/ecml/ShengL07",
+    "title": "Roulette Sampling for Cost-Sensitive Learning",
+    "authors": [
+      "Victor S. Sheng",
+      "Charles X. Ling"
+    ],
+    "venue": "ECML",
+    "year": 2007,
+    "isJournal": false,
+    "url": "https://doi.org/10.1007/978-3-540-74958-5_73"
+  },
+  {
+    "key": "conf/kdd/ShengL07",
+    "title": "Partial example acquisition in cost-sensitive learning",
+    "authors": [
+      "Victor S. Sheng",
+      "Charles X. Ling"
+    ],
+    "venue": "KDD",
+    "year": 2007,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/1281192.1281261"
+  },
+  {
+    "key": "journals/tkde/LingSY06",
+    "title": "Test Strategies for Cost-Sensitive Decision Trees",
+    "authors": [
+      "Charles X. Ling",
+      "Victor S. Sheng",
+      "Qiang Yang 0001"
+    ],
+    "venue": "IEEE Trans. Knowl. Data Eng.",
+    "year": 2006,
+    "isJournal": true,
+    "url": "https://doi.org/10.1109/TKDE.2006.131"
+  },
+  {
+    "key": "conf/aaai/ShengL06",
+    "title": "Thresholding for Making Classifiers Cost-sensitive",
+    "authors": [
+      "Victor S. Sheng",
+      "Charles X. Ling"
+    ],
+    "venue": "AAAI",
+    "year": 2006,
+    "isJournal": false,
+    "url": "http://www.aaai.org/Library/AAAI/2006/aaai06-076.php"
+  },
+  {
+    "key": "conf/icml/ShengL06",
+    "title": "Feature value acquisition in testing: a sequential batch test algorithm",
+    "authors": [
+      "Victor S. Sheng",
+      "Charles X. Ling"
+    ],
+    "venue": "ICML",
+    "year": 2006,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/1143844.1143946"
+  },
+  {
+    "key": "conf/kdd/LingSBM06",
+    "title": "Maximum profit mining and its application in software development",
+    "authors": [
+      "Charles X. Ling",
+      "Victor S. Sheng",
+      "Tilmann F. W. Bruckhaus",
+      "Nazim H. Madhavji"
+    ],
+    "venue": "KDD",
+    "year": 2006,
+    "isJournal": false,
+    "url": "https://doi.org/10.1145/1150402.1150530"
+  }
+]

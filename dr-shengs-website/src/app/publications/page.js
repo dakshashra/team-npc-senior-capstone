@@ -1,3 +1,5 @@
+import fallbackPublications from "./fallback-publications.json";
+
 export const metadata = {
   title: "Publications · Machine Learning & Data Science Lab",
   description: "Publications from the lab",
@@ -108,7 +110,7 @@ async function fetchPublications() {
     });
   } catch (err) {
     console.error("Failed to fetch DBLP publications after retries:", err);
-    return [];
+    return fallbackPublications;
   }
 }
 
