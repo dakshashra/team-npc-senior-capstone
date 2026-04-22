@@ -4,6 +4,16 @@ export const metadata = {
 };
 
 export const revalidate = 86400;
+const DBLP_XML_URLS = [
+  "https://dblp.org/pid/36/4372.xml",
+  "https://dblp.uni-trier.de/pid/36/4372.xml",
+];
+const FETCH_TIMEOUT_MS = 12000;
+const MAX_RETRIES_PER_URL = 2;
+
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
 
 function extractTags(xml, tag) {
   const results = [];
@@ -26,14 +36,53 @@ function getAttribute(xml, attr) {
 }
 
 async function fetchPublications() {
+  let lastError = null;
+
   try {
-    const res = await fetch("https://dblp.org/pid/36/4372.xml", {
-      next: { revalidate: 86400 },
-    });
+    let xml = null;
 
-    if (!res.ok) throw new Error(`DBLP fetch failed: ${res.status}`);
+    for (const url of DBLP_XML_URLS) {
+      for (let attempt = 0; attempt <= MAX_RETRIES_PER_URL; attempt += 1) {
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS);
 
-    const xml = await res.text();
+          let res;
+          try {
+            res = await fetch(url, {
+              next: { revalidate: 86400 },
+              headers: {
+                "User-Agent": "machine-learning-lab-site/1.0 (+https://dr-shengs-website)",
+                Accept: "application/xml,text/xml;q=0.9,*/*;q=0.8",
+              },
+              signal: controller.signal,
+            });
+          } finally {
+            clearTimeout(timeoutId);
+          }
+
+          if (!res.ok) {
+            throw new Error(`DBLP fetch failed: ${res.status} (${url})`);
+          }
+
+          xml = await res.text();
+          if (!xml?.trim()) {
+            throw new Error(`DBLP returned empty response (${url})`);
+          }
+          break;
+        } catch (err) {
+          lastError = err;
+          if (attempt < MAX_RETRIES_PER_URL) {
+            // Brief jittered-ish backoff to smooth transient network resets on serverless.
+            await delay(400 * (attempt + 1));
+          }
+        }
+      }
+
+      if (xml) break;
+    }
+
+    if (!xml) throw lastError ?? new Error("DBLP fetch failed for all endpoints");
 
     // Split into individual <r>...</r> publication blocks
     const rBlocks = extractTags(xml, "r");
@@ -58,7 +107,7 @@ async function fetchPublications() {
       return { key, title, authors, venue, year, isJournal, url };
     });
   } catch (err) {
-    console.error("Failed to fetch DBLP publications:", err);
+    console.error("Failed to fetch DBLP publications after retries:", err);
     return [];
   }
 }
