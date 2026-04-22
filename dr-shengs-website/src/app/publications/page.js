@@ -26,41 +26,69 @@ function getAttribute(xml, attr) {
 }
 
 async function fetchPublications() {
-  try {
-    const res = await fetch("https://dblp.org/pid/36/4372.xml", {
-      next: { revalidate: 86400 },
-    });
+  const DBLP_URL = "https://dblp.org/pid/36/4372.xml";
+  const MAX_RETRIES = 3;
+  const TIMEOUT_MS = 9000;
 
-    if (!res.ok) throw new Error(`DBLP fetch failed: ${res.status}`);
+  let lastErr;
+  for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), TIMEOUT_MS);
 
-    const xml = await res.text();
+      let res;
+      try {
+        res = await fetch(DBLP_URL, {
+          signal: controller.signal,
+          next: { revalidate: 86400 },
+          headers: {
+            "User-Agent":
+              "Mozilla/5.0 (compatible; DrShengsWebsite/1.0; +https://vercel.app)",
+            Accept: "application/xml, text/xml, */*",
+          },
+        });
+      } finally {
+        clearTimeout(timer);
+      }
 
-    // Split into individual <r>...</r> publication blocks
-    const rBlocks = extractTags(xml, "r");
+      if (!res.ok) throw new Error(`DBLP fetch failed: ${res.status}`);
 
-    return rBlocks.map((block, i) => {
-      // Determine publication type from the outer element tag
-      const typeMatch = block.match(/^<(\w+)\s/);
-      const type = typeMatch ? typeMatch[1] : "unknown";
-      const isJournal = type === "article";
+      const xml = await res.text();
 
-      const key = getAttribute(block, "key") ?? `pub-${i}`;
-      const title = extractTag(block, "title")?.replace(/\.$/, "") ?? "Untitled";
-      const year = parseInt(extractTag(block, "year") ?? "0") || 0;
-      const authors = extractTags(block, "author").map((a) =>
-        // Strip any orcid or pid attributes from author text
-        a.replace(/<[^>]+>/g, "").trim()
-      );
-      const venue =
-        extractTag(block, "journal") ?? extractTag(block, "booktitle") ?? "";
-      const url = extractTag(block, "ee") ?? null;
+      // Split into individual <r>...</r> publication blocks
+      const rBlocks = extractTags(xml, "r");
 
-      return { key, title, authors, venue, year, isJournal, url };
-    });
-  } catch (err) {
-    console.error("Failed to fetch DBLP publications:", err);
-    return [];
+      return rBlocks.map((block, i) => {
+        // Determine publication type from the outer element tag
+        const typeMatch = block.match(/^<(\w+)\s/);
+        const type = typeMatch ? typeMatch[1] : "unknown";
+        const isJournal = type === "article";
+
+        const key = getAttribute(block, "key") ?? `pub-${i}`;
+        const title = extractTag(block, "title")?.replace(/\.$/, "") ?? "Untitled";
+        const year = parseInt(extractTag(block, "year") ?? "0") || 0;
+        const authors = extractTags(block, "author").map((a) =>
+          // Strip any orcid or pid attributes from author text
+          a.replace(/<[^>]+>/g, "").trim()
+        );
+        const venue =
+          extractTag(block, "journal") ?? extractTag(block, "booktitle") ?? "";
+        const url = extractTag(block, "ee") ?? null;
+
+        return { key, title, authors, venue, year, isJournal, url };
+      });
+    } catch (err) {
+      lastErr = err;
+      console.warn(`DBLP fetch attempt ${attempt} failed:`, err?.message ?? err);
+      // Brief back-off before retrying (except on the last attempt)
+      if (attempt < MAX_RETRIES) {
+        await new Promise((r) => setTimeout(r, attempt * 500));
+      }
+    }
   }
+
+  console.error("Failed to fetch DBLP publications after all retries:", lastErr);
+  return [];
 }
 
 function groupByYear(pubs) {
