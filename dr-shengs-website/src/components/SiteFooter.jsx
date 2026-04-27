@@ -3,73 +3,155 @@ import Link from "next/link";
 
 export function SiteFooter() {
   return (
-    <footer style={{ backgroundColor: "#757575" }} className="w-full text-black">
-      <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-start md:items-center justify-between gap-8 px-8 py-10">
+    <footer
+      style={{
+        background: "#ededed",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        textAlign: "center",
+        padding: "32px",
+        marginTop: "auto",
+      }}
+    >
+      {/* Lab name */}
+      <h2
+        style={{
+          fontFamily: "'NeuePlakBlack', Inter, sans-serif",
+          fontSize: "24px",
+          fontWeight: 800,
+          marginBottom: "20px",
+          color: "#000000",
+        }}
+      >
+        Machine Learning &amp; Data Science Lab
+      </h2>
 
-        {/* Left: lab info */}
-        <div className="flex flex-col gap-4">
-          <h2 className="text-lg font-bold leading-tight">
-            Machine Learning &amp; Data Science Lab
-          </h2>
+      {/* Email */}
+      <div style={{ marginBottom: "20px" }}>
+        <span
+          style={{
+            display: "block",
+            fontFamily: "'NeuePlakBlack', Inter, sans-serif",
+            fontWeight: 800,
+            fontSize: "14px",
+            textTransform: "uppercase",
+            marginBottom: "5px",
+            letterSpacing: "1px",
+          }}
+        >
+          Email
+        </span>
+        <p style={{ fontSize: "16px", color: "#333333", lineHeight: 1.5 }}>
+          <a
+            href="mailto:victor.sheng@ttu.edu"
+            style={{ color: "#000000", textDecoration: "underline" }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#d60000";
+              e.currentTarget.style.textDecoration = "none";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#000000";
+              e.currentTarget.style.textDecoration = "underline";
+            }}
+          >
+            victor.sheng@ttu.edu
+          </a>
+        </p>
+      </div>
 
-          {/* Email */}
-          <div>
-            <span className="text-xs font-semibold uppercase tracking-wider opacity-70">Email</span>
-            <p className="mt-0.5 text-sm">
-              <a
-                href="mailto:victor.sheng@ttu.edu"
-                className="underline underline-offset-2 hover:opacity-75 transition-opacity"
-              >
-                victor.sheng@ttu.edu
-              </a>
-            </p>
-          </div>
+      {/* Phone */}
+      <div style={{ marginBottom: "20px" }}>
+        <span
+          style={{
+            display: "block",
+            fontFamily: "'NeuePlakBlack', Inter, sans-serif",
+            fontWeight: 800,
+            fontSize: "14px",
+            textTransform: "uppercase",
+            marginBottom: "5px",
+            letterSpacing: "1px",
+          }}
+        >
+          Phone
+        </span>
+        <p style={{ fontSize: "16px", color: "#333333", lineHeight: 1.5 }}>
+          <a
+            href="tel:8068348971"
+            style={{ color: "#000000", textDecoration: "underline" }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#d60000";
+              e.currentTarget.style.textDecoration = "none";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#000000";
+              e.currentTarget.style.textDecoration = "underline";
+            }}
+          >
+            806.834.8971
+          </a>
+        </p>
+      </div>
 
-          {/* Phone */}
-          <div>
-            <span className="text-xs font-semibold uppercase tracking-wider opacity-70">Phone</span>
-            <p className="mt-0.5 text-sm">
-              <a href="tel:8068348971" className="hover:opacity-75 transition-opacity">
-                806.834.8971
-              </a>
-            </p>
-          </div>
+      {/* Address */}
+      <div style={{ marginBottom: "20px" }}>
+        <span
+          style={{
+            display: "block",
+            fontFamily: "'NeuePlakBlack', Inter, sans-serif",
+            fontWeight: 800,
+            fontSize: "14px",
+            textTransform: "uppercase",
+            marginBottom: "5px",
+            letterSpacing: "1px",
+          }}
+        >
+          Address
+        </span>
+        <p style={{ fontSize: "16px", color: "#333333", lineHeight: 1.5 }}>
+          EC 314, Texas Tech University<br />
+          Department of Computer Science<br />
+          Box 43104, Lubbock, TX 79409‑3104
+        </p>
+      </div>
 
-          {/* Address */}
-          <div>
-            <span className="text-xs font-semibold uppercase tracking-wider opacity-70">Address</span>
-            <p className="mt-0.5 text-sm leading-relaxed">
-              EC 314, Texas Tech University<br />
-              Department of Computer Science<br />
-              Box 43104, Lubbock, TX 79409‑3104
-            </p>
-          </div>
+      {/* Admin login */}
+      <div style={{ marginBottom: "20px" }}>
+        <p style={{ fontSize: "16px", color: "#333333", lineHeight: 1.5 }}>
+          <Link
+            href="/admin"
+            style={{ color: "#000000", textDecoration: "underline" }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.color = "#d60000";
+              e.currentTarget.style.textDecoration = "none";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.color = "#000000";
+              e.currentTarget.style.textDecoration = "underline";
+            }}
+          >
+            admin login
+          </Link>
+        </p>
+      </div>
 
-          {/* Admin login */}
-          <div>
-            <Link
-              href="/admin"
-              className="text-xs underline underline-offset-2 opacity-60 hover:opacity-90 transition-opacity"
-            >
-              admin login
-            </Link>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="hidden md:block h-48 w-px bg-black/20 shrink-0" />
-
-        {/* Right: CS department logo */}
-        <div className="shrink-0">
-          <Image
-            src="/footerpic.png"
-            alt="TTU Department of Computer Science"
-            width={200}
-            height={90}
-            className="h-auto w-48 object-contain"
-          />
-        </div>
-
+      {/* Logo */}
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "10px",
+        }}
+      >
+        <Image
+          src="/footerpic.png"
+          alt="TTU Department of Computer Science"
+          width={300}
+          height={100}
+          style={{ maxWidth: "300px", height: "auto", display: "block" }}
+        />
       </div>
     </footer>
   );
