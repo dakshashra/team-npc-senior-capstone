@@ -4,12 +4,27 @@ import { useEffect, useState } from "react";
 import { collection, getDocs, query } from "firebase/firestore";
 import { db } from "@/app/firebase";
 
+function toDate(val) {
+  if (!val) return null;
+  const d = val?.toDate ? val.toDate() : new Date(val);
+  return isNaN(d) ? null : d;
+}
+
 function formatDate(dateVal) {
-  if (!dateVal) return null;
-  // Firestore Timestamp
-  const d = dateVal?.toDate ? dateVal.toDate() : new Date(dateVal);
-  if (isNaN(d)) return null;
+  const d = toDate(dateVal);
+  if (!d) return null;
   return d.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+}
+
+/** Returns true if the conference date is today or in the future (date-only comparison). */
+function isFutureOrToday(dateVal) {
+  const d = toDate(dateVal);
+  if (!d) return false;
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  const confDay = new Date(d);
+  confDay.setHours(0, 0, 0, 0);
+  return confDay >= today;
 }
 
 export function NewsClient() {
@@ -39,17 +54,18 @@ export function NewsClient() {
         });
         setNewsDocs(docs);
 
-        // Fetch conferences
+        // Fetch conferences — only keep upcoming ones
         const confSnap = await getDocs(query(collection(db, "conferences")));
         const confDocs = [];
         confSnap.forEach((doc) => {
           const data = doc.data();
-          confDocs.push({
+          const entry = {
             id: doc.id,
             name: data.name || "",
             description: data.description || "",
             date: data.date || null,
-          });
+          };
+          if (isFutureOrToday(entry.date)) confDocs.push(entry);
         });
         setConferences(confDocs);
       } catch (err) {
