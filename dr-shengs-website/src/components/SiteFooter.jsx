@@ -1,45 +1,73 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function SiteFooter() {
   return (
     <footer style={{ backgroundColor: "#757575" }} className="w-full text-black">
-      <div className="flex items-center justify-center gap-8 px-8 py-10">
+      <div className="mx-auto max-w-6xl flex flex-col md:flex-row items-start md:items-center justify-between gap-8 px-8 py-10">
 
-        {/* TTU logo — left */}
-        <div className="shrink-0">
-          <Image
-            src="/ttu2.png"
-            alt="Texas Tech University"
-            width={180}
-            height={80}
-            className="h-auto w-44 object-contain"
-          />
+        {/* Left: lab info */}
+        <div className="flex flex-col gap-4">
+          <h2 className="text-lg font-bold leading-tight">
+            Machine Learning &amp; Data Science Lab
+          </h2>
+
+          {/* Email */}
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-70">Email</span>
+            <p className="mt-0.5 text-sm">
+              <a
+                href="mailto:victor.sheng@ttu.edu"
+                className="underline underline-offset-2 hover:opacity-75 transition-opacity"
+              >
+                victor.sheng@ttu.edu
+              </a>
+            </p>
+          </div>
+
+          {/* Phone */}
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-70">Phone</span>
+            <p className="mt-0.5 text-sm">
+              <a href="tel:8068348971" className="hover:opacity-75 transition-opacity">
+                806.834.8971
+              </a>
+            </p>
+          </div>
+
+          {/* Address */}
+          <div>
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-70">Address</span>
+            <p className="mt-0.5 text-sm leading-relaxed">
+              EC 314, Texas Tech University<br />
+              Department of Computer Science<br />
+              Box 43104, Lubbock, TX 79409‑3104
+            </p>
+          </div>
+
+          {/* Admin login */}
+          <div>
+            <Link
+              href="/admin"
+              className="text-xs underline underline-offset-2 opacity-60 hover:opacity-90 transition-opacity"
+            >
+              admin login
+            </Link>
+          </div>
         </div>
 
         {/* Divider */}
-        <div className="h-28 w-px bg-black/20 shrink-0" />
+        <div className="hidden md:block h-48 w-px bg-black/20 shrink-0" />
 
-        {/* Contact + address — right */}
-        <div className="text-sm leading-relaxed">
-          <p>
-            <span className="font-semibold">Email:</span>{" "}
-            <a
-              href="mailto:victor.sheng@ttu.edu"
-              className="underline underline-offset-2 hover:text-zinc-600 transition-colors"
-            >
-              victor.sheng@ttu.edu
-            </a>
-          </p>
-          <p><span className="font-semibold">Phone:</span> 806.834.8971</p>
-          <p><span className="font-semibold">Fax:</span> 806.742.3519</p>
-          <p><span className="font-semibold">Office:</span> EC 314</p>
-
-          <div className="mt-3">
-            <p>Texas Tech University</p>
-            <p>Department of Computer Science</p>
-            <p>Box 43104</p>
-            <p>Lubbock, TX 79409−3104</p>
-          </div>
+        {/* Right: CS department logo */}
+        <div className="shrink-0">
+          <Image
+            src="/ttu2.png"
+            alt="TTU Department of Computer Science"
+            width={200}
+            height={90}
+            className="h-auto w-48 object-contain"
+          />
         </div>
 
       </div>
