@@ -5,13 +5,13 @@ import Link from "next/link";
 import { AwardsEditor } from "./sections/AwardsEditor";
 import { PeopleEditor } from "./sections/PeopleEditor";
 import { ResearchEditor } from "./sections/ResearchEditor";
-import { PublicationsEditor } from "./sections/PublicationsEditor";
+
 
 const TABS = [
   { id: "awards", label: "Awards" },
   { id: "people", label: "People" },
   { id: "research", label: "Research" },
-  { id: "publications", label: "Publications" },
+
 ];
 
 export function EditWebsiteClient() {
@@ -65,7 +65,7 @@ export function EditWebsiteClient() {
         {tab === "awards" && <AwardsEditor />}
         {tab === "people" && <PeopleEditor />}
         {tab === "research" && <ResearchEditor />}
-        {tab === "publications" && <PublicationsEditor />}
+
       </main>
     </div>
   );
