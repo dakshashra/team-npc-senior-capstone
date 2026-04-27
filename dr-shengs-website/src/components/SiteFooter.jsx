@@ -62,7 +62,7 @@ export function SiteFooter() {
         {/* Right: CS department logo */}
         <div className="shrink-0">
           <Image
-            src="/ttu2.png"
+            src="/footerpic.png"
             alt="TTU Department of Computer Science"
             width={200}
             height={90}
