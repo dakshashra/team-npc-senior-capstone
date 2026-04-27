@@ -56,6 +56,7 @@ export function NewsClient() {
           <p className="text-zinc-600">No news at this time.</p>
         ) : (
           <div className="flex flex-col gap-6 w-full">
+            <h2 className="text-2xl font-bold text-zinc-800 mb-2">Tech News</h2>
             {newsDocs.map((item) => (
               <a
                 key={item.id}
