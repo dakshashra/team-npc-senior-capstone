@@ -6,64 +6,73 @@ import os
 import re
 from datetime import datetime
 
-def strip_html(text):
-    return re.sub(r'<[^>]+>', '', text or '').strip()
 
-# ─────────────────────────────────────────
-# GRANTS: sync NSF opportunities → 'funding'
-# ─────────────────────────────────────────
-# ─────────────────────────────────────────
-# CONFERENCES: sync future CS conferences → 'conferences'
-# ─────────────────────────────────────────
+import xml.etree.ElementTree as ET
+
 def sync_conferences_to_firestore(db):
-    api_key = os.environ.get('PREDICTHQ_API_KEY')
-    api_url = "https://api.predicthq.com/v1/events/"
-
-    headers = {
-        "Authorization": f"Bearer {api_key}",
-        "Accept": "application/json"
-    }
-
-    # Dynamically get today's date so it always fetches future events
-    from datetime import datetime
-    today_str = datetime.now().strftime("%Y-%m-%d")
-
-    # Querying future tech/CS events
-    params = {
-        "q": "computer science OR software engineering OR artificial intelligence",
-        "category": "conferences",
-        "sort": "start",
-        "active.gte": today_str,
-        "limit": 20
-    }
+    # WikiCFP exposes an RSS feed for CS conferences — no API key required
+    WIKICFP_RSS = "http://www.wikicfp.com/cfp/rss?cat=cs"
 
     try:
-        response = requests.get(api_url, headers=headers, params=params, timeout=20)
+        response = requests.get(WIKICFP_RSS, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
         response.raise_for_status()
-        events = response.json().get("results", [])
-        print(f"✅ Conferences: Found {len(events)} events.")
+        root = ET.fromstring(response.content)
+        items = root.findall('./channel/item')
+        print(f"✅ Conferences: Found {len(items)} items.")
     except Exception as e:
         print(f"❌ Conferences fetch error: {e}")
         return
 
     collection_ref = db.collection('conferences')
 
-    for event in events:
+    # Clear old entries first (same pattern as news)
+    existing_docs = collection_ref.stream()
+    deleted = 0
+    for doc in existing_docs:
+        doc.reference.delete()
+        deleted += 1
+    print(f"🗑️  Deleted {deleted} old conference documents.")
+
+    for i, item in enumerate(items):
         try:
-            event_id = event.get('id', 'unknown')
-            
+            title = item.findtext('title') or 'No Title'
+            link  = item.findtext('link') or ''
+            desc  = strip_html(item.findtext('description') or '')
+
+            # WikiCFP encodes the conference date inside the description
+            # as "When: <date>" — extract it if present, else fall back to pubDate
+            date_match = re.search(r'When\s*:\s*([^\n<]+)', desc)
+            if date_match:
+                date_str = date_match.group(1).strip()
+            else:
+                date_str = item.findtext('pubDate') or 'TBD'
+
+            # Remove the "When / Where / ..." metadata lines from the description
+            # so only the human-readable summary remains
+            clean_desc = re.sub(r'(When|Where|Deadline)\s*:.*', '', desc).strip()
+            if not clean_desc:
+                clean_desc = "See link for details."
+
             doc_data = {
-                "title": event.get('title', 'No Title'),
-                "description": event.get('description') or "No description provided.",
-                "date": event.get('start', 'TBD'),  # PredictHQ returns ISO 8601 format
+                "title":       title,
+                "description": clean_desc,
+                "date":        date_str,
+                "link":        link,
                 "last_updated": firestore.SERVER_TIMESTAMP
             }
 
-            collection_ref.document(event_id).set(doc_data, merge=True)
-            print(f"📅 Synced conference: {doc_data['title']} (Date: {doc_data['date']})")
+            collection_ref.document(str(i).zfill(2)).set(doc_data)
+            print(f"🎓 Added conference: {title} ({date_str})")
 
         except Exception as e:
-            print(f"⚠️ Error processing conference {event.get('id')}: {e}")
+            print(f"⚠️ Error processing conference {i}: {e}")
+def strip_html(text):
+    return re.sub(r'<[^>]+>', '', text or '').strip()
+
+# ─────────────────────────────────────────
+# GRANTS: sync NSF opportunities → 'funding'
+# ─────────────────────────────────────────
+
 def sync_grants_to_firestore(db):
     api_key = os.environ.get('GRANTS_API_KEY')
     api_url = "https://api.simpler.grants.gov/v1/opportunities/search"
