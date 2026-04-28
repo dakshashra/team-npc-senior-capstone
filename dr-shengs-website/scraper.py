@@ -80,7 +80,8 @@ def sync_conferences_to_firestore(db):
             url     = conf.get("url", "")
             topic   = conf.get("_topic", "tech")
             cfp_end = conf.get("cfpEndDate", "")
-
+            if topic == "python":
+                topic = "AI/ML"
             location = ", ".join(filter(None, [city, country])) or "Location TBD"
             description = f"{name} is a {topic} conference taking place in {location}."
             if cfp_end:
