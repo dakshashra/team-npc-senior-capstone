@@ -11,6 +11,58 @@ def strip_html(text):
 # ─────────────────────────────────────────
 # GRANTS: sync NSF opportunities → 'funding'
 # ─────────────────────────────────────────
+# ─────────────────────────────────────────
+# CONFERENCES: sync future CS conferences → 'conferences'
+# ─────────────────────────────────────────
+def sync_conferences_to_firestore(db):
+    api_key = os.environ.get('PREDICTHQ_API_KEY')
+    api_url = "https://api.predicthq.com/v1/events/"
+
+    headers = {
+        "Authorization": f"Bearer {api_key}",
+        "Accept": "application/json"
+    }
+
+    # Dynamically get today's date so it always fetches future events
+    from datetime import datetime
+    today_str = datetime.now().strftime("%Y-%m-%d")
+
+    # Querying future tech/CS events
+    params = {
+        "q": "computer science OR software engineering OR artificial intelligence",
+        "category": "conferences",
+        "sort": "start",
+        "active.gte": today_str,
+        "limit": 20
+    }
+
+    try:
+        response = requests.get(api_url, headers=headers, params=params, timeout=20)
+        response.raise_for_status()
+        events = response.json().get("results", [])
+        print(f"✅ Conferences: Found {len(events)} events.")
+    except Exception as e:
+        print(f"❌ Conferences fetch error: {e}")
+        return
+
+    collection_ref = db.collection('conferences')
+
+    for event in events:
+        try:
+            event_id = event.get('id', 'unknown')
+            
+            doc_data = {
+                "title": event.get('title', 'No Title'),
+                "description": event.get('description') or "No description provided.",
+                "date": event.get('start', 'TBD'),  # PredictHQ returns ISO 8601 format
+                "last_updated": firestore.SERVER_TIMESTAMP
+            }
+
+            collection_ref.document(event_id).set(doc_data, merge=True)
+            print(f"📅 Synced conference: {doc_data['title']} (Date: {doc_data['date']})")
+
+        except Exception as e:
+            print(f"⚠️ Error processing conference {event.get('id')}: {e}")
 def sync_grants_to_firestore(db):
     api_key = os.environ.get('GRANTS_API_KEY')
     api_url = "https://api.simpler.grants.gov/v1/opportunities/search"
@@ -158,6 +210,7 @@ def main():
 
     sync_grants_to_firestore(db)
     sync_news_to_firestore(db)
+    sync_conferences_to_firestore(db)
 
 if __name__ == "__main__":
     main()
