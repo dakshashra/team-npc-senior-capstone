@@ -7,13 +7,8 @@ import Link from "next/link";
 const NAV_LINKS = [
   { href: "/research", label: "Research" },
   { href: "/people", label: "People" },
-  { 
-    href: "/news", 
-    label: "News",
-    subItems: [
-      { href: "/funding-opportunities", label: "Funding Opportunities" }
-    ]
-  },
+  { href: "/news", label: "News" },
+  { href: "/funding-opportunities", label: "Funding Opportunities" },
   { href: "/publications", label: "Publications" },
 ];
 
