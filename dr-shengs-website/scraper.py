@@ -4,6 +4,7 @@ from firebase_admin import credentials, firestore
 import json
 import os
 import re
+from datetime import datetime
 
 def strip_html(text):
     return re.sub(r'<[^>]+>', '', text or '').strip()
