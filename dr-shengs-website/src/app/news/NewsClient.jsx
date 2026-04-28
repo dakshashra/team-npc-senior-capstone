@@ -23,6 +23,7 @@ export function NewsClient() {
             title: data.title || "",
             description: data.description || "",
             year: data.year || "",
+            link: data.link || "",
           });
         });
 
@@ -81,6 +82,16 @@ export function NewsClient() {
                         <p className="mt-2 text-base text-zinc-600 leading-relaxed">
                           {item.description}
                         </p>
+                      )}
+                      {item.link && (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-3 inline-block text-sm font-medium text-[#CC0000] hover:underline"
+                        >
+                          Learn more →
+                        </a>
                       )}
                     </div>
                   ))}

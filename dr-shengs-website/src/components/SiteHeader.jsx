@@ -8,6 +8,7 @@ const NAV_LINKS = [
   { href: "/research", label: "Research" },
   { href: "/people", label: "People" },
   { href: "/news", label: "News" },
+  { href: "/conferences", label: "Conferences" },
   { href: "/funding-opportunities", label: "Funding Opportunities" },
   { href: "/publications", label: "Publications" },
 ];

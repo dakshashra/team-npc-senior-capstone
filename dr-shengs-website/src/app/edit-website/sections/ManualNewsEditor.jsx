@@ -13,7 +13,7 @@ import { db } from "@/app/firebase";
 import { Btn, FieldLabel, Panel, StatusLine, TextArea, TextInput } from "../editorUi";
 
 const COL = "manual-news";
-const EMPTY = { title: "", description: "", year: "" };
+const EMPTY = { title: "", description: "", year: "", link: "" };
 
 export function ManualNewsEditor() {
   const [items, setItems] = useState([]);
@@ -33,6 +33,7 @@ export function ManualNewsEditor() {
         title: String(d.data().title ?? ""),
         description: String(d.data().description ?? ""),
         year: String(d.data().year ?? ""),
+        link: String(d.data().link ?? ""),
       }));
       // Sort descending by year
       docs.sort((a, b) => b.year.localeCompare(a.year));
@@ -62,6 +63,7 @@ export function ManualNewsEditor() {
         title: adding.title.trim(),
         description: adding.description.trim(),
         year: adding.year.trim(),
+        link: adding.link.trim(),
       });
       setAdding(EMPTY);
       setStatus({ text: "News item added.", error: false });
@@ -86,6 +88,7 @@ export function ManualNewsEditor() {
         title: draft.title.trim(),
         description: draft.description.trim(),
         year: draft.year.trim(),
+        link: draft.link.trim(),
       });
       setEditingId(null);
       setStatus({ text: "News item updated.", error: false });
@@ -110,7 +113,7 @@ export function ManualNewsEditor() {
 
   function startEdit(item) {
     setEditingId(item.id);
-    setDraft({ title: item.title, description: item.description, year: item.year });
+    setDraft({ title: item.title, description: item.description, year: item.year, link: item.link });
   }
 
   return (
@@ -161,6 +164,14 @@ export function ManualNewsEditor() {
                       placeholder="e.g. 2025"
                     />
                   </div>
+                  <div>
+                    <FieldLabel>Link (optional)</FieldLabel>
+                    <TextInput
+                      value={draft.link}
+                      onChange={(e) => setDraft((d) => ({ ...d, link: e.target.value }))}
+                      placeholder="https://..."
+                    />
+                  </div>
                   <div className="flex flex-wrap gap-2">
                     <Btn onClick={() => handleSave(item.id)}>Save</Btn>
                     <Btn variant="secondary" onClick={() => setEditingId(null)}>
@@ -175,6 +186,16 @@ export function ManualNewsEditor() {
                     <p className="mt-1 text-sm text-zinc-400">{item.description}</p>
                   )}
                   <p className="mt-1 text-xs text-zinc-500">Year: {item.year}</p>
+                  {item.link && (
+                    <a
+                      href={item.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-1 block text-xs text-blue-400 hover:underline truncate"
+                    >
+                      {item.link}
+                    </a>
+                  )}
                   <div className="mt-3 flex flex-wrap gap-2">
                     <Btn variant="secondary" onClick={() => startEdit(item)}>
                       Edit
@@ -216,6 +237,14 @@ export function ManualNewsEditor() {
               value={adding.year}
               onChange={(e) => setAdding((a) => ({ ...a, year: e.target.value }))}
               placeholder="e.g. 2025"
+            />
+          </div>
+          <div>
+            <FieldLabel>Link (optional)</FieldLabel>
+            <TextInput
+              value={adding.link}
+              onChange={(e) => setAdding((a) => ({ ...a, link: e.target.value }))}
+              placeholder="https://..."
             />
           </div>
         </div>
