@@ -9,63 +9,106 @@ from datetime import datetime
 
 import xml.etree.ElementTree as ET
 
+# ─────────────────────────────────────────
+# CONFERENCES: sync upcoming CS conferences → 'conferences'
+# Source: github.com/tech-conferences/conference-data (no API key needed)
+# ─────────────────────────────────────────
+from datetime import date
+
 def sync_conferences_to_firestore(db):
-    # WikiCFP exposes an RSS feed for CS conferences — no API key required
-    WIKICFP_RSS = "http://www.wikicfp.com/cfp/rss?cat=cs"
+    current_year = datetime.now().year
+    next_year = current_year + 1
+    today = date.today()
 
-    try:
-        response = requests.get(WIKICFP_RSS, timeout=20, headers={"User-Agent": "Mozilla/5.0"})
-        response.raise_for_status()
-        root = ET.fromstring(response.content)
-        items = root.findall('./channel/item')
-        print(f"✅ Conferences: Found {len(items)} items.")
-    except Exception as e:
-        print(f"❌ Conferences fetch error: {e}")
-        return
+    # Topics that map to CS — pull both current and next year
+    TOPICS = ["data", "devops", "general", "python", "security", "javascript"]
+    RAW_BASE = "https://raw.githubusercontent.com/tech-conferences/conference-data/main/conferences"
 
+    all_conferences = []
+
+    for year in [current_year, next_year]:
+        for topic in TOPICS:
+            url = f"{RAW_BASE}/{year}/{topic}.json"
+            try:
+                resp = requests.get(url, timeout=15)
+                if resp.status_code == 404:
+                    continue  # that topic/year combo doesn't exist yet
+                resp.raise_for_status()
+                entries = resp.json()
+                for conf in entries:
+                    conf["_topic"] = topic  # tag for description
+                all_conferences.extend(entries)
+                print(f"✅ Fetched {len(entries)} {topic}/{year} conferences")
+            except Exception as e:
+                print(f"⚠️ Could not fetch {topic}/{year}: {e}")
+
+    # Filter to only upcoming conferences
+    upcoming = []
+    for conf in all_conferences:
+        start_raw = conf.get("startDate", "")
+        try:
+            conf_date = date.fromisoformat(start_raw)
+            if conf_date >= today:
+                upcoming.append(conf)
+        except ValueError:
+            pass  # skip malformed dates
+
+    # Deduplicate by (name + startDate) in case a conference appears in multiple topics
+    seen = set()
+    unique = []
+    for conf in upcoming:
+        key = (conf.get("name", ""), conf.get("startDate", ""))
+        if key not in seen:
+            seen.add(key)
+            unique.append(conf)
+
+    # Sort soonest first
+    unique.sort(key=lambda c: c.get("startDate", ""))
+
+    print(f"📅 Total upcoming unique conferences: {len(unique)}")
+
+    # Write to Firestore
     collection_ref = db.collection('conferences')
 
-    # Clear old entries first (same pattern as news)
-    existing_docs = collection_ref.stream()
-    deleted = 0
-    for doc in existing_docs:
+    # Clear old entries
+    for doc in collection_ref.stream():
         doc.reference.delete()
-        deleted += 1
-    print(f"🗑️  Deleted {deleted} old conference documents.")
 
-    for i, item in enumerate(items):
+    for i, conf in enumerate(unique):
         try:
-            title = item.findtext('title') or 'No Title'
-            link  = item.findtext('link') or ''
-            desc  = strip_html(item.findtext('description') or '')
+            name     = conf.get("name", "No Title")
+            start    = conf.get("startDate", "TBD")
+            end      = conf.get("endDate", "")
+            city     = conf.get("city", "")
+            country  = conf.get("country", "")
+            url      = conf.get("url", "")
+            topic    = conf.get("_topic", "tech")
+            cfp_end  = conf.get("cfpEndDate", "")
 
-            # WikiCFP encodes the conference date inside the description
-            # as "When: <date>" — extract it if present, else fall back to pubDate
-            date_match = re.search(r'When\s*:\s*([^\n<]+)', desc)
-            if date_match:
-                date_str = date_match.group(1).strip()
-            else:
-                date_str = item.findtext('pubDate') or 'TBD'
-
-            # Remove the "When / Where / ..." metadata lines from the description
-            # so only the human-readable summary remains
-            clean_desc = re.sub(r'(When|Where|Deadline)\s*:.*', '', desc).strip()
-            if not clean_desc:
-                clean_desc = "See link for details."
+            # Build a useful description from available fields
+            location = ", ".join(filter(None, [city, country])) or "Location TBD"
+            date_range = f"{start} – {end}" if end and end != start else start
+            description = f"{name} is a {topic} conference taking place in {location}."
+            if cfp_end:
+                description += f" Call for papers deadline: {cfp_end}."
 
             doc_data = {
-                "title":       title,
-                "description": clean_desc,
-                "date":        date_str,
-                "link":        link,
-                "last_updated": firestore.SERVER_TIMESTAMP
+                "title":        name,
+                "description":  description,
+                "date":         start,
+                "end_date":     end,
+                "location":     location,
+                "link":         url,
+                "topic":        topic,
+                "cfp_deadline": cfp_end,
+                "last_updated": firestore.SERVER_TIMESTAMP,
             }
 
-            collection_ref.document(str(i).zfill(2)).set(doc_data)
-            print(f"🎓 Added conference: {title} ({date_str})")
+            collection_ref.document(str(i).zfill(3)).set(doc_data)
+            print(f"🎓 Synced: {name} ({start}) [{topic}]")
 
         except Exception as e:
-            print(f"⚠️ Error processing conference {i}: {e}")
+            print(f"⚠️ Error syncing conference {i}: {e}")
 def strip_html(text):
     return re.sub(r'<[^>]+>', '', text or '').strip()
 

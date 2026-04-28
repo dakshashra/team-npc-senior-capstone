@@ -1,4 +1,4 @@
-name: Weekly NSF Sync
+name: Weekly Data Sync  # ← optional rename
 
 on:
   schedule:
@@ -18,8 +18,8 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        # ↓ added lxml for robust XML parsing
-        run: pip install requests firebase-admin python-dateutil newsapi-python lxml
+        # lxml no longer needed — remove it; everything else stays the same
+        run: pip install requests firebase-admin python-dateutil newsapi-python
 
       - name: Run sync script
         env:
