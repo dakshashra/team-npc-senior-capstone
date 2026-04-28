@@ -18,11 +18,12 @@ jobs:
           python-version: '3.9'
 
       - name: Install dependencies
-        run: pip install requests firebase-admin python-dateutil newsapi-python
+        run: pip install requests firebase-admin python-dateutil newsapi-python predicthq
 
       - name: Run sync script
         env:
           FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           GRANTS_API_KEY: ${{ secrets.GRANTS_API_KEY }}
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+          PREDICTHQ_API_KEY: ${{ secrets.PREDICTHQ_API_KEY }}
         run: python dr-shengs-website/scraper.py
