@@ -6,6 +6,7 @@ import { AwardsEditor } from "./sections/AwardsEditor";
 import { PeopleEditor } from "./sections/PeopleEditor";
 import { ResearchEditor } from "./sections/ResearchEditor";
 import { ConferencesEditor } from "./sections/ConferencesEditor";
+import { ManualNewsEditor } from "./sections/ManualNewsEditor";
 
 
 const TABS = [
@@ -13,6 +14,7 @@ const TABS = [
   { id: "people", label: "People" },
   { id: "research", label: "Research" },
   { id: "conferences", label: "Conferences" },
+  { id: "news", label: "News" },
 ];
 
 export function EditWebsiteClient() {
@@ -67,6 +69,7 @@ export function EditWebsiteClient() {
         {tab === "people" && <PeopleEditor />}
         {tab === "research" && <ResearchEditor />}
         {tab === "conferences" && <ConferencesEditor />}
+        {tab === "news" && <ManualNewsEditor />}
 
       </main>
     </div>
