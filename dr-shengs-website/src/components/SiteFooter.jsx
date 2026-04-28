@@ -116,27 +116,7 @@ export function SiteFooter() {
         </p>
       </div>
 
-      {/* Admin login */}
-      <div style={{ marginBottom: "20px" }}>
-        <p style={{ fontSize: "16px", color: "#333333", lineHeight: 1.5 }}>
-          <Link
-            href="/admin"
-            style={{ color: "#000000", textDecoration: "underline" }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.color = "#d60000";
-              e.currentTarget.style.textDecoration = "none";
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.color = "#000000";
-              e.currentTarget.style.textDecoration = "underline";
-            }}
-          >
-            admin login
-          </Link>
-        </p>
-      </div>
-
-      {/* Logo */}
+      {/* Logo — click to go to admin */}
       <div
         style={{
           width: "100%",
@@ -145,13 +125,15 @@ export function SiteFooter() {
           marginTop: "10px",
         }}
       >
-        <Image
-          src="/footerpic.png"
-          alt="TTU Department of Computer Science"
-          width={300}
-          height={100}
-          style={{ maxWidth: "300px", height: "auto", display: "block" }}
-        />
+        <Link href="/admin">
+          <Image
+            src="/footerpic.png"
+            alt="TTU Department of Computer Science"
+            width={300}
+            height={100}
+            style={{ maxWidth: "300px", height: "auto", display: "block" }}
+          />
+        </Link>
       </div>
     </footer>
   );
