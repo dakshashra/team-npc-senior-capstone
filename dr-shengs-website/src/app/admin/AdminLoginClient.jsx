@@ -70,7 +70,7 @@ export function AdminLoginClient() {
       <div className="relative mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-16">
         <div className="mb-10 text-center">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#CC0000]/90">
-            Restricted
+
           </p>
           <h1 className="mt-2 text-3xl font-semibold tracking-tight text-white">
             Admin access
