@@ -76,7 +76,7 @@ export function AdminLoginClient() {
             Admin access
           </h1>
           <p className="mt-2 text-sm text-zinc-400">
-            Sign in with credentials stored in the admin collection.
+
           </p>
         </div>
 
