@@ -14,16 +14,21 @@ import xml.etree.ElementTree as ET
 # Source: github.com/tech-conferences/conference-data (no API key needed)
 # ─────────────────────────────────────────
 from datetime import date
-
 def sync_conferences_to_firestore(db):
     current_year = datetime.now().year
     next_year = current_year + 1
     today = date.today()
 
-    # Topics that map to CS — pull both current and next year
     TOPICS = ["data", "devops", "general", "python", "security", "javascript"]
     RAW_BASE = "https://raw.githubusercontent.com/tech-conferences/conference-data/main/conferences"
 
+    # ── 1. Clear collection first ──
+    collection_ref = db.collection('conferences')
+    for doc in collection_ref.stream():
+        doc.reference.delete()
+    print("🗑️ Cleared old conferences.")
+
+    # ── 2. Fetch fresh data ──
     all_conferences = []
 
     for year in [current_year, next_year]:
@@ -32,62 +37,51 @@ def sync_conferences_to_firestore(db):
             try:
                 resp = requests.get(url, timeout=15)
                 if resp.status_code == 404:
-                    continue  # that topic/year combo doesn't exist yet
+                    continue
                 resp.raise_for_status()
                 entries = resp.json()
                 for conf in entries:
-                    conf["_topic"] = topic  # tag for description
+                    conf["_topic"] = topic
                 all_conferences.extend(entries)
                 print(f"✅ Fetched {len(entries)} {topic}/{year} conferences")
             except Exception as e:
                 print(f"⚠️ Could not fetch {topic}/{year}: {e}")
 
-    # Filter to only upcoming conferences
+    # ── 3. Filter to future only, deduplicate, sort ──
+    seen = set()
     upcoming = []
+
     for conf in all_conferences:
         start_raw = conf.get("startDate", "")
         try:
             conf_date = date.fromisoformat(start_raw)
-            if conf_date >= today:
-                upcoming.append(conf)
+            if conf_date <= today:
+                continue
         except ValueError:
-            pass  # skip malformed dates
+            continue  # skip anything with a malformed or missing date
 
-    # Deduplicate by (name + startDate) in case a conference appears in multiple topics
-    seen = set()
-    unique = []
-    for conf in upcoming:
-        key = (conf.get("name", ""), conf.get("startDate", ""))
-        if key not in seen:
-            seen.add(key)
-            unique.append(conf)
+        key = (conf.get("name", ""), start_raw)
+        if key in seen:
+            continue
+        seen.add(key)
+        upcoming.append(conf)
 
-    # Sort soonest first
-    unique.sort(key=lambda c: c.get("startDate", ""))
+    upcoming.sort(key=lambda c: c.get("startDate", ""))
+    print(f"📅 {len(upcoming)} upcoming conferences after today ({today})")
 
-    print(f"📅 Total upcoming unique conferences: {len(unique)}")
-
-    # Write to Firestore
-    collection_ref = db.collection('conferences')
-
-    # Clear old entries
-    for doc in collection_ref.stream():
-        doc.reference.delete()
-
-    for i, conf in enumerate(unique):
+    # ── 4. Write to Firestore ──
+    for i, conf in enumerate(upcoming):
         try:
-            name     = conf.get("name", "No Title")
-            start    = conf.get("startDate", "TBD")
-            end      = conf.get("endDate", "")
-            city     = conf.get("city", "")
-            country  = conf.get("country", "")
-            url      = conf.get("url", "")
-            topic    = conf.get("_topic", "tech")
-            cfp_end  = conf.get("cfpEndDate", "")
+            name    = conf.get("name", "No Title")
+            start   = conf.get("startDate", "TBD")
+            end     = conf.get("endDate", "")
+            city    = conf.get("city", "")
+            country = conf.get("country", "")
+            url     = conf.get("url", "")
+            topic   = conf.get("_topic", "tech")
+            cfp_end = conf.get("cfpEndDate", "")
 
-            # Build a useful description from available fields
             location = ", ".join(filter(None, [city, country])) or "Location TBD"
-            date_range = f"{start} – {end}" if end and end != start else start
             description = f"{name} is a {topic} conference taking place in {location}."
             if cfp_end:
                 description += f" Call for papers deadline: {cfp_end}."
